@@ -1,74 +1,75 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lecture 7: Convection and Radiation &#8212; PHY009/10 - Thermal Physics and Solids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Convection and Radiation &#8212; PHY009/10 - Thermal Physics and Solids</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture_7_Convection_Radiation';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 8: Intermolecular Forces and Deformation" href="Lecture_8_Intermolecular_Forces.html" />
-    <link rel="prev" title="Lecture 6: Thermal Conduction" href="Lecture_6_Thermal_Conduction.html" />
+    <link rel="next" title="Intermolecular Forces and Deformation" href="Lecture_8_Intermolecular_Forces.html" />
+    <link rel="prev" title="Thermal Conduction" href="Lecture_6_Thermal_Conduction.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -76,23 +77,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -100,7 +94,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -108,16 +101,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -130,9 +132,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="Introduction.html">
+  
   
   
   
@@ -142,38 +148,45 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Introduction.html">
-                    Unit 3: Thermal Physics and Solids
+                    Thermal Physics and Solids
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Semester 2 - Week 1</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 1</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Lecture_1_Atomic_Mass_Size_Moles.html">Lecture 1: Atomic Mass, Size and Moles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_2_Thermometry.html">Lecture 2: Thermometry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_3_Thermal_Expansion.html">Lecture 3: Thermal Expansion, The Kelvin Scale and Thermometers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_1_Atomic_Mass_Size_Moles.html">Atomic Mass, Size and Moles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_2_Thermometry.html">Thermometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_3_Thermal_Expansion.html">Thermal Expansion, The Kelvin Scale and Thermometers</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Semester 2 - Week 2</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 2</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Lecture_4_Thermal_Energy.html">Lecture 4: Thermal Energy, Calorimetry and Changes of State</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_5_Gas_Laws.html">Lecture 5: The Gas Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_6_Thermal_Conduction.html">Lecture 6: Thermal Conduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_4_Thermal_Energy.html">Thermal Energy, Calorimetry and Changes of State</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_5_Gas_Laws.html">The Gas Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_6_Thermal_Conduction.html">Thermal Conduction</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Semester 2 - Week 3</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 3</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 7: Convection and Radiation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_8_Intermolecular_Forces.html">Lecture 8: Intermolecular Forces and Deformation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_9_Hookes_Law.html">Lecture 9: Hookes Law</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Convection and Radiation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_8_Intermolecular_Forces.html">Intermolecular Forces and Deformation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_9_Hookes_Law.html">Hooke’s Law</a></li>
 </ul>
 
     </div>
@@ -189,7 +202,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -198,14 +211,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -327,26 +340,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -357,7 +364,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 7: Convection and Radiation</h1>
+    <h1>Convection and Radiation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -367,7 +374,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intro">Intro</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convection">Convection</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convection-current-examples">Convection Current Examples</a></li>
@@ -382,12 +388,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stefan-s-law">Stefan’s Law</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-1">Question 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-2">Question 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-3">Question 3</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a></li>
 </ul>
             </nav>
         </div>
@@ -397,14 +398,13 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="lecture-7-convection-and-radiation">
-<h1>Lecture 7: Convection and Radiation<a class="headerlink" href="#lecture-7-convection-and-radiation" title="Permalink to this heading">#</a></h1>
-<hr class="docutils" />
-<div class="section" id="learning-objectives">
-<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
-<p>By the end of this lecture you should:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="convection-and-radiation">
+<span id="tps-topic7"></span><h1>Convection and Radiation<a class="headerlink" href="#convection-and-radiation" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Learning Objectives</p>
+<p>By the end of this topic you should:</p>
 <ul class="simple">
 <li><p>Be able to explain what convection heat flow is and be able to give several examples of where this mechanism is important.</p></li>
 <li><p>Be able to explain what radiative heat transfer is.</p></li>
@@ -413,95 +413,150 @@ document.write(`
 <li><p>Be able to calculate the total heat radiated from a black body as a function of temperature.</p></li>
 </ul>
 </div>
-<div class="section" id="intro">
-<h2>Intro<a class="headerlink" href="#intro" title="Permalink to this heading">#</a></h2>
-<p>In this lecture we are going to pick up from the last lecture where we were looking at mechanisms of heat conduction in materials. Today we are going to be looking at convection and radiation. In doing so we are going to be looking at some relationships that extend beyond what you may consider to fall within the scope of general thermodynamics. For example, when considering radiative heat transfer, we see applications in astrophysics.</p>
-</div>
-<div class="section" id="convection">
-<h2>Convection<a class="headerlink" href="#convection" title="Permalink to this heading">#</a></h2>
+<section id="intro">
+<h2>Intro<a class="headerlink" href="#intro" title="Link to this heading">#</a></h2>
+<p>In this lecture we are going to pick up from the <a class="reference internal" href="Lecture_6_Thermal_Conduction.html#tps-topic6"><span class="std std-ref">last topic</span></a> where we were looking at mechanisms of heat conduction in materials, and now consider two other types of heat transfer: convection and radiation. In doing so we are going to be looking at some relationships that extend beyond what you may consider to fall within the scope of general thermodynamics such as how radiative heat transfer can be applied in the study of astrophysics.</p>
+</section>
+<section id="convection">
+<h2>Convection<a class="headerlink" href="#convection" title="Link to this heading">#</a></h2>
 <p>Convection is the mechanism by which heat is transferred through fluids, where a fluid may be either a liquid or a gas.</p>
-<p>The Met Office defines convection as “<em>the transfer of heat by the circulation or movement of heated parts of a liquid or gas” or “the movement within a liquid or a gas driven by differences in temperature</em>”. You may be thankful to know that you will not be asked to perform any calculations for a convection heat transfer and this is because it is very complicated to do so.</p>
-<p>Convection can be modelled, but we find that it is a chaotic system, this means that making very small changes to the starting parameters of our model will result in drastic changes in the system as it evolves over time.
+<p>The Met Office defines convection as “<strong>the transfer of heat by the circulation or movement of heated parts of a liquid or gas” or “the movement within a liquid or a gas driven by differences in temperature</strong>”. You may be thankful to know that you will not be asked to perform any calculations for a convection heat transfer and this is because it is extremely difficult to do so.</p>
+<p>Convection is a chaotic system meaning that making very small changes to the starting parameters of our model will result in drastic changes in the system as it evolves over time.
 If we consider the MET office again, when modelling weather patterns and extrapolating forwards to make predictions, they must take into consideration chaotic systems such as convection and turbulence.</p>
-<p>To help aid these calculations they use a supercomputer called the cray XC40, which is capable of making 14,000 trillion arithmetic calculations per second! This would be the same as every person on the earth performing over 2 million calculations per second.Thanks to these computers, the MET uses 215 billion weather measurements from across the globe every day to act as the starting point for their atmospheric models for weather predictions.</p>
+<p>To help aid these calculations they use a supercomputer called the cray XC40, which is capable of making 14,000 trillion arithmetic calculations per second! This would be the same as every person on the earth performing over 2 million calculations per second.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>But even with this level of calculation weather predictions can often be inaccurate, due to the chaotic nature of the system being studied¬</p>
+</div>
+</aside>
+<p>Thanks to these computers, the MET uses 215 billion weather measurements from across the globe every day to act as the starting point for their atmospheric models for weather predictions.</p>
 <p><strong>So what are the actual mechanics driving convection currents?</strong></p>
 <ol class="arabic simple">
-<li><p>Well there is a source of heat that supplies energy to one particular spot, for example, if you imagine we have a large water bath and place a bunsen burner in the middle of it, that spot in the middle is going to receive the majority of the heat supplied.</p></li>
-<li><p>This means that only the water in that spot is going to be heated significantly compared to the rest of the water in this large water bath. If we provide heat energy we are going to increase the kinetic energy of the molecules in this region which in turn is going to increase the amount of volume that they occupy. As the amount of water being heated has not changed, but the volume has increased, the density of this heated water is reduced.</p></li>
-<li><p>Denser materials sink and less dense materials rise, this means that this heated water rises and the volume it occupies is replaced with cooler water that can be then be heated.</p></li>
+<li><p>There is a source of heat that supplies energy to one particular spot. For example, if we have a large water bath and place an immersion heater element in the middle of it, that spot in the middle is going to receive the majority of the heat supplied.</p></li>
+<li><p>This means that only the water immediately next to the heating element is going to be heated significantly compared to the rest of the water in this large water bath.</p></li>
+<li><p>If we provide heat energy we are going to increase the kinetic energy of the molecules in this region which in turn is going to increase the amount of volume that they occupy. As the mass of water being heated has not changed, but the volume has increased, the density of this heated water is reduced.</p></li>
+<li><p>Denser materials sink and less dense materials rise meaning the heated water rises and the volume it occupies is replaced with cooler water that can be then be heated.</p></li>
 <li><p>As the hot water rises, it spreads out and dissipates its energy with the rest of the fluid causing it to cool down and again become more dense causing it to begin to sink. This constant rising and falling of the hot and cooling fluid is what we describe as a convection current.</p></li>
 </ol>
 <hr class="docutils" />
-<div class="section" id="convection-current-examples">
-<h3>Convection Current Examples<a class="headerlink" href="#convection-current-examples" title="Permalink to this heading">#</a></h3>
+<section id="convection-current-examples">
+<h3>Convection Current Examples<a class="headerlink" href="#convection-current-examples" title="Link to this heading">#</a></h3>
 <p>Here we can see a model of the convection currents in the earth’s mantle that nicely demonstrates this localised heating, rising and falling.</p>
-<p><img alt="" src="_images/Convection.png" /></p>
+<figure class="align-center" id="fig-convection">
+<a class="reference internal image-reference" href="_images/Convection.png"><img alt="A 2D image showing a simulation of thermal convection in the Earth's mantle. The image is dominated by blue swirls, representing cooler regions. There are several vertical bands of yellow and red, indicating hotter regions. These bands rise upwards, creating a pattern of convection cells where warm material rises, cools, and then sinks back down, repeating the cycle. The horizontal axis is labeled &quot;x (km)&quot; and the vertical axis is labeled &quot;z (km)&quot;, representing depth. The title of the image is &quot;Thermal convection, constant viscosity.&quot;" src="_images/Convection.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">A 2D numerical simulation of thermal convection in the Earth’s mantle with constant viscosity. The color scale represents temperature, with warmer colors indicating higher temperatures. The horizontal axis represents horizontal distance along the Earth’s surface, and the vertical axis represents depth.</span><a class="headerlink" href="#fig-convection" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Another example of a convection current that you may be familiar with is a land/sea breeze, which can be created under the right conditions:</p>
-<p><img alt="" src="_images/SeaBreeze.png" /></p>
+<figure class="align-center" id="fig-seabreeze">
+<a class="reference internal image-reference" href="_images/SeaBreeze.png"><img alt="A diagram showing how land and sea breezes form. The top half of the diagram shows a day scene. The sun is shining on a coastline. An arrow shows warm air rising from the land towards the sea. Another arrow shows cooler air blowing from the sea towards the land, labeled &quot;cool sea breeze.&quot; The bottom half of the diagram shows a night scene. The moon is in the sky. An arrow shows warm air rising from the sea towards the land. Another arrow shows cooler air blowing from the land towards the sea, labeled &quot;cool land breeze.&quot;" src="_images/SeaBreeze.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">A diagram illustrating the formation of land and sea breezes. During the day, the land heats up faster than the sea, creating a low-pressure area over the land. This causes cooler air from the sea to flow inland as a sea breeze. At night, the land cools down faster than the sea, creating a high-pressure area over the land. This causes cooler air from the land to flow towards the sea as a land breeze.</span><a class="headerlink" href="#fig-seabreeze" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <ul class="simple">
 <li><p>At night time, the land cools relatively quickly, but the warmer water heats the air above it, increasing the temperature of the air above the sea relative to the land. This causes the warmer less dense air to rise and be replaced by the cooler air from above the land creating a land breeze.</p></li>
 <li><p>The opposite is true in the daytime. The land is heated up by the sun much more rapidly than the sea, causing the air above the land to heat up more quickly relative to the air above the sea. This means that the less dense air above the land rises to be replaced by the denser cooler air from the sea. This time the breeze is blowing towards the land from the sea and this is what we refer to as a sea breeze.</p></li>
 </ul>
-<p><img alt="" src="_images/WeatherFronts.png" /></p>
+<figure class="align-center" id="fig-weatherfronts">
+<a class="reference internal image-reference" href="_images/WeatherFronts.png"><img alt="A map of the Earth showing land surface temperatures. The map is color-coded, with warmer areas appearing in shades of red and orange, and cooler areas in shades of blue and green. A notable feature is the contrast between coastal regions, which are generally cooler, and inland regions, which are significantly warmer." src="_images/WeatherFronts.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">A global map showing land surface temperatures. Warmer areas are depicted in red and orange, while cooler areas are shown in blue and green. The map highlights significant temperature differences between coastal regions and inland areas, with inland regions generally experiencing higher temperatures.</span><a class="headerlink" href="#fig-weatherfronts" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Convection currents are very important when modelling climate and weather systems and they can be seen to operate on a global scale.  As the sun heats the surface of the earth, the air above the surface is heated and rises, and under certain conditions this air can continue to rise to form different types of clouds, which obviously impact the weather.</p>
 <p>Furthermore, there is a process known as the ocean conveyor current, which is a water current that carries warmer water from the equator of the planet to the poles. This process is impacted by convection due to the ocean temperature and the salinity (salt concentration) of the water. Warm waters near the equator are pushed towards the poles by strong wind patterns, and are carried to the higher latitudes where they cool via interaction with the colder winds. The water also evaporates during this movement, which in turn increases the salt concentration of the water.</p>
 <p>This increase in salinity and decrease in temperature causes the water to sink through a convection process. This is vital for driving ocean currents as it supplies water to deep water currents which then transport the water back to the tropical regions. These systems are very complicated and are made even more difficult when considering the coriolis force caused by the Earth’s rotation.</p>
 <p>If the earth did not rotate, the atmosphere would simply cycle from the high pressure regions at the poles to the low pressure regions at the equator and back again, however due to the earth’s rotation, the air is deflected. If the air is travelling from the north pole to the equator, it is deflected west, whereas if it is travelling from the equator to the north pole it is deflected to the east. The opposite is true for the south pole. Clearly this just adds another level of complexity that makes modelling large climate systems more difficult.</p>
 <p>Now that we have a good overview of conduction and convection, it is time to look at the final mechanism for heat transfer - radiation!</p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="radiation">
-<h2>Radiation<a class="headerlink" href="#radiation" title="Permalink to this heading">#</a></h2>
+<section id="radiation">
+<h2>Radiation<a class="headerlink" href="#radiation" title="Link to this heading">#</a></h2>
 <p>Simply put, all objects emit electromagnetic radiation and the peak wavelength they emit is dependent on the temperature of the object.</p>
-<p><img alt="" src="_images/EMRadiation.png" /></p>
+<figure class="align-center" id="fig-emradiation">
+<a class="reference internal image-reference" href="_images/EMRadiation.png"><img alt="A collage of four images. The top left image shows a glowing light bulb filament, emitting a bright orange light within the glass bulb. The top right image shows a blacksmith hammering a red-hot piece of metal on an anvil. Sparks are flying from the metal as it is struck. The bottom left image shows a thermal image of a cow. The cow's body is depicted in shades of orange and red, indicating areas of higher temperature. The bottom right image shows a thermal image of a person. The person's body is depicted in shades of blue, green, and yellow, indicating varying temperatures across their body." src="_images/EMRadiation.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">A collage of four images demonstrating different forms of heat. The top left image shows a glowing light bulb filament. The top right image shows a blacksmith hammering a red-hot piece of metal. The bottom left image shows a thermal image of a cow, with its body temperature represented by a color gradient. The bottom right image shows a thermal image of a person, with their body temperature represented by a color gradient.</span><a class="headerlink" href="#fig-emradiation" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>You will have seen images like those above before where we show the temperature of an object/person or cow, using a thermal camera. These simply measure the wavelength of light being emitted by the object in the non-visible region of the spectrum and apply a colour scale so that we are able to differentiate between the different temperatures visibly.</p>
-<p>You will recall that during the pandemic it was common to use non-contact thermometers to determine the body temperature of a person to gauge if they have a fever. These thermometers focus the infrared radiation that we radiate onto a sensor in order to determine skin temperature. The cow and the person here show this nicely, with yellows, reds and whites representing hot regions on the object and the greens, blues and blacks representing the cooler regions.</p>
-<p>We are also aware that we do not need a thermal imaging camera to know that what we have said here is true, as we heat an object to a higher and higher temperature, eventually the electromagnetic wave it emits will fall within the visible region of the electromagnetic spectrum. For example, the image above shows a blacksmith working on a glowing red hot piece of metal. In the lightbulb, we run a high current through the wire which causes resistive heating until the tungsten filament is so hot it begins to glow and produce enough light to illuminate a room. Things become red hot at around <span class="math notranslate nohighlight">\(800\)</span>˚C and white hot at around <span class="math notranslate nohighlight">\(3000˚\)</span>C.</p>
+<p>You may recall that during the pandemic it was common to use non-contact thermometers to determine the body temperature of a person to gauge if they have a fever. These thermometers focus the infrared radiation that we radiate onto a sensor in order to determine skin temperature. The cow and the person here show this nicely, with yellows, reds and whites representing hot regions on the object and the greens, blues and blacks representing the cooler regions.</p>
+<p>We are also aware that we do not need a thermal imaging camera to know that what we have said here is true, as we heat an object to a higher and higher temperature, eventually the electromagnetic wave it emits will fall within the visible region of the electromagnetic spectrum. For example, the image above shows a blacksmith working on a glowing red hot piece of metal. In the lightbulb, we run a high current through the wire which causes resistive heating until the tungsten filament is so hot it begins to glow and produce enough light to illuminate a room. Things become red hot at around <span class="math notranslate nohighlight">\(800\,^\circ\text{C}\)</span> and white hot at around <span class="math notranslate nohighlight">\(3000\,^\circ\text{C}\)</span>.</p>
 <hr class="docutils" />
-<div class="section" id="blackbody-radiation">
-<h3>Blackbody Radiation<a class="headerlink" href="#blackbody-radiation" title="Permalink to this heading">#</a></h3>
-<p>Now, when we want to perform calculations to determine the temperature of an object from the wavelength of radiation it emits, we do so assuming that it is a <em>blackbody radiator</em>.</p>
-<p>A blackbody radiator is a hypothetical that object is capable of emitting and absorbing all wavelengths of electromagnetic radiation. In reality, there are no ideal black bodies, but there are some examples that are good approximations.</p>
+<section id="blackbody-radiation">
+<h3>Blackbody Radiation<a class="headerlink" href="#blackbody-radiation" title="Link to this heading">#</a></h3>
+<p>Now, when we want to perform calculations to determine the temperature of an object from the wavelength of radiation it emits, we do so assuming that it is a <strong>blackbody radiator</strong>.</p>
+<p>A blackbody radiator is a hypothetical object that emits and absorbs all wavelengths of electromagnetic radiation. In reality, there are no ideal black bodies, but there are some examples that are good approximations.</p>
 <p>The best example is the cosmic microwave background (CMB), more commonly referred to as “the afterglow of the big bang”. If you ever watched an analogue TV (and it scares me slightly that you might be young enough to not have!) that was not tuned to a channel you would have seen TV static - this is the jumping black and white dots that flicker on the screen - part of this static pattern may be attributed to the cosmic microwave background. The CMB is shown below:</p>
-<p><img alt="" src="_images/CMB.png" /></p>
+<figure class="align-center" id="fig-cmb">
+<a class="reference internal image-reference" href="_images/CMB.png"><img alt="An image of the Cosmic Microwave Background (CMB) radiation. The image shows a projection of the spherical CMB onto an oval shape. The map is colored with varying hues, ranging from blue to yellow and red, creating a pattern of subtle variations and fluctuations across the surface." src="_images/CMB.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">An all-sky map of the Cosmic Microwave Background (CMB) radiation. The CMB is the oldest light in the universe, emitted shortly after the Big Bang. The map shows tiny temperature fluctuations across the sky, which are the seeds of structure formation in the universe.</span><a class="headerlink" href="#fig-cmb" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="dropdown admonition">
-<p class="admonition-title">What is the Cosmic Microwave Background? </p>
+<p class="admonition-title">What is the Cosmic Microwave Background?</p>
 <p><strong>This is not examinable, but is included for your interest.</strong></p>
-<p>In 1965, Arno Penzais and Robert Wilson were working on satellite communication technologies at Bell labs in the states. When doing this they turned on a microwave antenna and pointed it towards the sky only to find that the signals they detected had no directional preference (e.g. they measured the same sort of signal regardless of where the detector was pointed. Analysis of these signals by physicists showed that the wavelength of the microwave signals detected correspond to a temperature of around <span class="math notranslate nohighlight">\(2.725\,\)</span>K.</p>
-<p>Around <span class="math notranslate nohighlight">\(380000\)</span> years after the big bang, the universe cooled to a toasty <span class="math notranslate nohighlight">\(3000\,\)</span>K, which allowed for the the formation of neutral atoms for the first time, and consequently, the universe became transparent to most light. As we will learn in our final unit, electrons in atoms can be exited between energy states via absorption of photons of specific wavelengths. The atom is therefore opaque to these wavelengths (as it absorbs them) but transparent to others. Prior to the formation of atoms, photons would simply scatter off of the free electrons and protons.</p>
-<p>This <span class="math notranslate nohighlight">\(3000\,\)</span>K blackbody radiation therefore “survived” and as the universe expanded it cooled to its current temperature of <span class="math notranslate nohighlight">\(2.725\,\)</span>K. On this map of the CMB, you will see hotter and cooler areas. In these slightly cooler regions, the density of matter was greater which allowed for the formation of galaxies such as the Milky Way.</p>
+<p>In 1965, Arno Penzais and Robert Wilson were working on satellite communication technologies at Bell labs in the states. When doing this they turned on a microwave antenna and pointed it towards the sky only to find that the signals they detected had no directional preference (e.g. they measured the same sort of signal regardless of where the detector was pointed. Analysis of these signals by physicists showed that the wavelength of the microwave signals detected correspond to a temperature of around <span class="math notranslate nohighlight">\(2.725\text{ K}\)</span>.</p>
+<p>Around <span class="math notranslate nohighlight">\(380000\)</span> years after the big bang, the universe cooled to a toasty <span class="math notranslate nohighlight">\(3000\text{ K}\)</span>, which allowed for the the formation of neutral atoms for the first time, and consequently, the universe became transparent to most light. As we will learn in our final unit, electrons in atoms can be exited between energy states via absorption of photons of specific wavelengths. The atom is therefore opaque to these wavelengths (as it absorbs them) but transparent to others. Prior to the formation of atoms, photons would simply scatter off of the free electrons and protons.</p>
+<p>This <span class="math notranslate nohighlight">\(3000\text{ K}\)</span> blackbody radiation therefore “survived” and as the universe expanded it cooled to its current temperature of <span class="math notranslate nohighlight">\(2.725\text{ K}\)</span>. On this map of the CMB, you will see hotter and cooler areas. In these slightly cooler regions, the density of matter was greater which allowed for the formation of galaxies such as the Milky Way.</p>
 <p>The CMB is the best direct evidence of the big bang theory. In summary - the CMB is the best example of a blackbody radiator, which itself is an idealised object that can perfectly absorb or emit all wavelengths of electromagnetic radiation.</p>
 </div>
 <p>Now we have established what a blackbody radiator is, we can begin to investigate the relationship between the wavelength of light that an object emits and its temperature.</p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="the-planck-curve">
-<h2>The Planck Curve<a class="headerlink" href="#the-planck-curve" title="Permalink to this heading">#</a></h2>
+<section id="the-planck-curve">
+<h2>The Planck Curve<a class="headerlink" href="#the-planck-curve" title="Link to this heading">#</a></h2>
 <p>An object at a given temperature will radiate electromagnetic radiation, however it does not emit a single wavelength of electromagnetic radiation, instead it radiates a distribution of wavelengths, the intensities of which vary as a function of temperature.</p>
-<p>We can plot the <em>spectral radiance</em> as a function of wavelength for an object at various temperatures to see how this changes. Spectral radiance is simply “the radiance of a surface per unit frequency or wavelength” and has units of kW<span class="math notranslate nohighlight">\(\,\)</span>sr<span class="math notranslate nohighlight">\(^{-1}\,\)</span>m<span class="math notranslate nohighlight">\(^{-2}\,\)</span>nm<span class="math notranslate nohighlight">\(^{-1}\)</span> if measured as a function of wavelength. In essence it is a  measure of intensity. The diagram below is known as a Planck curve and illustrates how the spectral radiance varies as a function of temperature:</p>
-<p><img alt="" src="Figures/PlankCurve.png" /></p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><span class="math notranslate nohighlight">\(\text{st}\)</span> is a <strong>steradian</strong>, the units for a <strong>solid angle</strong>. One steradian is the solid angle subtended at the center of a unit sphere by a unit area on its surface. It’s analogous to the radian for plane angles, where one radian is the angle subtended when the arc length equals the radius.</p>
+</div>
+</aside>
+<p>We can plot the <strong>spectral radiance</strong> as a function of wavelength for an object at various temperatures to see how this changes. Spectral radiance is simply “the radiance of a surface per unit frequency or wavelength” and has units of <span class="math notranslate nohighlight">\(\text{kW sr}^{-1}\text{ m}^{-2}\text{ nm}^{-1}\)</span> if measured as a function of wavelength. In essence it is a  measure of intensity. The diagram below is known as a Planck curve and illustrates how the spectral radiance varies as a function of temperature:</p>
+<figure class="align-center" id="fig-planckcurve">
+<a class="reference internal image-reference" href="_images/PlanckCurve.png"><img alt="A graph illustrating Planck's law of black-body radiation. The horizontal axis is labeled &quot;Wavelength (microns)&quot; and increases from left to right. The vertical axis is labeled &quot;Spectral radiance (kW per sr per square m per nm)&quot; and increases from bottom to top. The graph shows three curves, each representing the spectral radiance of a black body at a different temperature; 3000 K (red), 4000 K (green), and 5000 K (blue). As the temperature increases, the peak of the curve shifts to shorter wavelengths. A fourth curve, labeled &quot;Classical theory (5000 K),&quot; diverges significantly from the actual black-body curve at shorter wavelengths, illustrating the ultraviolet catastrophe." src="_images/PlanckCurve.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">A graph illustrating Planck’s law of black-body radiation. The graph shows the spectral radiance (power emitted per unit area, solid angle, and wavelength) as a function of wavelength for black bodies at temperatures of <span class="math notranslate nohighlight">\(3000\text{ K}\)</span>,  <span class="math notranslate nohighlight">\(4000\text{ K}\)</span>, and <span class="math notranslate nohighlight">\(5000\text{ K}\)</span>. The graph also includes the classical theory prediction for a black body at <span class="math notranslate nohighlight">\(5000\text{ K}\)</span>, which diverges significantly from the actual observations at shorter wavelengths, illustrating the ultraviolet catastrophe.</span><a class="headerlink" href="#fig-planckcurve" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>What we notice is that as the temperature of a body increases, the peak wavelength of the light it emits increases in intensity and is shifted towards the lower wavelengths (e.g. higher frequencies/energies).
 This is a very important relationship to remember and one that can only be explained based on the teachings of quantum mechanics. The black line on this plot shows the prediction made using Classical theory (e.g. not quantum theory) - we see that as the wavelength emitted by the object gets smaller and smaller into the ultraviolet region, the intensity of its spectral radiance increases exponentially to infinity!</p>
 <p>This means that if we were to integrate under the curve to find the total radiated intensity, it would also be equal to infinity - this is clearly not possible. Lord Rayleigh who derived this classical model referred to this as the “ultraviolet catastrophe”.</p>
 <p>Plancks’ model based on quantum mechanics was not favoured at the time even by himself - in a letter to his friend he called it “an act of desperation” into which he was forced because “a theoretical explanation had to be found at any cost, regardless of the price”. Only five years later with the  Einstein’s explanation of the photoelectric effect amongst other evidence, did the validity of quantum theory become accepted.</p>
 <hr class="docutils" />
-<div class="section" id="wien-s-displacement-law">
-<h3>Wien’s Displacement Law<a class="headerlink" href="#wien-s-displacement-law" title="Permalink to this heading">#</a></h3>
+<section id="wien-s-displacement-law">
+<h3>Wien’s Displacement Law<a class="headerlink" href="#wien-s-displacement-law" title="Link to this heading">#</a></h3>
 <p>The temperature, <span class="math notranslate nohighlight">\(T\)</span>, of an object is related to the peak wavelength of light it emits, <span class="math notranslate nohighlight">\(\lambda_{peak}\)</span>, by Wien’s Displacement Law:</p>
-<p><span class="math notranslate nohighlight">\( \lambda_{peak} = \frac{b}{T}, \)</span></p>
-<p>where <span class="math notranslate nohighlight">\(b\)</span> is Wiens displacement constant, which is equal to <span class="math notranslate nohighlight">\(2.8977721(26) \times 10^{-3}\,\)</span>m<span class="math notranslate nohighlight">\(\,\)</span>K<span class="math notranslate nohighlight">\(^{-1}\)</span>. The peak wavelength therefore has units of <span class="math notranslate nohighlight">\(m\)</span> and the temperature is measured in Kelvin.</p>
-</div>
+<div class="math notranslate nohighlight">
+\[\lambda_{peak} = \frac{b}{T}\]</div>
+<p>where <span class="math notranslate nohighlight">\(b\)</span> is Wiens displacement constant, which is equal to <span class="math notranslate nohighlight">\(2.8977721(26) \times 10^{-3}\text{ m K}\)</span>. The peak wavelength therefore has units of <span class="math notranslate nohighlight">\(\text{m}\)</span> and the temperature is measured in Kelvin.</p>
+</section>
 <hr class="docutils" />
-<div class="section" id="stefan-s-law">
-<h3>Stefan’s Law<a class="headerlink" href="#stefan-s-law" title="Permalink to this heading">#</a></h3>
+<section id="stefan-s-law">
+<h3>Stefan’s Law<a class="headerlink" href="#stefan-s-law" title="Link to this heading">#</a></h3>
 <p>There is a second law that we should learn when considering blackbody radiators and their temperature dependencies - this is Stefan’s Law. Stefan’s Law tells us the total power, <span class="math notranslate nohighlight">\(P\)</span> emitted by a blackbody radiator with a given surface area, <span class="math notranslate nohighlight">\(A\)</span>, and temperature, <span class="math notranslate nohighlight">\(T\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(P = A \sigma T^4, \)</span></p>
-<p>where <span class="math notranslate nohighlight">\(\sigma\)</span> is the Stefan-Boltzmann constant and has a value of <span class="math notranslate nohighlight">\(5.67 \times 10^8\,\)</span>W<span class="math notranslate nohighlight">\(\,\)</span>m<span class="math notranslate nohighlight">\(^{-2}\,\)</span>K<span class="math notranslate nohighlight">\(^{-4}\)</span>. This relationship is used routinely in astronomy to gain information about stars, for example, the stage at which the star is in its life cycle. We can do this using a Hertzsprung-Russel Diagram (shown below).</p>
-<p><img alt="" src="_images/RHDiagram.png" /></p>
-<p>The total power of a star is simply the amount of energy it emits in a given unit of time (recall that <span class="math notranslate nohighlight">\(P = \frac{dE}{dt}\)</span>). In astronomy this is often just called the luminosity of the star.  Using Stefan’s law we are able to determine the surface temperature of a star from its luminosity.</p>
+<div class="math notranslate nohighlight">
+\[P = A \sigma T^4\]</div>
+<p>where <span class="math notranslate nohighlight">\(\sigma\)</span> is the Stefan-Boltzmann constant and has a value of <span class="math notranslate nohighlight">\(5.67 \times 10^8\text{ W m}^{-2}\text{ K}^{-4}\)</span>. This relationship is used routinely in astronomy to gain information about stars, for example, the stage at which the star is in its life cycle. We can do this using a Hertzsprung-Russel Diagram (shown below).</p>
+<figure class="align-center" id="fig-rhdiagram">
+<a class="reference internal image-reference" href="_images/RHDiagram.png"><img alt="An H-R diagram, a plot of stellar luminosity versus surface temperature. The diagram is a scatter plot with individual stars represented by coloured circles. The colour of each circle corresponds to its surface temperature, with blue representing the hottest stars and red representing the coolest. The horizontal axis represents surface temperature, decreasing from left to right. The vertical axis represents luminosity, increasing from bottom to top. The diagram shows distinct groupings of stars; a diagonal band labeled &quot;Main Sequence&quot; containing the majority of stars, a cluster of large, luminous stars labeled &quot;Giants&quot; and &quot;Supergiants&quot; towards the top right, and a cluster of small, dim stars labeled &quot;White Dwarfs&quot; towards the bottom left. The Sun is marked on the diagram for reference." src="_images/RHDiagram.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">A Hertzsprung-Russell (H-R) diagram, plotting the luminosity of stars against their surface temperature. The diagram shows distinct groupings of stars, including the Main Sequence, where most stars reside, as well as regions for giants, supergiants, and white dwarfs. The Sun is marked for reference.</span><a class="headerlink" href="#fig-rhdiagram" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The total power of a star is simply the amount of energy it emits in a given unit of time (recall that <span class="math notranslate nohighlight">\(P = \frac{\mathrm{d}E}{\mathrm{d}t}\)</span>). In astronomy this is often just called the luminosity of the star.  Using Stefan’s law we are able to determine the surface temperature of a star from its luminosity.</p>
 <p>We can see from this diagram that if we plot a star’s luminosity (in this case measured relative to the sun) as a function of its surface temperature, the stars fall within different clusters depending on the type of star they are. For example, white dwarves, main sequence stars, red or blue giants or supergiants.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Life-cycle of a star - for additional info only</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The next few paragraphs of notes outline the life-cycle of a star and are suplementary to this course. They are only included for reference if you are interested. However, you should still be comfortable using Stefans Law and Wien’s Displacement Law.</p>
@@ -510,78 +565,133 @@ This is a very important relationship to remember and one that can only be expla
 <p>Once almost all of the hydrogen has been used up, the fusion pressure in the core drops and the core of the star collapses under its gravitational forces, this increases the temperature of the core which allows hydrogen in a shell surrounding the core to begin to fuse, which causes the star to expand. As the core continues to collapse and become more and more dense, the outer shells of the star expand further and further until the star becomes a red giant.</p>
 <p>Low mass main sequence stars are unable to become red giants and instead will continue to fuse hydrogen for up to a trillion years - the current age of the universe is 13.7 billion years for reference! If the star is sufficiently heavy (above 8-10 solar masses) once the core of the star has fused into helium, the gravitational forces acting on the core are sufficient to fuse heavier elements until eventually the core is formed of iron (no more fusion can take place at this point as we will learn later this semester). At the end of the lifetime of the star, these super giants will go supernova and depending on their mass produce either a neutron star or a blackhole. Stars with masses less than 10 solar masses cannot go supernova and instead they just slowly lose their outer layers leaving behind only the core of the star - this is known as a white dwarf star.</p>
 </div>
+</section>
+</section>
+<section id="questions">
+<h2>Questions<a class="headerlink" href="#questions" title="Link to this heading">#</a></h2>
+<div class="dropdown hint admonition">
+<p class="admonition-title">Question 7.1 - Temperature of a blackbody object</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Question</label><div class="sd-tab-content docutils">
+<p>A hot object emits light with a peak wavelength of <span class="math notranslate nohighlight">\(0.5470\,\mu m\)</span>.</p>
+<p>What is its blackbody temperature?</p>
 </div>
-<hr class="docutils" />
-<div class="section" id="questions">
-<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this heading">#</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Atempt the questions before looking at the solutions otherwise you will not learn!</strong></p>
-<p>Students who look at mark schemes without going through the motions of a question often think “<em>yes, that’s what I would have done</em>”, but are then unable to perfom on exams as the knowledge was never consolidated through practise.</p>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Hint</label><div class="sd-tab-content docutils">
+<p>Blackbody objects are described by two laws, Wien’s (linking wavelength to temperature) and Stefan’s (linking power to temperature).</p>
+<p>Make sure you have all the dimensions correct.</p>
 </div>
-<div class="admonition-note admonition">
-<p class="admonition-title">Note</p>
-<p>Units have been omitted in calculations below for simplicity. Ensure you know what each value represents.</p>
-</div>
-<hr class="docutils" />
-<div class="section" id="question-1">
-<h3>Question 1<a class="headerlink" href="#question-1" title="Permalink to this heading">#</a></h3>
-<p>A hot object emits light with a peak wavelength of <span class="math notranslate nohighlight">\(0.5470\,\mu m\)</span>. What is its blackbody temperature?</p>
-<div class="dropdown admonition">
-<p class="admonition-title">Q1 Solution</p>
-<p>To answer this question we are simply going to use Wien’s displacement law:</p>
-<p><span class="math notranslate nohighlight">\( \lambda_{peak} = \frac{b}{T},\)</span></p>
-<p><span class="math notranslate nohighlight">\( T = \frac{b}{\lambda_{peak}}, \)</span></p>
-<p><span class="math notranslate nohighlight">\( T = \frac{2.898 \times 10^{-3}}{0.547 \times 10^{-6}}, \)</span></p>
-<p><span class="math notranslate nohighlight">\( T = 5298\, K.\)</span></p>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+Solution</label><div class="sd-tab-content docutils">
+<p>To answer this question we use Wien’s displacement law:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lambda_{peak} &amp;= \frac{b}{T}\\
+\therefore T &amp;= \frac{b}{\lambda_{peak}}\\
+    &amp;= \frac{2.898 \times 10^{-3}}{0.547 \times 10^{-6}}\\
+    &amp;= 5298\text{ K}
+\end{align*}\]</div>
 </div>
 </div>
-<hr class="docutils" />
-<div class="section" id="question-2">
-<h3>Question 2<a class="headerlink" href="#question-2" title="Permalink to this heading">#</a></h3>
-<p>The sun has a diameter of <span class="math notranslate nohighlight">\(1.4 \times 10^9\,\)</span>m and a surface temperature of <span class="math notranslate nohighlight">\(5800\,\)</span>K. Calculate the power it radiates into space.</p>
-<div class="dropdown admonition">
-<p class="admonition-title">Q2 Solution</p>
+</div>
+<div class="dropdown hint admonition">
+<p class="admonition-title">Question 7.2 - Power of a star</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+Question</label><div class="sd-tab-content docutils">
+<p>The sun has a diameter of <span class="math notranslate nohighlight">\(1.4 \times 10^9\text{ m}\)</span> and a surface temperature of <span class="math notranslate nohighlight">\(5800\text{ K}\)</span>.</p>
+<p>Calculate the power it radiates into space.</p>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
+Hint</label><div class="sd-tab-content docutils">
+<p>The question asks us to find power and provides the temperature and diameter. One of the two blackbody models <strong>almost</strong> links these three properties, but we need to change the diameter into something else.</p>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
+Solution</label><div class="sd-tab-content docutils">
 <p>To answer this question we must use Stefan’s law:</p>
-<p><span class="math notranslate nohighlight">\(P = A \sigma T^4, \)</span></p>
-<p>as <span class="math notranslate nohighlight">\(A\)</span> is the surface area of the sun, we must write an expression for this in terms of the diameter provided:</p>
-<p><span class="math notranslate nohighlight">\( A = 4\pi r^2, \)</span></p>
-<p><span class="math notranslate nohighlight">\( A = 4\pi \left(\frac{d}{2}\right)^2, \)</span></p>
-<p><span class="math notranslate nohighlight">\( A = 4\pi \frac{d^2}{4}. \)</span></p>
-<p><span class="math notranslate nohighlight">\( A = \pi d^2. \)</span></p>
-<p>Now we sub in the expression for the surface area into Stefan’s law:</p>
-<p><span class="math notranslate nohighlight">\(P =  \pi d^2 \sigma T^4, \)</span></p>
-<p><span class="math notranslate nohighlight">\( P = \pi \times (1.4 \times 10^9)^2 \times 5.67\times 10^{-8} \times 5800^4\)</span></p>
-<p><span class="math notranslate nohighlight">\( P = 3.95 \times 10^{26}\, W\)</span></p>
-<p><span class="math notranslate nohighlight">\( P = 4.0 \times 10^{26}\, W\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+P = A \sigma T^4
+\end{align*}\]</div>
+<p>As <span class="math notranslate nohighlight">\(A\)</span> is the surface area of the sun, we must write an expression for this in terms of the diameter provided:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+A &amp;= 4\pi r^2\\
+    &amp;= 4\pi \left(\frac{d}{2}\right)^2\\
+    &amp;= 4\pi \frac{d^2}{4}\\
+    &amp;= \pi d^2
+\end{align*}\]</div>
+<p>Now we substitute this expression for the surface area into Stefan’s law:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+P &amp;=  \pi d^2 \sigma T^4\\
+    &amp;= \pi \times (1.4 \times 10^9)^2 \times 5.67\times 10^{-8} \times 5800^4\\
+    &amp;= 3.95 \times 10^{26}\text{ W}\\
+    &amp;= 4.0 \times 10^{26}\text{ W to 2 sig figs}
+\end{align*}\]</div>
 </div>
 </div>
-<hr class="docutils" />
-<div class="section" id="question-3">
-<h3>Question 3<a class="headerlink" href="#question-3" title="Permalink to this heading">#</a></h3>
-<p>Solar radiation falls onto the surface of the Earth at an intensity of <span class="math notranslate nohighlight">\(1.37\,\)</span>kW<span class="math notranslate nohighlight">\(\,\)</span>m<span class="math notranslate nohighlight">\(^{-2}\)</span> junder normal incidence. Estimate the temperature of the Earth assuming it radiates back into space as much power as it recieves. The radius of the Earth is <span class="math notranslate nohighlight">\(6.4\times 10^6\,\)</span>m.</p>
-<div class="dropdown admonition">
-<p class="admonition-title">Q3 Solution</p>
-<p>To answer this question, we will make the assumption that the earth behaves as a perfect blackbody. As the Sun’s radiation is not normal to the surface of the earth (except near the equator), the area of the Earth used in this calculation will be the cross sectional area, <span class="math notranslate nohighlight">\(A_c\)</span>, rather than half the surface area:</p>
-<p><span class="math notranslate nohighlight">\(A_c = \pi r^2\)</span></p>
+</div>
+<div class="dropdown hint admonition">
+<p class="admonition-title">Question 7.3 - Power of the Sun based on Earth measurements</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-6">
+Question</label><div class="sd-tab-content docutils">
+<p>Solar radiation falls onto the surface of the Earth at an intensity of <span class="math notranslate nohighlight">\(1.37\text{ kW m}^{-2}\)</span> under normal incidence.</p>
+<p>Estimate the temperature of the Earth assuming it radiates back into space as much power as it recieves. The radius of the Earth is <span class="math notranslate nohighlight">\(6.4\times 10^6\text{ m}\)</span>.</p>
+</div>
+<input id="sd-tab-item-7" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-7">
+Hint</label><div class="sd-tab-content docutils">
+<p>You’ll need to think about the area of the Earth used for the <strong>incident</strong> radiation from the Sun, and the area used for the <strong>emission</strong> from the Earth. They aren’t the same.</p>
+</div>
+<input id="sd-tab-item-8" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-8">
+Solution</label><div class="sd-tab-content docutils">
+<p>To answer this question, we make the assumption that the Earth behaves as a perfect blackbody. As the Sun’s radiation intercepts the Earth in parallel lines (i.e. not radially towards the centre of the Earth), the area used in this calculation will be the cross sectional area, <span class="math notranslate nohighlight">\(A_c\)</span>, rather than half the surface area:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+A_c = \pi r^2
+\end{align*}\]</div>
 <p>Looking at the units of the solar radiation intensity, it is clear that if multiplied by an area we will get the corresponding amount of power incident upon the earth:</p>
-<p><span class="math notranslate nohighlight">\(P = I A_c\)</span></p>
-<p><span class="math notranslate nohighlight">\(P = I \pi r^2.\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+P &amp;= I A_c\\
+    &amp;= I \pi r^2
+\end{align*}\]</div>
 <p>The question also states that the same amount of power is radiated back into space, therefore we can equate the power above to the power given using Stefan’s law:</p>
-<p><span class="math notranslate nohighlight">\(P = A \sigma T^4, \)</span></p>
-<p>however the Earth will radiate this energy back into space in all direction, therefore the area we use in this equation is actually the surface area of the Earth:</p>
-<p><span class="math notranslate nohighlight">\(P = (4 \pi r^2) \sigma T^4, \)</span></p>
-<p>therefore:</p>
-<p><span class="math notranslate nohighlight">\(I \pi r^2 = (4 \pi r^2) \sigma T^4,\)</span></p>
-<p><span class="math notranslate nohighlight">\( I = 4 \sigma T^4,\)</span></p>
-<p><span class="math notranslate nohighlight">\( T = ^4\sqrt{\frac{I}{4\sigma}}, \)</span></p>
-<p><span class="math notranslate nohighlight">\( T = ^4\sqrt{\frac{1370}{4\times 5.67\times 10^{-8}}}, \)</span></p>
-<p><span class="math notranslate nohighlight">\( T = 278.8\, K. \)</span></p>
-<p>This is around <span class="math notranslate nohighlight">\(6\)</span>˚C, which seems like a reasonable estimation.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+P = A \sigma T^4
+\end{align*}\]</div>
+<p>however the Earth will radiate this energy back into space in all direction, therefore the area we use in this equation is now the full surface area of the Earth:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+P = (4 \pi r^2) \sigma T^4
+\end{align*}\]</div>
+<p>As the two powers are the same (power incident on Earth = power emitted by Earth) we can state:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+I \pi r^2 &amp;= (4 \pi r^2) \sigma T^4\\
+\therefore I &amp;= 4 \sigma T^4\\
+\text{or } T &amp;= ^4\sqrt{\frac{I}{4\sigma}}\\
+    &amp;= ^4\sqrt{\frac{1370}{4\times 5.67\times 10^{-8}}}\\
+    &amp;= 278.8\text{ K}
+\end{align*}\]</div>
+<p>This is around <span class="math notranslate nohighlight">\(6\,^\circ\text{C}\)</span>, which seems like a reasonable estimation.</p>
 </div>
 </div>
 </div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -608,11 +718,10 @@ This is a very important relationship to remember and one that can only be expla
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="Lecture_6_Thermal_Conduction.html"
@@ -620,7 +729,7 @@ This is a very important relationship to remember and one that can only be expla
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 6: Thermal Conduction</p>
+        <p class="prev-next-title">Thermal Conduction</p>
       </div>
     </a>
     <a class="right-next"
@@ -628,21 +737,20 @@ This is a very important relationship to remember and one that can only be expla
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 8: Intermolecular Forces and Deformation</p>
+        <p class="prev-next-title">Intermolecular Forces and Deformation</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -650,7 +758,6 @@ This is a very important relationship to remember and one that can only be expla
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intro">Intro</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convection">Convection</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convection-current-examples">Convection Current Examples</a></li>
@@ -665,12 +772,7 @@ This is a very important relationship to remember and one that can only be expla
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stefan-s-law">Stefan’s Law</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-1">Question 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-2">Question 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-3">Question 3</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a></li>
 </ul>
   </nav></div>
 
@@ -685,16 +787,17 @@ This is a very important relationship to remember and one that can only be expla
   <div class="footer-item">
     
 <p class="component-author">
-By Dr Ross Mathieson
+By Drs Ross Mathieson and Matt Mears
 </p>
 
   </div>
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -718,8 +821,8 @@ By Dr Ross Mathieson
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
   </footer>

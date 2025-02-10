@@ -1,74 +1,75 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lecture 2: Thermometry &#8212; PHY009/10 - Thermal Physics and Solids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Thermometry &#8212; PHY009/10 - Thermal Physics and Solids</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture_2_Thermometry';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 3: Thermal Expansion, The Kelvin Scale and Thermometers" href="Lecture_3_Thermal_Expansion.html" />
-    <link rel="prev" title="Lecture 1: Atomic Mass, Size and Moles" href="Lecture_1_Atomic_Mass_Size_Moles.html" />
+    <link rel="next" title="Thermal Expansion, The Kelvin Scale and Thermometers" href="Lecture_3_Thermal_Expansion.html" />
+    <link rel="prev" title="Atomic Mass, Size and Moles" href="Lecture_1_Atomic_Mass_Size_Moles.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -76,23 +77,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -100,7 +94,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -108,16 +101,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -130,9 +132,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="Introduction.html">
+  
   
   
   
@@ -142,38 +148,45 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Introduction.html">
-                    Unit 3: Thermal Physics and Solids
+                    Thermal Physics and Solids
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Semester 2 - Week 1</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 1</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Lecture_1_Atomic_Mass_Size_Moles.html">Lecture 1: Atomic Mass, Size and Moles</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 2: Thermometry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_3_Thermal_Expansion.html">Lecture 3: Thermal Expansion, The Kelvin Scale and Thermometers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_1_Atomic_Mass_Size_Moles.html">Atomic Mass, Size and Moles</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Thermometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_3_Thermal_Expansion.html">Thermal Expansion, The Kelvin Scale and Thermometers</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Semester 2 - Week 2</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 2</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Lecture_4_Thermal_Energy.html">Lecture 4: Thermal Energy, Calorimetry and Changes of State</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_5_Gas_Laws.html">Lecture 5: The Gas Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_6_Thermal_Conduction.html">Lecture 6: Thermal Conduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_4_Thermal_Energy.html">Thermal Energy, Calorimetry and Changes of State</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_5_Gas_Laws.html">The Gas Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_6_Thermal_Conduction.html">Thermal Conduction</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Semester 2 - Week 3</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 3</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Lecture_7_Convection_Radiation.html">Lecture 7: Convection and Radiation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_8_Intermolecular_Forces.html">Lecture 8: Intermolecular Forces and Deformation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_9_Hookes_Law.html">Lecture 9: Hookes Law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_7_Convection_Radiation.html">Convection and Radiation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_8_Intermolecular_Forces.html">Intermolecular Forces and Deformation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_9_Hookes_Law.html">Hooke’s Law</a></li>
 </ul>
 
     </div>
@@ -189,7 +202,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -198,14 +211,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -327,26 +340,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -357,7 +364,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 2: Thermometry</h1>
+    <h1>Thermometry</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -367,23 +374,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-and-temperature">Heat and Temperature</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-flow">Heat Flow</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-equilibrium">Thermal Equilibrium</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thermetric-properties">Thermetric Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thermometric-properties">Thermometric Properties</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-scales">Temperature Scales</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-temperature-scales">Alternative Temperature Scales</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermometer-limitations">Thermometer Limitations</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question">Question</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-1">Question 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-2">Question 2</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a></li>
 </ul>
             </nav>
         </div>
@@ -393,14 +395,13 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="lecture-2-thermometry">
-<h1>Lecture 2: Thermometry<a class="headerlink" href="#lecture-2-thermometry" title="Permalink to this heading">#</a></h1>
-<hr class="docutils" />
-<div class="section" id="learning-objectives">
-<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
-<p>By the end of this lecture you should:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="thermometry">
+<span id="tps-topic2"></span><h1>Thermometry<a class="headerlink" href="#thermometry" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Learning Objectives</p>
+<p>By the end of this topic you should:</p>
 <ul class="simple">
 <li><p>Be able to explain the difference between heat and temperature.</p></li>
 <li><p>Be able to define “thermometry”.</p></li>
@@ -409,33 +410,47 @@ document.write(`
 </ul>
 </div>
 <hr class="docutils" />
-<div class="section" id="heat-and-temperature">
-<h2>Heat and Temperature<a class="headerlink" href="#heat-and-temperature" title="Permalink to this heading">#</a></h2>
+<section id="heat-and-temperature">
+<h2>Heat and Temperature<a class="headerlink" href="#heat-and-temperature" title="Link to this heading">#</a></h2>
 <p>In everyday conversation we often use the terms “heat” and “temperature” interchangeably. However, in physics each of these terms has a very specific meaning and it is important that we know the difference.</p>
 <p>We use temperature as a measure of the hotness or coldness of something, which itself is rather abstract as hotness and coldness from an experiential perspective are rather vague terms. That being said, there are many physical properties that are temperature dependent, e.g. the length of a bar of metal or the ability of a conductor to carry current. This means that there is an underlying physical mechanism that we can relate to temperature.</p>
 <p>Ultimately, temperature is a measure of the average kinetic energy of the atoms/molecules in a substance. Considering what we learnt about negative temperature coefficient resistors last semester - as the temperature of a NTC increases, so does the kinetic energy of the molecules that form it, as these vibrate more, they impede the flow of current.</p>
 <p>For a given solid, if we continue to increase the temperature of the material, eventually the chemical bonds that bind the molecules together will begin to break and there will be a phase transition, e.g. solid to liquid, liquid to gas, or solid to gas (sublimation).</p>
 <p><strong>But how do we increase the temperature of the wire?</strong> In essence we “heat it up” i.e supply it with heat. Therefore heat must be a form of energy that can be transferred from one object to another.</p>
 <p>Heat always flows from hot to cold, which is why when you place two bodies at different temperatures in contact with one another, they will eventually reach thermal equilibrium. The heat from one body is transferred to the cooler body, increasing the temperature of the cooler body and decreasing the temperature of the hotter body.</p>
-<div class="dropdown admonition">
-<p class="admonition-title">Temperature</p>
-<p>Temperature is a measure that is proportional to the average kinetic energy of the atoms in a substance.</p>
-<p>As a solid heats up, the vibrational energy of its atoms increases until it reaches as point where chemical bonds break.</p>
-<p>This leads to a “change of state” or “phase transition” when the solid changes from a solid to a liquid.</p>
-<p>As the temperature increases further, there is a second change of state and the liquid turns into a gas.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Temperature</div>
+<p class="sd-card-text">Temperature is a measure that is proportional to the average kinetic energy of the atoms in a substance.</p>
+<p class="sd-card-text">As a solid heats up, the vibrational energy of its atoms increases until it reaches as point where chemical bonds break.</p>
+<p class="sd-card-text">This leads to a “change of state” or “phase transition” when the solid changes from a solid to a liquid.</p>
+<p class="sd-card-text">As the temperature increases further, there is a second change of state and the liquid turns into a gas.</p>
 </div>
-<div class="dropdown admonition">
-<p class="admonition-title">Heat</p>
-<p>Heat is a measure of the the total internal or thermal energy that an object or substance has.</p>
-<p>Heat is a form of energy so has the unit of Joules, J.</p>
-<p>Heat will always flow from a hot body to a colder body, and this heat flow is a flow of energy.</p>
-<p>Heat <em>flow</em> is measured in Joules per second, or Watts, W.</p>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Heat</div>
+<p class="sd-card-text">Heat is a measure of the the total internal or thermal energy that an object or substance has.</p>
+<p class="sd-card-text">Heat is a form of energy so has the unit of Joules, J.</p>
+<p class="sd-card-text">Heat will always flow from a hot body to a colder body, and this heat flow is a flow of energy.</p>
+<p class="sd-card-text">Heat <em>flow</em> is measured in Joules per second, or Watts, W.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <p>For a given amount of heat that an object possesses, the temperature is dependent on the mass and volume of the object. If the object is very large or massive, this heat must be dissipated across more material or space, which results in an overall lower temperature than if this heat was contained within a small mass or space.</p>
 <p>Conversely, you may have very little heat energy, but a very high temperature if the energy is contained within a very small amount of mass or concentrated in a very small volume of space - for example, a spark. For any given object however, the more heat that it has, the higher its temperature will be. The heat and temperature of an object are related to one another via its mass.</p>
 <div class="admonition-example admonition">
 <p class="admonition-title">Example</p>
-<p>To affirm our understanding of heat and temperature, consider an <span class="math notranslate nohighlight">\(80˚\,\)</span>C cup of coffee sat in a room that has an ambient temperature of <span class="math notranslate nohighlight">\(25˚\,\)</span>C.</p>
+<p>To affirm our understanding of heat and temperature, consider an <span class="math notranslate nohighlight">\(80\,^\circ\text{C}\)</span> cup of coffee sat in a room that has an ambient temperature of <span class="math notranslate nohighlight">\(25\,^\circ\text{C}\)</span>.</p>
 <ul class="simple">
 <li><p>What happens to the temperature of the coffee over time?</p></li>
 <li><p>Why does this happen?</p></li>
@@ -443,137 +458,226 @@ document.write(`
 </ul>
 </div>
 <hr class="docutils" />
-<div class="section" id="heat-flow">
-<h3>Heat Flow<a class="headerlink" href="#heat-flow" title="Permalink to this heading">#</a></h3>
-<p>To answer the questions above, we must consider the flow of heat from one object to another aka the heat flow. Heat flow occurs when there is a difference in temperature between two objects as heat energy will flow from the hotter object to the cooler object. The difference in temperature between two objects seperated by a given distance is known as a <em>temperature gradient</em>. The steeper the temperature gradient, the greater the heat flow between the two objects.</p>
-<p><img alt="" src="_images/HeatFlow1.png" /></p>
-<p>As heat energy flows from the hotter object, its temperature decreases, whereas as energy flows to the cooler object, its temperature will increase.</p>
+<section id="heat-flow">
+<h3>Heat Flow<a class="headerlink" href="#heat-flow" title="Link to this heading">#</a></h3>
+<p>To answer the questions above, we must consider the ‘movement’ of heat from one object to another known as the heat flow. Heat flow occurs when there is a difference in temperature between two objects as heat energy will flow from the hotter object to the cooler object. The difference in temperature between two objects seperated by a given distance is known as a <strong>temperature gradient</strong>. The steeper the temperature gradient, the greater the heat flow between the two objects.</p>
+<figure class="align-center" id="fig-heatflow1">
+<a class="reference internal image-reference" href="_images/HeatFlow1.png"><img alt="A visual representation of heat flow in a bar from a hot source to a cold sink. The image depicts a temperature gradient transitioning from red (hot) to blue (cold), with an arrow indicating the direction of heat transfer. We are assuming the system is insulated meaning no heat flows out of the bar." src="_images/HeatFlow1.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">A colour gradient bar transitions from red on the left to blue on the right. An arrow points from the red section towards the blue section with the text “Heat Flow” written above it. Text at the left end of the bar reads “Hot” and text at the right end reads “Cold”.</span><a class="headerlink" href="#fig-heatflow1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>As heat energy flows from the hotter object its temperature decreases, whereas as energy flows to the cooler region its temperature will increase.</p>
 <p>Heat will continue to flow between the two objects so long as there is a temperature difference. Over time the difference in temperature between the two objects will decrease, meaning the temperature gradient (and therefore heat flow) also decreases as a function of time.</p>
-<p>The following factors impact the amount of heat flow between two objects:</p>
+<p>The following factors impact the amount of heat flow between two objects, one hot and one cold:</p>
 <ul class="simple">
 <li><p><strong>The temperature difference between them</strong> - the greater the temperature difference the greater the heat flow.</p></li>
 <li><p><strong>The actual temperature</strong> -  this is related to the mechanisms through which heat may be transferred. For example, heat can be transferred either by conduction, convection or radiation. At higher temperatures radiation tends to dominate.</p></li>
-<li><p><strong>The surface area of the objects</strong> - if we have a larger surface area more heat is able to flow through the surface in any given period of time.</p></li>
+<li><p><strong>The contact surface area of the objects</strong> - if we have a larger surface area in contact between the two objects more heat is able to flow through this surface in any given period of time.</p></li>
 <li><p><strong>The amount of insulations around an object</strong> - if we are able to insulate our object and prevent heat being conducted away as easily, we are able to reduce the amount of heat flow. For example consider a flask. This contains a vessel within a larger vessel between which is a partial vacuum. The lack of air molecules in this cavity reduces the amount of heat loss via conduction and convection.</p></li>
 </ul>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="thermal-equilibrium">
-<h3>Thermal Equilibrium<a class="headerlink" href="#thermal-equilibrium" title="Permalink to this heading">#</a></h3>
+<section id="thermal-equilibrium">
+<h3>Thermal Equilibrium<a class="headerlink" href="#thermal-equilibrium" title="Link to this heading">#</a></h3>
 <p>After a given amount of time, the temperature of the two objects will be the same (they’re in <em>thermal equilibrium</em>) and there is <strong>no net heat flow between the two objects</strong></p>
-<p><img alt="" src="_images/HeatFlow2.png" /></p>
+<figure class="align-center" id="fig-heatflow2">
+<a class="reference internal image-reference" href="_images/HeatFlow2.png"><img alt="A diagram shows two identical rectangular objects. The objects are shaded the same colour and labeled &quot;Object 1&quot; and &quot;Object 2.&quot; A two-way arrow points between Object 1 and Object 2. The arrow is labeled &quot;No net heat flow.&quot; The temperature of both objects is labeled &quot;T_1.&quot;" src="_images/HeatFlow2.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">A diagram illustrating thermal equilibrium between two objects. Two objects at the same temperature, T₁, are shown. Since their temperatures are equal, there is no <em>net</em> heat flow between them.</span><a class="headerlink" href="#fig-heatflow2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Now consider the system shown below. Here we have three objects, object 1 is in thermal equilibrium with objects 2 and 3.</p>
-<p><img alt="" src="_images/HeatFlow3.png" /></p>
+<figure class="align-center" id="label-for-crossreferencing">
+<a class="reference internal image-reference" href="_images/HeatFlow3.png"><img alt="A diagram shows three identical rectangular objects. The objects are shaded the same color and labeled &quot;Object 1,&quot; &quot;Object 2,&quot; and &quot;Object 3.&quot; Object 1 and Object 2 are at the same temperature, labeled &quot;T_1.&quot; A double-headed arrow between Object 1 and Object 2 is labeled &quot;No net heat flow.&quot;. Another double-headed arrow between Object 1 and Object 3 is labeled &quot;No net heat flow.&quot;. A double-headed arrow points be Object 3 towards Object 1 and Object 2, with the label &quot;Heat flow?&quot; above the arrow." src="_images/HeatFlow3.png" style="width: 80%;" /></a>
+</figure>
 <div class="dropdown admonition">
 <p class="admonition-title">Are objects 2 and 3 are also in thermal equiblirium with one another?</p>
-<p><strong>Yes</strong> - objects 2 and 3 must be in thermal equilibrium with oneanother as if there is not net heat flow between either of them and object 1, then they must both be the same temperature as object 1, which means that they are also the same temperature as each other.</p>
+<p><strong>Yes</strong> - objects 2 and 3 must be in thermal equilibrium with one another. As there is no net heat flow between either of them and object 1, then they must both be the same temperature as object 1, which means that they are also the same temperature as each other.</p>
 <p><strong>In summary: if body 1 is in thermal equilibrium with bodies 2 and 3, then bodies 2 and 3 are in thermal equilibrium with each other.</strong></p>
 </div>
-<p>The summary statement in the dropdown above is known as the <strong>zeroth law of thermodynamics</strong> and it is this statement is what makes a thermometer useful: it measures its own temperature, but when the thermometer is in thermal equilibrium with another body it will also measure the temperature of that body.</p>
+<p>The summary statement in the dropdown above is known as the <strong>zeroth law of thermodynamics</strong> and it is this statement is what makes a thermometer useful. A thermometer measures and displays its own temperature, but when the thermometer is in thermal equilibrium with another body it will also show the temperature of that body.</p>
 <p>This brings us onto thermometry, which is essentially understanding how we can use physical properties of materials in order to determine the temperature of another body.</p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="thermetric-properties">
-<h2>Thermetric Properties<a class="headerlink" href="#thermetric-properties" title="Permalink to this heading">#</a></h2>
-<p>The physical properties of an object that change with temperature are known as thermometric properties and these include the volume expansion of materials, the electrical resistance of materials, and at very high temperatures, the peak wavelength of light emitted by hot glowing objects. <strong>A thermometric propertiy is a physical property that changes in a known way with temperature.</strong></p>
-<p>We are going to consider how we could use the thermal expansion of a liquid to measure temperature using a thermometer. In a liquid thermometer, we have a liquid that expands or contracts as a function of temperature, thus the volume it occupies/the length in the thermometer tube also changes as a function of temperature. If we know the volumes the liquid occupies for a given series of temperatures, we can mark these volumes/temperatures of the vessel walls. To do this we must perform a calibration between the length of the liquid in the tube and the temperature.</p>
-<p>An alternative style of thermometer is the <em>bimetallic strip</em>. This is effectively a strip formed of two metals, each with different thermal responses to heat, arranged in a spiral. As the temperature changes, one of the metals with expand or contract more than the other, causing the metal strip to bend. One end of the metal strip is connected to a casing and the other a pointer, the position of the pointer then changes as a function of the temperature. Again this can be calibrated with temperature. The image below was taken from <a class="reference external" href="https://tameson.co.uk/pages/bimetallic-thermometer">here</a></p>
-<p><img alt="" src="_images/BimetallicStrip.png" /></p>
-<p>In the case for either thermometer, to perform the calibrations we first need to define some temperature scales!</p>
+<section id="thermometric-properties">
+<h2>Thermometric Properties<a class="headerlink" href="#thermometric-properties" title="Link to this heading">#</a></h2>
+<p>The physical properties of an object that change with temperature are known as thermometric properties and these include the volume expansion of materials, the electrical resistance of materials, and (at very high temperatures) the peak wavelength of light emitted by hot glowing objects. <strong>A thermometric property is a physical property that changes in a known, quantifiable way with temperature.</strong></p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Strictly speaking the glass also expands when it is heated, but we assume this is negligible compared to that of the liquid.</p>
 </div>
+</aside>
+<p>Firstly we consider how we could use the thermal expansion of a liquid to measure temperature using a thermometer. In a liquid thermometer, we have a liquid that expands or contracts as a function of temperature, thus the volume it occupies also changes as a function of temperature - as the glass container is a fixed shape, this means the liquid can only expand in one direction, along the length of the inner gap. If we know the volumes the liquid occupies for a given series of temperatures, we can mark these volumes/temperatures of the vessel walls. To do this we must perform a calibration between the length of the liquid in the tube and the temperature.</p>
+<p>An alternative style of thermometer is the <strong>bimetallic strip</strong>. This is effectively a layered strip formed of two metals, each with different thermal responses to heat, arranged in a spiral. As the temperature changes, one of the metals with expand or contract more than the other, causing the metal strip to bend. One end of the metal strip is connected to a casing and the other a pointer, the position of the pointer then changes as a function of the temperature. The image below was taken from <a class="reference external" href="https://tameson.co.uk/pages/bimetallic-thermometer">here</a></p>
+<figure class="align-center" id="fig-bimetallicstrip">
+<a class="reference internal image-reference" href="_images/BimetallicStrip.png"><img alt="A diagram shows a bimetallic strip thermometer. The thermometer consists of a spiral coil made of two different metals. A pointer extends from the center of the coil and points to a scale marked with numbers from 0 to 40 degrees Celsius. The pointer currently points to the number 10." src="_images/BimetallicStrip.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">A bimetallic strip thermometer. The bimetallic strip is shown coiled into a spiral. As the temperature changes, the strip uncoils or coils further, moving a pointer along a scale to indicate the temperature.</span><a class="headerlink" href="#fig-bimetallicstrip" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In the case for either thermometer, to perform the calibrations we first need to define some temperature scales.</p>
+</section>
 <hr class="docutils" />
-<div class="section" id="temperature-scales">
-<h2>Temperature Scales<a class="headerlink" href="#temperature-scales" title="Permalink to this heading">#</a></h2>
-<p>The difficulty in defining a temperature scale is the fact that when we do so we have no thermometer to act as a starting point, instead we must use reproducible starting points that always occur at the same temperature - these are known as <strong>fixed points</strong>.</p>
-<p>Assuming that the thermometric property we are measuring varies linearly with temperature, we would need two fixed points to define our temperature scale. What is a convenient example of this? The temperatures at which phase transitions occur e.g. the freezing and boiling points of water! However, we should note that even this is not trivial as the freezing and boiling points of water are dependent on other factors such as air pressure, the presence of impurities in the water etc.</p>
+<section id="temperature-scales">
+<h2>Temperature Scales<a class="headerlink" href="#temperature-scales" title="Link to this heading">#</a></h2>
+<p>The difficulty in defining a temperature scale is the fact that when we do so we have no thermometer to act as a starting point. We could define our scale with zero at different amounts of heat. To address this we instead use reproducible physical processes that always occur at the same temperature - these are known as <strong>fixed points</strong>.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>More common is to use the triple point of water, which is the tempature-pressure at which water exists in solid, liquid and gas forms. More on this in the <a class="reference internal" href="Lecture_3_Thermal_Expansion.html#tps-topic3"><span class="std std-ref">next topic</span></a></p>
+</div>
+</aside>
+<p>Assuming that the thermometric property we are measuring varies linearly with temperature, we would need a minimum of two fixed points to define our temperature scale. What is a convenient example of this? The temperatures at which phase transitions occur e.g. the freezing and boiling points of water! However, we should note that even this is not trivial as the freezing and boiling points of water are dependent on other factors such as air pressure, the presence of impurities in the water etc.</p>
 <p>The examples of the melting and boiling points of water are “fixed points”. Using fixed points we are able to ensure that the temperature read out of one thermometer is consistent with that of another, regardless of the type of thermometer.</p>
-<p>The other things we need to consider when defining our temperature scale is how many intervals between our fixed points we want to include. For example, say that there are 100˚ difference between the freezing point and boiling point of water, and this is why water freezes at 0˚C and boils at 100˚C. However, we could just as easily define a different number of degrees and say water freezes at zero and boils at 50˚C.</p>
+<p>The other things we need to consider when defining our temperature scale is how many intervals between our fixed points we want to include. For example, say that there are <span class="math notranslate nohighlight">\(100\,^\circ\text{C}\)</span> difference between the freezing point and boiling point of water, and this is why water freezes at <span class="math notranslate nohighlight">\(0\,^\circ\text{C}\)</span> and boils at <span class="math notranslate nohighlight">\(100\,^\circ\text{C}\)</span>. However, we could just as easily define a different number of degrees and say water freezes at zero and boils at <span class="math notranslate nohighlight">\(50\,^\circ\text{C}\)</span>.</p>
 <p>The easiest way to consider a temperature scale is to plot it:</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/1375d32b91fd1fdbc36c862dc28e1f4e80753d6d13ff7c807dbdb99a8d0587e2.png" src="_images/1375d32b91fd1fdbc36c862dc28e1f4e80753d6d13ff7c807dbdb99a8d0587e2.png" />
+<img alt="_images/c9839ca981c0c31995e35987aa487ecf236ee17dbe79dcb9cc4749261b70f164.png" src="_images/c9839ca981c0c31995e35987aa487ecf236ee17dbe79dcb9cc4749261b70f164.png" />
 </div>
 </div>
-<p>The gradient of the plot is given by:</p>
-<p><span class="math notranslate nohighlight">\( m = \frac{\Delta y}{\Delta x} = \frac{T_U - T_L}{X_U - X_L}, \)</span></p>
-<p>which can be written as:</p>
-<p><span class="math notranslate nohighlight">\( m = = \frac{N}{X_U - X_L}, \)</span></p>
-<p>where <span class="math notranslate nohighlight">\(N\)</span> is the number of steps between <span class="math notranslate nohighlight">\(T_U\)</span> and <span class="math notranslate nohighlight">\(T_L\)</span>, where the subscripts indicate the upper and lower fixed points. For example for the Celsius scale, <span class="math notranslate nohighlight">\(N=100\)</span>.</p>
-<p>So using the steps above, we can perform a calibration between the length of the liquid in our thermometer and the temperature of the body we are measuring, in this instance water. Here we can see that at 0C, which we are defining as the freezing point, the length of the liquid is at 20mm, whereas at 100C, which we are defining as the boiling point, the length of the liquid is at 120mm.</p>
-<p>By determining the gradient of this line, for any given value on the x-axis, we can determine the corresponding value on the y-axis. e.g. for any given measured length, we can determine the temperature, however before we are able to do this, we must also know the intercept of the line so that we are able to use <span class="math notranslate nohighlight">\(y = mx + c\)</span>, which in this case can be expressed as:</p>
-<p><span class="math notranslate nohighlight">\( T_M = \frac{N}{X_U - X_L} X_M + c, \)</span></p>
-<p>where <span class="math notranslate nohighlight">\(T_M\)</span> and <span class="math notranslate nohighlight">\(X_M\)</span> are the measured temperature and measured lenght of liquid in the thermometer, respectively. By writing an expression for the temperature at the lower fixed point:</p>
-<p><span class="math notranslate nohighlight">\( T_L = \frac{N}{X_U - X_L} X_L + c. \)</span></p>
+<p>So in the graph above we can perform a calibration between the length of the liquid in our thermometer and the temperature of the body we are measuring - in the graph above we are using water. Here our first fixed point is the freezing point of water which we defined as <span class="math notranslate nohighlight">\(0\,^\circ \text{C}\)</span> and has a corresponding length of the liquid of <span class="math notranslate nohighlight">\(20\text{ mm}\)</span>. The second fixed point is the boiling point of water which is defined as <span class="math notranslate nohighlight">\(100\,^\circ \text{C}\)</span> and the length of the liquid is now at <span class="math notranslate nohighlight">\(120\text{ mm}\)</span>.</p>
+<p>By determining the gradient of this line, for any given value on the temperature axis, we can determine the corresponding length of the liquid. The gradient of the plot <span class="math notranslate nohighlight">\(m\)</span> is given by:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m = \frac{\Delta y}{\Delta x} = \frac{X_U - X_L}{T_U - T_L} = \Theta
+\end{align*}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\Theta\)</span> (capital theta) is our calibration factor with units <span class="math notranslate nohighlight">\(\text{mm degree}^{-1}\)</span>.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this case we already know <span class="math notranslate nohighlight">\(c\)</span>. The intercept is when <span class="math notranslate nohighlight">\(T=0\)</span> which we’ve just defined meaning <span class="math notranslate nohighlight">\(c=20\text{ mm} = X_L\)</span>, but we’ll continue working with <span class="math notranslate nohighlight">\(c\)</span> as we may have a different temperature scale where the freezing point of water is not defined as zero.</p>
+</div>
+</aside>
+<p>When dealing with straight lines and linear models we often must also know the intercept of the line so that we are able to use <span class="math notranslate nohighlight">\(y = mx + c\)</span>. For now we will leave this as an unknown parameter that we’ll deal with later if necessary.</p>
+<p>Now let us use this calibrated system to measure the temperature of some other object, <span class="math notranslate nohighlight">\(T_M\)</span>, by noting the length of the liquid in the thermometer, <span class="math notranslate nohighlight">\(X_M\)</span>, when the thermometer and object are in thermal equilibrium. Using the equation of a straight line we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+X_M &amp;= \Theta T_M + c\\
+\therefore T_M &amp;= \frac{X_M-c}{\Theta}
+\end{align*}\]</div>
+<p>We can also writing an expression for the temperature at the lower fixed point by setting <span class="math notranslate nohighlight">\(T_M=T_L\)</span>:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_L = \frac{X_L-c}{\Theta}
+\end{align*}\]</div>
 <p>and by subtracting this expression from the expression for the measured temperature, we can eliminate the intercept term and thus derive an expression that allows us to determine the temperature for any given length of liquid:</p>
-<p><span class="math notranslate nohighlight">\( T_M - T_L = \frac{N}{X_U - X_L} X_M + c - \left(\frac{N}{X_U - X_L} X_L + c \right), \)</span></p>
-<p><span class="math notranslate nohighlight">\( T_M - T_L = \frac{N}{X_U - X_L} X_M - \frac{N}{X_U - X_L} X_L, \)</span></p>
-<p><span class="math notranslate nohighlight">\( T_M - T_L = \frac{N(X_M - X_L)}{X_U - X_L}, \)</span></p>
-<p><span class="math notranslate nohighlight">\( T_M = \frac{N(X_M - X_L)}{X_U - X_L} + T_L. \)</span></p>
-<p>Using our example of a liquid thermometer and using the Celsius scale, the lower temperature we used corresponds to 0˚C, which simplifies our expression to:</p>
-<p><span class="math notranslate nohighlight">\( T_M = \frac{100(X_M - X_L)}{X_U - X_L}. \)</span></p>
-<p>On the physical thermometer, rather than having a scale that shows the length of the liquid in the glass tube, we simply print on the temperature that each length would correspond to. This saves us from needing to perform the conversion between measured length and temperature each time.</p>
-<p><img alt="" src="_images/ThermometerPlot.png" /></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_M - T_L &amp;= \frac{X_M-c}{\Theta} - \frac{X_L-c}{\Theta}\\
+    &amp;= \frac{X_M}{\Theta} - \frac{c}{\Theta} - \frac{X_L}{\Theta} + \frac{c}{\Theta}\\
+    &amp;= \frac{X_M-X_L}{\Theta}
+    \therefore T_M = \frac{X_M-X_L}{\Theta} + T_L
+\end{align*}\]</div>
+<p>Using our example of a water-based liquid thermometer and using the Celsius scale, the lower temperature we used corresponds to <span class="math notranslate nohighlight">\(T_L = 0\,^\circ\text{C}\)</span> which simplifies our expression to:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_M = \frac{X_M-X_L}{\Theta}
+\end{align*}\]</div>
+<p>On the physical thermometer, rather than having a scale that shows the length of the liquid in the glass tube, we simply print on the temperature that each length would correspond to. This saves us from needing to perform the conversion between measured length and temperature each time, but the steps we have gone through above are necessary to calibrate our thermometers in the first place.</p>
+<figure class="align-center" id="fig-thermometerplot">
+<a class="reference internal image-reference" href="_images/ThermometerPlot.png"><img alt="A line graph with a grid background. The x-axis is labeled &quot;Liquid Length [mm]&quot; and the y-axis is labeled &quot;Temperature [C]&quot;.  A straight line starts at the origin (0,0) and extends diagonally upwards to the right.  There are two vertical lines extending from the x-axis to intersect the diagonal line.  A horizontal line connects the two intersection points. Two vertical lines extend downwards from these intersection points to the x-axis.  There are black circles at the top and bottom of the vertical lines extending from the x-axis.  The word &quot;Fixed Points&quot; is written next to a black circle and a black square." src="_images/ThermometerPlot.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">A graph illustrating the linear relationship between temperature and liquid length in a  calibrated liquid-in-glass thermometer. The fixed points, representing the freezing and boiling points of water, are marked on the graph. The diagonal line represents the calibration curve for the thermometer. Note that the axes are swapped compared to the earlier graph, as here we have a calibrated thermometer meaning the length change to temperature conversion is known.</span><a class="headerlink" href="#fig-thermometerplot" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <hr class="docutils" />
-<div class="section" id="alternative-temperature-scales">
-<h3>Alternative Temperature Scales<a class="headerlink" href="#alternative-temperature-scales" title="Permalink to this heading">#</a></h3>
-<p>There are different temperature scales that may be used which use different fixed points, for example 0 degrees fahrenheit corresponds to the freezing temperature of a solution of brine made from a mixture of water, ice, and ammonium chloride (a salt), and is equivalent to approximately -17.8˚C. 100˚f corresponds to just over a normal body temperature (~37C).</p>
-<p>The Kelvin scale is more absolute, zero kelvin represents absolute zero, the temperature at which a thermodynamic system has the lowest possible about of energy. An increase in 1K corresponds to an increase in 1˚C, and 0K is equal to 273.15˚C. We will use Kelvin regularly in this course.</p>
+<section id="alternative-temperature-scales">
+<h3>Alternative Temperature Scales<a class="headerlink" href="#alternative-temperature-scales" title="Link to this heading">#</a></h3>
+<p>There are different temperature scales that may be used which use different fixed points, for example <span class="math notranslate nohighlight">\(0\)</span> degrees fahrenheit corresponds to the freezing temperature of a solution of brine made from a mixture of water, ice, and ammonium chloride (a salt), and is equivalent to approximately <span class="math notranslate nohighlight">\(-17.8\,^\circ\text{C}\)</span>. <span class="math notranslate nohighlight">\(100\,^\circ\text{F}\)</span> corresponds to just over a normal body temperature <span class="math notranslate nohighlight">\((\approx 37\,^\circ\text{C})\)</span>.</p>
+<p>The Kelvin scale is more absolute, zero kelvin represents absolute zero, the temperature at which a thermodynamic system has the lowest possible about of energy. An increase in 1K corresponds to an increase in <span class="math notranslate nohighlight">\(1\,^\circ\text{C}\)</span>, and <span class="math notranslate nohighlight">\(0\text{ K}\)</span> is equal to <span class="math notranslate nohighlight">\(273.15\,^\circ\text{C}\)</span>. We will use Kelvin regularly in this course.</p>
 <div class="admonition-steps-for-defining-a-temperature-scale admonition">
 <p class="admonition-title">Steps for Defining a Temperature Scale</p>
 <p>So to summarise how we may use a thermometric property to define a temperature scale, the steps are as follows:</p>
 <ol class="arabic simple">
 <li><p>We first choose a thermometric property (e.g. volume, peak wavelength, electrical resistivity).</p></li>
 <li><p>We then measure the thermometric property at and upper and lower fixed point (ideally fixed points that correspond to reproducible temperatures such as phase transitions)</p></li>
-<li><p>We then use the fixed points to define an upper and lower temperature, separated by a given range or number of intervals (N).</p></li>
+<li><p>We then use the fixed points to define an upper and lower temperature.</p></li>
 <li><p>We can then perform a calibration between the fixed points and defined temperatures to give us any unknown temperature for a given measurement.</p></li>
 </ol>
 <p>When using the thermometer, the value <span class="math notranslate nohighlight">\(X_M\)</span> of the thermometric property is measured at an unknown temperature <span class="math notranslate nohighlight">\(T_M\)</span>. The unknown temperature is defined by the equation:</p>
-<p><span class="math notranslate nohighlight">\( T_M = \frac{N(X_M - X_L)}{X_U - X_L} + T_L, \)</span></p>
-<p>where <span class="math notranslate nohighlight">\(N\)</span> is the defined temperature range between the upper and lower fixed points.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_M = \frac{X_M-X_L}{\Theta} + T_L
+\end{align*}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\Theta\)</span> is the calibration (or conversion) factor.</p>
 </div>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="thermometer-limitations">
-<h3>Thermometer Limitations<a class="headerlink" href="#thermometer-limitations" title="Permalink to this heading">#</a></h3>
+<section id="thermometer-limitations">
+<h3>Thermometer Limitations<a class="headerlink" href="#thermometer-limitations" title="Link to this heading">#</a></h3>
 <p>Thermometers can often be used beyond the range of their fixed points but we need to be cautious. <strong>The linear relationship between the thermometric property and temperature is only an approximation</strong> – non-linearities can become significant if we stray too far beyond the fixed points.  This can make our thermometer inaccurate beyond the fixed points.</p>
-<p><strong>The medium that we use to measure temperature with must not change state over the temperature range that we use the thermometer</strong>. For a liquid in glass thermometer using water this means that the thermometer would not be valid below 0 °C or above 100 °C. Different materials would show different temperature ranges. Generally the temperature range of a liquid in glass thermometer is limited by the change of state of its working liquid.</p>
-<p>In the example we used above, liquid water would not be an ideal material for measuring temperature, as at 0˚C, the water would freeze and expand, whereas at 100˚C the liquid would boil. This limits the range of temperatures we can measure. An alternative material could be used such as mercury, which has a freezing point of -38.83˚C and a boiling point of 356.7˚C.</p>
-</div>
-</div>
+<p><strong>The medium that we use to measure temperature with must not change state over the temperature range that we use the thermometer</strong>. For a liquid in glass thermometer using water this means that the thermometer would not be valid below <span class="math notranslate nohighlight">\(0\,^\circ\text{C}\)</span> or above <span class="math notranslate nohighlight">\(100\,^\circ\text{C}\)</span>. Different materials would show different temperature ranges. Generally the temperature range of a liquid in glass thermometer is limited by the change of state of its working liquid.</p>
+<p>In the example we used above, liquid water would not be an ideal material for measuring temperature, as at <span class="math notranslate nohighlight">\(0\,^\circ\text{C}\)</span>, the water would freeze and expand, whereas at <span class="math notranslate nohighlight">\(100\,^\circ\text{C}\)</span> the liquid would boil. This limits the range of temperatures we can measure. An alternative material could be used such as mercury, which has a freezing point of <span class="math notranslate nohighlight">\(-38.83\,^\circ\text{C}\)</span> and a boiling point of <span class="math notranslate nohighlight">\(356.7\,^\circ\text{C}\)</span>.</p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="question">
-<h2>Question<a class="headerlink" href="#question" title="Permalink to this heading">#</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Atempt the questions before looking at the solutions otherwise you will not learn!</strong></p>
-<p>Students who look at mark schemes without going through the motions of a question often think “<em>yes, that’s what I would have done</em>”, but are then unable to perfom on exams as the knowledge was never consolidated through practise.</p>
-</div>
-<div class="section" id="question-1">
-<h3>Question 1<a class="headerlink" href="#question-1" title="Permalink to this heading">#</a></h3>
+<section id="questions">
+<h2>Questions<a class="headerlink" href="#questions" title="Link to this heading">#</a></h2>
+<div class="dropdown hint admonition">
+<p class="admonition-title">Question 2.1 - Heat versus temperature</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Question</label><div class="sd-tab-content docutils">
 <p>What are heat and temperature?</p>
-<div class="dropdown admonition">
-<p class="admonition-title">Q1 Solution</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Solution</label><div class="sd-tab-content docutils">
 <p><strong>Heat</strong> is a measure of the total internal or thermal energy that an object or substance has. Heat is energy and is measured in Joules, J.</p>
 <p><strong>Temperature</strong> is a measure of the average amount of kinetic energy that the atom/molecules in a substance have. As a substance is provided with heat, its temperature will increase.</p>
 </div>
 </div>
-<hr class="docutils" />
-<div class="section" id="question-2">
-<h3>Question 2<a class="headerlink" href="#question-2" title="Permalink to this heading">#</a></h3>
-<p>A length of mercury thread in a liquid-in-glass thermometer measures <span class="math notranslate nohighlight">\(40.0\,\)</span>mm at the lower fixed point and <span class="math notranslate nohighlight">\(110\,\)</span>mm on the upper fixed point of the Celsius scale.  Calculate the temperature when the length of the mercury thread is: <span class="math notranslate nohighlight">\(80.0\,\)</span>mm, <span class="math notranslate nohighlight">\(160\,\)</span>mm and <span class="math notranslate nohighlight">\(32.0\,\)</span>mm.</p>
-<div class="dropdown admonition">
-<p class="admonition-title">Q1 Solution</p>
-<p>In order to solve this question we simply need to use the equation derived above:</p>
-<p><span class="math notranslate nohighlight">\( T_M = \frac{100(X_M - X_L)}{X_U - X_L}. \)</span></p>
-<p>We can then subsitute in the appropriate values for each of the measured lengths:</p>
-<p><span class="math notranslate nohighlight">\( T_M = \frac{100(80\,mm - 40\,mm)}{110\,mm - 40\,mm} = 57.1˚C \)</span></p>
-<p><span class="math notranslate nohighlight">\( T_M = \frac{100(160\,mm  - 40\,mm)}{110\,mm - 40\,mm} = 171˚C\)</span></p>
-<p><span class="math notranslate nohighlight">\( T_M = \frac{100(32\,mm  - 40\,mm)}{110\,mm - 40\,mm} = -11.4˚C \)</span></p>
+</div>
+<div class="dropdown hint admonition">
+<p class="admonition-title">Question 2.2 - A mercury thermometer</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+Question</label><div class="sd-tab-content docutils">
+<p>A length of mercury thread in a liquid-in-glass thermometer measures <span class="math notranslate nohighlight">\(40.0\,\)</span>mm at the lower fixed point and <span class="math notranslate nohighlight">\(110.0\,\)</span>mm on the upper fixed point of the Celsius scale.<br />
+Calculate the temperature when the length of the mercury thread is: <span class="math notranslate nohighlight">\(80.0\,\)</span>mm, <span class="math notranslate nohighlight">\(160\,\)</span>mm and <span class="math notranslate nohighlight">\(32.0\,\)</span>mm.</p>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+Hint</label><div class="sd-tab-content docutils">
+<p>Approach this problem step by step. You first need the calibration factor that converts a temperature into a length, then use this to find the corresponding temperatures at given lengths.</p>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
+Solution</label><div class="sd-tab-content docutils">
+<p>First we find the calibration factor</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Theta &amp;= \frac{X_U - X_L}{T_U - T_L}\\
+    &amp;= \frac{110.0 - 40.0}{100.0 - 0.0}\\
+    &amp;= 0.7\text{ mm degree}^{-1}
+\end{align*}\]</div>
+<p>Now we can find an expression for the measured temperature at given lengths of mercury using</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_M = \frac{X_M-X_L}{\Theta} + T_L
+\end{align*}\]</div>
+<p>where <span class="math notranslate nohighlight">\(T_L = 0\)</span> as the lower fixed point on the Celsius scale.</p>
+<p>The three temperatues are therefore</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\text{80 mm: } &amp;&amp; T_{M} &amp;= \frac{80.0-40.0}{0.7} = 57.1\,^\circ\text{C}\\
+\text{160 mm: } &amp;&amp; T_{M} &amp;= \frac{160.0-40.0}{0.7} = 171.4\,^\circ\text{C}\\
+\text{32 mm: } &amp;&amp; T_{M} &amp;= \frac{32.0-40.0}{0.7} = -11.4\,^\circ\text{C}
+\end{align*}\]</div>
 </div>
 </div>
 </div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -600,11 +704,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="Lecture_1_Atomic_Mass_Size_Moles.html"
@@ -612,7 +715,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 1: Atomic Mass, Size and Moles</p>
+        <p class="prev-next-title">Atomic Mass, Size and Moles</p>
       </div>
     </a>
     <a class="right-next"
@@ -620,21 +723,20 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 3: Thermal Expansion, The Kelvin Scale and Thermometers</p>
+        <p class="prev-next-title">Thermal Expansion, The Kelvin Scale and Thermometers</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -642,23 +744,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-and-temperature">Heat and Temperature</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-flow">Heat Flow</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-equilibrium">Thermal Equilibrium</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thermetric-properties">Thermetric Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thermometric-properties">Thermometric Properties</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-scales">Temperature Scales</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-temperature-scales">Alternative Temperature Scales</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermometer-limitations">Thermometer Limitations</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question">Question</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-1">Question 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-2">Question 2</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a></li>
 </ul>
   </nav></div>
 
@@ -673,16 +770,17 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By Dr Ross Mathieson
+By Drs Ross Mathieson and Matt Mears
 </p>
 
   </div>
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -706,8 +804,8 @@ By Dr Ross Mathieson
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
   </footer>

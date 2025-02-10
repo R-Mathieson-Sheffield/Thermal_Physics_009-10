@@ -1,73 +1,74 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lecture 9: Hookes Law &#8212; PHY009/10 - Thermal Physics and Solids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hooke’s Law &#8212; PHY009/10 - Thermal Physics and Solids</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture_9_Hookes_Law';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Lecture 8: Intermolecular Forces and Deformation" href="Lecture_8_Intermolecular_Forces.html" />
+    <link rel="prev" title="Intermolecular Forces and Deformation" href="Lecture_8_Intermolecular_Forces.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -75,23 +76,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -99,7 +93,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -107,16 +100,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -129,9 +131,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="Introduction.html">
+  
   
   
   
@@ -141,38 +147,45 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="Introduction.html">
-                    Unit 3: Thermal Physics and Solids
+                    Thermal Physics and Solids
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Semester 2 - Week 1</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 1</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Lecture_1_Atomic_Mass_Size_Moles.html">Lecture 1: Atomic Mass, Size and Moles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_2_Thermometry.html">Lecture 2: Thermometry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_3_Thermal_Expansion.html">Lecture 3: Thermal Expansion, The Kelvin Scale and Thermometers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_1_Atomic_Mass_Size_Moles.html">Atomic Mass, Size and Moles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_2_Thermometry.html">Thermometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_3_Thermal_Expansion.html">Thermal Expansion, The Kelvin Scale and Thermometers</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Semester 2 - Week 2</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 2</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Lecture_4_Thermal_Energy.html">Lecture 4: Thermal Energy, Calorimetry and Changes of State</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_5_Gas_Laws.html">Lecture 5: The Gas Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_6_Thermal_Conduction.html">Lecture 6: Thermal Conduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_4_Thermal_Energy.html">Thermal Energy, Calorimetry and Changes of State</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_5_Gas_Laws.html">The Gas Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_6_Thermal_Conduction.html">Thermal Conduction</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Semester 2 - Week 3</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 3</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Lecture_7_Convection_Radiation.html">Lecture 7: Convection and Radiation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture_8_Intermolecular_Forces.html">Lecture 8: Intermolecular Forces and Deformation</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 9: Hookes Law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_7_Convection_Radiation.html">Convection and Radiation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture_8_Intermolecular_Forces.html">Intermolecular Forces and Deformation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Hooke’s Law</a></li>
 </ul>
 
     </div>
@@ -188,7 +201,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -197,14 +210,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -326,26 +339,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -356,7 +363,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 9: Hookes Law</h1>
+    <h1>Hooke’s Law</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -366,20 +373,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-and-plastic-deformation">Elastic and Plastic Deformation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hooke-s-law">Hooke’s Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Hooke’s Law</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-strain-plot">Stress-Strain Plot</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#youngs-modulus">Youngs Modulus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#young-s-modulus">Young’s Modulus</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-stored-in-tensile-strain">Energy Stored in Tensile Strain</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intermolecular-force-revisited">Intermolecular Force Revisited</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#speed-of-sound-in-a-material">Speed of Sound in a Material</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-1">Question 1</a></li>
-</ul>
-</li>
 </ul>
             </nav>
         </div>
@@ -389,14 +391,13 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="lecture-9-hookes-law">
-<h1>Lecture 9: Hookes Law<a class="headerlink" href="#lecture-9-hookes-law" title="Permalink to this heading">#</a></h1>
-<hr class="docutils" />
-<div class="section" id="learning-objectives">
-<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
-<p>By the end of this lecture you should:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="hooke-s-law">
+<span id="tps-topic9"></span><h1>Hooke’s Law<a class="headerlink" href="#hooke-s-law" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Learning Objectives</p>
+<p>By the end of this topic you should:</p>
 <ul class="simple">
 <li><p>Be able to define elastic and plastic deformation.</p></li>
 <li><p>Be able to draw an annotated stress/strain curve.</p></li>
@@ -406,58 +407,72 @@ document.write(`
 </ul>
 </div>
 <hr class="docutils" />
-<div class="section" id="elastic-and-plastic-deformation">
-<h2>Elastic and Plastic Deformation<a class="headerlink" href="#elastic-and-plastic-deformation" title="Permalink to this heading">#</a></h2>
-<p>If we apply a force to a material and this changes its size, if we remove the force and the object returns to its original size, we say that it is behaving elastically. It has been <em>elastically</em> deformed. An easy example to remember this is to consider an “elastic material” such as a rubber band. If we stretch it and let go, it will return to its original shape.</p>
-<p>On the flip side, if we remove the force acting on an object and it does not return to its original shape, we say that it is behaving plastically. It has been <em>plastically</em> deformed.</p>
-<p>A material does not have to behave either elastically or plastically, it may depend on the load that is applied. Under moderate strains (small changes in length) a metal may return to its original shape, but under large strains (large changes in length) the meterial will not.</p>
-<p>This behaviour can be determined by looking at stress-strain curves as you will see shortly. We are going to consider how a spring may behaves as we apply different amounts of tensile force to it, which nicely leads us onto Hooke’s Law.</p>
-</div>
+<section id="elastic-and-plastic-deformation">
+<h2>Elastic and Plastic Deformation<a class="headerlink" href="#elastic-and-plastic-deformation" title="Link to this heading">#</a></h2>
+<p>If we apply a force to a material and this changes its size, if we remove the force and the object returns to its original size, we say that it is behaving elastically. It has been <strong>elastically</strong> deformed. An easy example to remember this is to consider an “elastic material” such as a rubber band. If we stretch it and let go, it will return to its original shape.</p>
+<p>On the flip side, if we remove the force acting on an object and it does not return to its original shape, we say that it is behaving plastically. It has been <strong>plastically</strong> deformed.</p>
+<p>A material does not have to behave either elastically or plastically; it may depend on the load that is applied. Up to moderate strains (small changes in length) a metal may behave elastically and return to its original shape, but under large strains (large changes in length) the material will not.</p>
+<p>This behaviour can be determined by looking at stress-strain curves as you will see shortly. We are going to consider how a spring may behave as we apply different amounts of tensile force to it, which nicely leads us onto Hooke’s Law.</p>
+</section>
 <hr class="docutils" />
-<div class="section" id="hooke-s-law">
-<h2>Hooke’s Law<a class="headerlink" href="#hooke-s-law" title="Permalink to this heading">#</a></h2>
+<section id="id1">
+<h2>Hooke’s Law<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>The Hooke’s law experiment is a classic physics classroom experiment as all you need to perform it is a spring and some masses. In the experiment you secure the spring vertically to a clamp stand, measure its initial length, add a mass (<span class="math notranslate nohighlight">\(f = ma\)</span>), which intuitively will cause the spring to stretch and its length to increase. By measuring the new length the extension of the spring can be determined.</p>
-<p>Naturally if more masses are added, the force acting on the spring increases as does the magnitude of the extenion. Therefore <strong>the extension is proportional to the force applied to the spring</strong>. - This is Hooke’s law, and it can be expressed mathematically as:</p>
-<p><span class="math notranslate nohighlight">\( F \propto \Delta x. \)</span></p>
+<p>Naturally if more masses are added, the force acting on the spring increases as does the magnitude of the extenion. Therefore <strong>the extension is proportional to the force applied to the spring</strong> - yhis is Hooke’s law, and it can be expressed mathematically as:</p>
+<div class="math notranslate nohighlight">
+\[F \propto \Delta x\]</div>
 <p>When we have a linearly proportional relationship, naturally we introduce a constant of proportionality, <span class="math notranslate nohighlight">\(k\)</span>, which in this case is the spring constant:</p>
-<p><span class="math notranslate nohighlight">\( F = k \Delta x \)</span></p>
-<p>Hooke’s law does not only apply to springs and can apply to other elastically deformable materials. If we look at the form of this equation we notice that it is a linear relationship. However, in the spring extension experiment one will find that as masses keep being added, the extension of the material does not continue to occur linearly. This Hooke’s law can only describe a system when it is behaving linearly.</p>
-<p>Hookes law relates force to extension. In the last lecture we introduced the concepts of stress and strain, which themselves can be written in terms of force and extension respectively:</p>
-<p><span class="math notranslate nohighlight">\( \sigma = \frac{F}{A} \to F = \sigma A, \)</span></p>
-<p>and</p>
-<p><span class="math notranslate nohighlight">\( \epsilon = \frac{\Delta L}{L_0} \to \Delta L = \epsilon L_0,\)</span></p>
-<p>as such Hooke’s law can be expressed in terms of stress and strain:</p>
-<p><span class="math notranslate nohighlight">\( F = k \Delta L \to \sigma A = k \epsilon L_0, \)</span></p>
-<p>which can be rearranged to make strain the subject:</p>
-<p><span class="math notranslate nohighlight">\(\sigma  = \frac{k L_0}{A}\epsilon, \)</span></p>
+<div class="math notranslate nohighlight">
+\[F = k \Delta x\]</div>
+<p>Hooke’s law does not only apply to springs and can apply to other elastically deformable materials. If we look at the form of this equation we notice that it is a linear relationship. However, in the spring extension experiment one will find that as masses keep being added, the extension of the material does not continue to vary linearly. This Hooke’s law can only describe a system when it is behaving linearly.</p>
+<p>Hooke’s law relates force to extension. In the <a class="reference internal" href="Lecture_8_Intermolecular_Forces.html#tps-topic8"><span class="std std-ref">last topic</span></a> we introduced the concepts of stress and strain, which themselves can be written in terms of force and extension respectively:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\sigma = \frac{F}{A} \quad &amp;\therefore F = \sigma A\\
+\epsilon = \frac{\Delta L}{L_0} \quad &amp;\therefore \Delta L = \epsilon L_0\end{split}\]</div>
+<p>As such Hooke’s law can be expressed in terms of stress and strain:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}F &amp;= k \Delta L\\
+\therefore \sigma A &amp;= k \epsilon L_0\\
+\sigma  &amp;= \frac{k L_0}{A}\epsilon\end{split}\]</div>
 <p><strong>Therefore for Hooke’s law to be valid stress must be proportional strain!</strong> The constant of proportionality is equal to <span class="math notranslate nohighlight">\(\frac{kL_0}{A}\)</span>. Lets see what this looks like for a material on a stress strain plot.</p>
 <hr class="docutils" />
-<div class="section" id="stress-strain-plot">
-<h3>Stress-Strain Plot<a class="headerlink" href="#stress-strain-plot" title="Permalink to this heading">#</a></h3>
-<p><img alt="" src="_images/StressStrainPlot.png" /></p>
-<p>The plot above illustrates an example stress-strain plot for a given material:</p>
+<section id="stress-strain-plot">
+<h3>Stress-Strain Plot<a class="headerlink" href="#stress-strain-plot" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="fig-stressstrainplot">
+<a class="reference internal image-reference" href="_images/StressStrainPlot.png"><img alt="A graph of stress versus strain. The horizontal axis is labeled Strain, and the vertical axis is labeled Stress [Pa]. The graph shows a red line starting at the origin (0,0) and initially rising linearly with a constant slope up to a point labeled P1. After P1, the line continues to rise but curves and gradually becomes flatter, reaching points P2 and then P3. The region from the origin to P1 represents the linear elastic region, or Hookian behavior. Beyond P1, the curve represents the non-linear region. The title of the graph is Stress-Strain Curve. A small white square is present in the top right corner." src="_images/StressStrainPlot.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 42 </span><span class="caption-text">A stress-strain curve illustrating the mechanical behavior of a material. The curve shows an initial linear region (Hookian behavior) where stress is proportional to strain, followed by a non-linear region where the material’s response deviates from linearity, indicating plastic deformation or other non-linear effects. Key points P0, P1, P2, and P3 are marked on the curve to highlight different stages of deformation.</span><a class="headerlink" href="#fig-stressstrainplot" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><a class="reference internal" href="#fig-stressstrainplot"><span class="std std-numref">Fig. 42</span></a> illustrates an example stress-strain plot for a given material:</p>
 <ul class="simple">
-<li><p>Between points 0 and 1 we can see that as the strain (force applied) increases, the stress also increases linearly. Hooke’s law applies between these two points. Point 1 is referred to as the <em>limit of proportionality</em>. <strong>At any point along this line, if we were to remove the load (strain) the object would return to its original length</strong>. The material is therefore being elastically (reversibly) deformed and behaving elastically.</p></li>
+<li><p>Between points 0 and 1 we can see that as the strain (force applied) increases, the stress also increases linearly. Hooke’s law applies between these two points. Point 1 is referred to as the <strong>limit of proportionality</strong>. At any point along this line, if we were to remove the load (strain) the object would return to its original length. The material is therefore being elastically (reversibly) deformed and behaving elastically.</p></li>
 <li><p>Between points 1 and 2, Hooke’s law no longer applies as the stress and strain are not linearly proportional, but the material is still being elastically deformed. As such, if the strain is removed, the material will still return to its original shape despite Hooke’s law not applying beyond the limit of proportionality.</p></li>
-<li><p>Beyond this point, if more strain is applied the material will no longer undergo elastic deformation and instead begin to deform plastically. If the load is removed, the material will not return to its original length and instead has been <em>permanently deformed</em>. Point 2 is therefore called the <em>elastic limit</em> (or yield point).</p></li>
-<li><p>Between points 2 and 3* is known as the region of <em>plastic deformation</em>, which is characterised by a small increase in stress for a given amount of strain (for a small amount of additional force, the length of the material will increase dramatically.)</p></li>
-<li><p>Point 3 represents the fracture point or the point at which the material will break/snap. The fracture point for brittle and ductile materials occurs at different points. If a material is <em>ductile</em> it will be capable of undergoing a large amount of plastic deformation before breaking, whereas if it is <em>brittle</em>, the fracture point will occur much nearer the elastic limit.</p></li>
+<li><p>Beyond this point, if more strain is applied the material will no longer undergo elastic deformation and instead begin to deform plastically. If the load is removed, the material will not return to its original length and instead has been <strong>permanently deformed</strong>. Point 2 is therefore called the <strong>elastic limit</strong> (or yield point).</p></li>
+<li><p>Between points 2 and 3 is known as the region of <strong>plastic deformation</strong>, which is characterised by a small increase in stress for a given amount of strain (for a small amount of additional force, the length of the material will increase dramatically.)</p></li>
+<li><p>Point 3 represents the fracture point or the point at which the material will break/snap. The fracture point for brittle and ductile materials occurs at different points. If a material is <strong>ductile</strong> it will be capable of undergoing a large amount of plastic deformation before breaking, whereas if it is <strong>brittle</strong>, the fracture point will occur much nearer the elastic limit.</p></li>
 </ul>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="youngs-modulus">
-<h3>Youngs Modulus<a class="headerlink" href="#youngs-modulus" title="Permalink to this heading">#</a></h3>
-<p>Referring back to the region of proportionality, a useful material characteristic to be aware of is the <em>Youngs modulus</em> of a material. Simply put this is the <em>ratio of stress to strain</em>, and this may be determined from the gradient of the linear proportion of the stress strain graph, which can be modelled as <span class="math notranslate nohighlight">\(y=mx+c\)</span> format, where the value of the intercept, <span class="math notranslate nohighlight">\(c\)</span> is <span class="math notranslate nohighlight">\(0\)</span>. Therefore the gradient of the line of best fit, the youngs modulus, <span class="math notranslate nohighlight">\(E\)</span>, is simply equal to:</p>
-<p><span class="math notranslate nohighlight">\(\sigma = E \epsilon, \)</span></p>
-<p><span class="math notranslate nohighlight">\( \frac{F}{A} = E \frac{\Delta L}{L_0}, \)</span></p>
-<p><span class="math notranslate nohighlight">\( E = \frac{F L_0}{A \Delta L}.\)</span></p>
-<p>From the equation above, we can see that the unit of length cancel on the top and bottom of the equation, and as such the Youngs modulus has units of N<span class="math notranslate nohighlight">\(\,\)</span>m<span class="math notranslate nohighlight">\(^{-2}\)</span> or Pascal (Pa). It should be noted that the Youngs modulus of a material is typically in the GPa range (<span class="math notranslate nohighlight">\(\times 10^9\,\)</span>Pa).</p>
-<p><img alt="" src="_images/AnnotatedStressStrain.png" /></p>
-<p>The Youngs moduli of various materials is proved below:</p>
-<table class="colwidths-auto table">
+<section id="young-s-modulus">
+<h3>Young’s Modulus<a class="headerlink" href="#young-s-modulus" title="Link to this heading">#</a></h3>
+<p>Referring back to the region of proportionality, a useful material characteristic to be aware of is the <strong>Young’s modulus</strong> of a material. Simply put this is the <strong>ratio of stress to strain</strong>, and this may be determined from the gradient of the linear proportion of the stress strain graph, which can be modelled as <span class="math notranslate nohighlight">\(y=mx+c\)</span> format, where the value of the intercept, <span class="math notranslate nohighlight">\(c\)</span> is <span class="math notranslate nohighlight">\(0\)</span>. Therefore the gradient of the line of best fit, the youngs modulus, <span class="math notranslate nohighlight">\(E\)</span>, is simply equal to:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\sigma = E \epsilon\\
+\therefore \frac{F}{A} &amp;= E \frac{\Delta L}{L_0}\\
+E &amp;= \frac{F L_0}{A \Delta L}\end{split}\]</div>
+<p>From the equation above, we can see that the unit of length cancel on the top and bottom of the equation, and as such the Youngs modulus has units of <span class="math notranslate nohighlight">\(\text{N m}^{-2}\)</span> or Pascal (<span class="math notranslate nohighlight">\(\text{Pa}\)</span>). It should be noted that the Young’s modulus of a material is typically in the GPa range (<span class="math notranslate nohighlight">\(\times 10^9\text{ Pa}\)</span>).</p>
+<figure class="align-center" id="fig-annotatedstressstrain">
+<a class="reference internal image-reference" href="_images/AnnotatedStressStrain.png"><img alt="A graph of stress versus strain. The horizontal axis is labeled Strain, and the vertical axis is labeled Stress (Pa). The graph shows a red line starting at the origin (0,0) and initially rising linearly with a constant slope up to a point labeled P1.  A blue line labeled y = mx + c is overlaid on this linear section.  A blue dashed line extends horizontally from the origin to a point on the strain axis, labeled delta x = x_1 - x_0. Another blue dashed line extends vertically from the origin to a point on the stress axis, labeled delta y = y_1 - y_0. After P1, the red line continues to rise but curves and gradually becomes flatter, reaching points P2 and then P3. The region from the origin to P1 represents the linear elastic region, or Hookian behavior. Beyond P1, the curve represents the non-linear region. The title of the graph is Stress-Strain Curve. A small white square is present in the top right corner." src="_images/AnnotatedStressStrain.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 43 </span><span class="caption-text">A stress-strain curve, building upon <a class="reference internal" href="#fig-stressstrainplot"><span class="std std-numref">Fig. 42</span></a>, illustrating the mechanical behavior of a material. The curve shows an initial linear region (Hookian behavior) where stress is proportional to strain, followed by a non-linear region.  Key points P0, P1, P2, and P3 are marked.  The linear region is further annotated to show the equation for a straight line (<span class="math notranslate nohighlight">\(y = mx + c\)</span>), the change in stress (<span class="math notranslate nohighlight">\(\Delta y = y_1 - y_0\)</span>), and the change in strain (<span class="math notranslate nohighlight">\(\Delta x = x_1 - x_0\)</span>).</span><a class="headerlink" href="#fig-annotatedstressstrain" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The Young’s moduli of various materials is proved below:</p>
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Material</p></th>
-<th class="head"><p>E (GPa)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(E \text{(GPa)}\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -488,23 +503,37 @@ document.write(`
 </tbody>
 </table>
 </div>
+</section>
 <hr class="docutils" />
-<div class="section" id="energy-stored-in-tensile-strain">
-<h3>Energy Stored in Tensile Strain<a class="headerlink" href="#energy-stored-in-tensile-strain" title="Permalink to this heading">#</a></h3>
+<section id="energy-stored-in-tensile-strain">
+<h3>Energy Stored in Tensile Strain<a class="headerlink" href="#energy-stored-in-tensile-strain" title="Link to this heading">#</a></h3>
 <p>As this is a physics topic, we are also interested in energy. If we want to change the length of an object, either by compression or extension, we must do work on the object. In effect we are storing energy in the material by compressing it or stretching it. If we recall that the work done is simply defined as:</p>
-<p><span class="math notranslate nohighlight">\(W = F \Delta s\)</span>,</p>
-<p>we can easily modify this equation to be applicable with the system that we are modelling:</p>
-<p><span class="math notranslate nohighlight">\(W = F \Delta L.\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}W &amp;= F \Delta s\\
+    &amp;= F \Delta L\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(s\)</span> is a general displacement and <span class="math notranslate nohighlight">\(\Delta L\)</span> is the change in length</p>
 <p>These expressions are dimensionally consistent as displacement and extension have the same units. Therefore if we want to calculate the work done in extending an object, we can do so by determining the area under the curve in a force extension plot as the area underneath corresponds to the product of the force and extension. This could be done via integration for the entire curve (adding all the tiny contributions together, but for the linear region can be determined just using:</p>
-<p><span class="math notranslate nohighlight">\(W = \frac{1}{2} F \Delta L,\)</span></p>
+<div class="math notranslate nohighlight">
+\[W = \frac{1}{2} F \Delta L\]</div>
 <p>which is the area of a triangle.</p>
-<p><img alt="" src="_images/EnergyStoredinTensileStrain.png" /></p>
+<figure class="align-center" id="fig-energystoredintensilestrain">
+<a class="reference internal image-reference" href="_images/EnergyStoredinTensileStrain.png"><img alt="A graph of force versus extension. The horizontal axis is labeled extension, and the vertical axis is labeled force. The graph shows a light blue line starting at the origin (0,0) and initially rising linearly with a constant slope up to a point labeled A. A dashed line extends horizontally from A to the force axis, labeled F. Another dashed line extends vertically from A to the extension axis, labeled ΔL. On the linear portion of the line, a point is marked with a dashed line extending horizontally to the force axis, labeled F₁. A double-headed arrow on the extension axis below this point is also labeled delta L. The linear region of the line represents Hooke's Law. Beyond A, the curve represents the non-linear region. The graph's title is not explicitly labeled." src="_images/EnergyStoredinTensileStrain.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 44 </span><span class="caption-text">A force-extension graph illustrating the relationship between force and extension for a material. The graph shows an initial linear region where force is directly proportional to extension (Hooke’s Law), followed by a non-linear region where the material’s behavior deviates from linearity.</span><a class="headerlink" href="#fig-energystoredintensilestrain" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Intuitively this makes sense, if we have a material and we deform it in the elastic region, it will want to return to its original shape, therefore it must have elastic potential energy! Finally, we are going to look at the microscopic properties of materials under stress and strain by considering the intermolecular forces.</p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="intermolecular-force-revisited">
-<h3>Intermolecular Force Revisited<a class="headerlink" href="#intermolecular-force-revisited" title="Permalink to this heading">#</a></h3>
-<p><img alt="" src="_images/IntermolecularForcePlot.png" /></p>
+<section id="intermolecular-force-revisited">
+<h3>Intermolecular Force Revisited<a class="headerlink" href="#intermolecular-force-revisited" title="Link to this heading">#</a></h3>
+<p>First we need to refresh our memories of how force and energy vary with distance at the atomic / molecular level. <a class="reference internal" href="#fig-intermolecularforceplot2"><span class="std std-numref">Fig. 45</span></a> is identical to <a class="reference internal" href="Lecture_8_Intermolecular_Forces.html#fig-intermolecularforceplot"><span class="std std-numref">Fig. 32</span></a> from <a class="reference internal" href="Lecture_8_Intermolecular_Forces.html#tps-topic8"><span class="std std-ref">the last topic</span></a>.</p>
+<figure class="align-center" id="fig-intermolecularforceplot2">
+<a class="reference internal image-reference" href="_images/IntermolecularForcePlot.png"><img alt="A graph showing two curves. The horizontal axis represents distance. The vertical axis represents both potential energy (U) and force (F). The potential energy curve is a smooth curve that starts high on the left, dips down to a minimum point labeled &quot;U_0&quot; at a distance labeled &quot;r_0&quot;, and then rises slightly before leveling off. The force curve is similar shape the potential energy curve, crossing the horizontal axis at the same distance &quot;r_0&quot;. Text labels indicate which curve represents &quot;Force&quot; and which represents &quot;Potential energy.&quot;" src="_images/IntermolecularForcePlot.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 45 </span><span class="caption-text">A graph showing the Lennard-Jones potential, which describes the interaction energy between two neutral atoms or molecules. The horizontal axis represents the distance between the two particles <span class="math notranslate nohighlight">\((r)\)</span>, and the vertical axis represents the potential energy <span class="math notranslate nohighlight">\((U)\)</span> and force <span class="math notranslate nohighlight">\((F)\)</span>. The potential energy curve has a characteristic shape with a minimum <span class="math notranslate nohighlight">\(U_0\)</span> at a specific distance <span class="math notranslate nohighlight">\(r_0\)</span>, indicating the equilibrium separation distance where the attractive and repulsive forces between the particles are balanced.</span><a class="headerlink" href="#fig-intermolecularforceplot2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Let us consider what is actually happening on a microscopic level when we apply a tensile stress to a material. When we stretch a material we are in effect increasing the separation distance between constituent molecules/atoms. As the length of the material increases linearly with the added stress, we may assume that the same relationship holds on the microscopic level. For example, looking at this force vs molecular separation plot we can see that around small deviations from <span class="math notranslate nohighlight">\(r_0\)</span> we may approximate the curve to be linear.
 This means that if they behave consistently, we would be able to make predictions about the macroscopic properties of a material based on its microscopic structure. What we actually find is that the fracture points of materials tend to be much lower that what would be predicted by extrapolating from the microscopic force plot. The reason for this is that these materials will not have perfectly crystalline structures, and instead will contain defects that introduce weak points that lead to breaks at much lower levels of stress.
 These defects can include:</p>
@@ -514,42 +543,42 @@ These defects can include:</p>
 <li><p><strong>Interstitial atoms:</strong> an atom (of the same or different type) is lodged between lattice points.</p></li>
 <li><p><strong>Frenkel defect:</strong> an atom leaves its place in the lattice creating a vaccency and then becomes an interstital atom at another point in the crystal.</p></li>
 </ul>
-<p><img alt="" src="_images/CrystalDefect1.png" /></p>
+<figure class="align-center" id="fig-crystaldefect1">
+<a class="reference internal image-reference" href="_images/CrystalDefect1.png"><img alt="A grid of regularly spaced blue circles representing atoms in a crystal lattice.  Several defects are highlighted. Top left, a light blue circle outside the grid is labeled Interstitial atom. Top right, a larger purple circle replaces a blue circle within the grid, labeled Substitutional larger atom. Bottom left, a missing blue circle within the grid is labeled Vacancy. Bottom centre, a light blue circle is outside the grid near a missing blue circle, labeled Frenkel-pair. Bottom right, a smaller brown circle replaces a blue circle within the grid, labeled Substitutional smaller atom.  Black arrows point from the labels to the corresponding defects." src="_images/CrystalDefect1.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 46 </span><span class="caption-text">A diagram illustrating various point defects in a crystal lattice. The image shows a 2D lattice structure with different types of defects labeled: Interstitial atom, Substitutional larger atom, Vacancy, Frenkel-pair, and Substitutional smaller atom. Figure <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Point_defects_in_crystal_structures.svg">taken from Wikimedia</a></span><a class="headerlink" href="#fig-crystaldefect1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <ul class="simple">
 <li><p><strong>Edge dislocations:</strong> an additional atomic plane is introduced in between other lattice planes.</p></li>
 <li><p><strong>Screw dislocations:</strong> one part of the lattice is simply displaced by another point.</p></li>
 </ul>
-<p><img alt="" src="_images/EsgeScrew.jpg" /></p>
-<p>The first defect figure above was <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Point_defects_in_crystal_structures.svg">taken from Wikimedia</a> and the second from <a class="reference external" href="https://facts.net/science/chemistry/8-astounding-facts-about-edge-dislocation/">Facts.net</a>.</p>
-</div>
-</div>
+<figure class="align-center" id="fig-edgescrew">
+<a class="reference internal image-reference" href="_images/EdgeScrew.jpg"><img alt="Two perspective views of a three-dimensional lattice structure labeled (a) and (b). (a) Edge dislocation A lattice structure of connected blue cubes with black circles at each corner A slice of the structure is missing creating a visible edge within the lattice An arrow points to this edge with the label Edge dislocation. (b) Screw dislocation A lattice structure of connected blue cubes with black circles at each corner A step or ramp is formed within the lattice spiraling around an axis An arrow points to this ramp with the label Screw dislocation." src="_images/EdgeScrew.jpg" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 47 </span><span class="caption-text">A diagram comparing two types of dislocation in a crystal lattice: (a) Edge dislocation and (b) Screw dislocation. The images show a regular arrangement of atoms (represented by circles) with a disrupted region indicating the dislocation type. Image taken from <a class="reference external" href="https://facts.net/science/chemistry/8-astounding-facts-about-edge-dislocation/">Facts.net</a></span><a class="headerlink" href="#fig-edgescrew" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="speed-of-sound-in-a-material">
-<h2>Speed of Sound in a Material<a class="headerlink" href="#speed-of-sound-in-a-material" title="Permalink to this heading">#</a></h2>
+<section id="speed-of-sound-in-a-material">
+<h2>Speed of Sound in a Material<a class="headerlink" href="#speed-of-sound-in-a-material" title="Link to this heading">#</a></h2>
 <p>As a final segue into the next unit of this course, Oscillations and Waves, we can relate the Young’s modulus of a material to the speed at which a sound wave will propagate through it. To do this we must know the density of the material.</p>
-<p>As you are going to learn in the next unit, sound is a <em>longitudinal wave</em> which is characterised by the <em>compression</em> and <em>rarefaction</em> of the atoms or molecules in the material through which it propagates. Essentially, the atoms vibrate back and forth, which results in regions of higher and lower pressure. The actual particles do not move along the medium, but the regions of compression and rarefaction do which results in the propagation of the wave as we can seen in the gif below:</p>
+<p>As you are going to learn in the next unit, sound is a <strong>longitudinal wave</strong> which is characterised by the <strong>compression</strong> and <strong>rarefaction</strong> of the atoms or molecules in the material through which it propagates. Essentially, the atoms vibrate back and forth, which results in regions of higher and lower pressure. The actual particles do not move along the medium, but the regions of compression and rarefaction do which results in the propagation of the wave as we can seen in the gif below:</p>
 <p><img alt="" src="_images/LongitudinalWave.gif" /></p>
 <p>The speed of the wave, <span class="math notranslate nohighlight">\(c\)</span>, can be calculated as:</p>
-<p><span class="math notranslate nohighlight">\( c = \sqrt{\frac{E}{\rho}}, \)</span></p>
-<p>where <span class="math notranslate nohighlight">\(E\)</span> is the Youngs modulus of the material, and <span class="math notranslate nohighlight">\(\rho\)</span> is the density of the material. The speed of sound is much greater in most solids than it is in air (<span class="math notranslate nohighlight">\(c = 340\,\)</span>m<span class="math notranslate nohighlight">\(\,\)</span>s<span class="math notranslate nohighlight">\(^{-1}\)</span>).</p>
-<p>In the next unit, you will learn more about both longitudinal and <em>transverse</em> waves.</p>
-</div>
-<hr class="docutils" />
-<div class="section" id="questions">
-<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this heading">#</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Atempt the questions before looking at the solutions otherwise you will not learn!</strong></p>
-<p>Students who look at mark schemes without going through the motions of a question often think “<em>yes, that’s what I would have done</em>”, but are then unable to perfom on exams as the knowledge was never consolidated through practise.</p>
-</div>
-<div class="admonition-note admonition">
-<p class="admonition-title">Note</p>
-<p>Units have been omitted in calculations below for simplicity. Ensure you know what each value represents.</p>
-</div>
-<hr class="docutils" />
-<div class="section" id="question-1">
-<h3>Question 1<a class="headerlink" href="#question-1" title="Permalink to this heading">#</a></h3>
-<p>A cylindrical steel wire has a diameter of <span class="math notranslate nohighlight">\(0.500\,\)</span>mm and a length of <span class="math notranslate nohighlight">\(2.00\,\)</span>m and a mass of <span class="math notranslate nohighlight">\(3.10\,\)</span>g. The wire is fixed vertically and has an extension of <span class="math notranslate nohighlight">\(2.50\,\)</span>mm when it supports a load of <span class="math notranslate nohighlight">\(3.50\,\)</span>kg.</p>
+<div class="math notranslate nohighlight">
+\[c = \sqrt{\frac{E}{\rho}}\]</div>
+<p>where <span class="math notranslate nohighlight">\(E\)</span> is the Youngs modulus of the material, and <span class="math notranslate nohighlight">\(\rho\)</span> is the density of the material. The speed of sound is much greater in most solids than it is in air (<span class="math notranslate nohighlight">\(c = 340\text{ m s}^{-1}\)</span>).</p>
+<p>In the next unit, you will learn more about both longitudinal and <strong>transverse</strong> waves.</p>
+<div class="dropdown hint admonition">
+<p class="admonition-title">Question 8.1 - Stretching a wire</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Question</label><div class="sd-tab-content docutils">
+<p>A cylindrical steel wire has a diameter of <span class="math notranslate nohighlight">\(0.500\text{ mm}\)</span> and a length of <span class="math notranslate nohighlight">\(2.00\text{ m}\)</span> and a mass of <span class="math notranslate nohighlight">\(3.10\text{ g}\)</span>. The wire is fixed vertically and has an extension of <span class="math notranslate nohighlight">\(2.50\text{ mm}\)</span> when it supports a load of <span class="math notranslate nohighlight">\(3.50\text{ kg}\)</span>.</p>
 <ul class="simple">
 <li><p>a) Calculate the stress of the wire.</p></li>
 <li><p>b) Calculate the strain on the wire.</p></li>
@@ -557,54 +586,78 @@ These defects can include:</p>
 <li><p>d) Calculate the energy stored in the stretched wire.</p></li>
 <li><p>e) Calculate the speed of sound in the wire.</p></li>
 </ul>
-<div class="dropdown admonition">
-<p class="admonition-title">Q1a Solution</p>
-<p>To calculate the stress of the wire we will use the stress equation:</p>
-<p><span class="math notranslate nohighlight">\(\sigma = \frac{F}{A},\)</span></p>
-<p>where the force is simply equal to the weight, <span class="math notranslate nohighlight">\(mg\)</span>, and the area is simply equal to the cross sectional area of a cylinder:</p>
-<p><span class="math notranslate nohighlight">\(\sigma = \frac{mg}{\pi r^2},\)</span></p>
-<p><span class="math notranslate nohighlight">\(\sigma = \frac{mg}{\pi \left(\frac{d}{2}\right)^2},\)</span></p>
-<p><span class="math notranslate nohighlight">\(\sigma = \frac{3.5 \times 9.81}{\pi \left(\frac{0.5 \times 10^{-3}}{2}\right)^2},\)</span></p>
-<p><span class="math notranslate nohighlight">\(\sigma = 0.175 \times 10^9\, \text{Pa},\)</span></p>
-<p><span class="math notranslate nohighlight">\(\sigma = 0.175\, \text{GPa}.\)</span></p>
 </div>
-<div class="dropdown admonition">
-<p class="admonition-title">Q1b Solution</p>
-<p>The strain on the wire can be calculated using the strain equation:</p>
-<p><span class="math notranslate nohighlight">\(\epsilon = \frac{\Delta L}{L_0},\)</span></p>
-<p><span class="math notranslate nohighlight">\(\epsilon = \frac{2.5 \times 10^{-3}}{2},\)</span></p>
-<p><span class="math notranslate nohighlight">\(\epsilon = 1.25 \times10^{-3}.\)</span></p>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Hint</label><div class="sd-tab-content docutils">
+<p>This problem explores the mechanical properties of a wire under load.<br />
+Consider the definitions of stress, strain, Young’s modulus, and elastic potential energy.  How are these quantities related to the applied force, dimensions of the wire, and its extension?<br />
+Think about how the mass of the wire might be relevant for calculating the speed of sound.<br />
+Remember to use consistent units throughout your calculations.</p>
 </div>
-<div class="dropdown admonition">
-<p class="admonition-title">Q1c Solution</p>
-<p>The Youngs modulus of the wire can be easily calculated using the stress and strain:</p>
-<p><span class="math notranslate nohighlight">\(E = \frac{\sigma}{\epsilon},\)</span></p>
-<p><span class="math notranslate nohighlight">\( E = \frac{0.175\, \text{GPa}}{1.25 \times10^{-3}},\)</span></p>
-<p><span class="math notranslate nohighlight">\( E = 140 \times 10^9\, \text{Pa},\)</span></p>
-<p><span class="math notranslate nohighlight">\( E = 140\, \text{GPa}.\)</span></p>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+Solution</label><div class="sd-tab-content docutils">
+<p><strong>Part a</strong><br />
+To calculate the stress of the wire we will use the stress equation:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sigma = \frac{F}{A}
+\end{align*}\]</div>
+<p>where the force is simply equal to the weight, <span class="math notranslate nohighlight">\(mg\)</span>, and the area is equal to the cross sectional area of a cylinder:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sigma &amp;= \frac{mg}{\pi r^2}\\
+    &amp;= \frac{mg}{\pi \left(\frac{d}{2}\right)^2}\\
+    &amp;= \frac{3.5 \times 9.81}{\pi \left(\frac{0.5 \times 10^{-3}}{2}\right)^2}\\
+    &amp;= 0.175 \times 10^9\text{ Pa} = 0.175\, \text{GPa}
+\end{align*}\]</div>
+<p><strong>Part b</strong><br />
+The strain on the wire can be calculated using the strain equation:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\epsilon &amp;= \frac{\Delta L}{L_0}\\
+    &amp;= \frac{2.5 \times 10^{-3}}{2}\\
+    &amp;= 1.25 \times10^{-3}
+\end{align*}\]</div>
+<p><strong>Part c</strong><br />
+The Youngs modulus of the wire can be calculated using the stress and strain:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E &amp;= \frac{\sigma}{\epsilon}\\
+    &amp;= \frac{0.175\text{ GPa}}{1.25 \times10^{-3}}\\
+    &amp;= 140 \times 10^9\text{ Pa}\\
+    &amp;= 140\, \text{GPa}
+\end{align*}\]</div>
+<p><strong>Part d</strong>
+To determine the energy stored in the wire we calculate the area under the linear section of the plot stress-strain, thus:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E &amp;= \frac{1}{2}F\Delta L\\
+    &amp;= \frac{1}{2}mg\Delta L\\
+    &amp;= \frac{1}{2}\cdot 3.5\cdot 9.81 \cdot 2.5\times 10^{-3}\\
+    &amp;= 0.0429 \text{ J}
+\end{align*}\]</div>
+<p><strong>Part e</strong>
+To solve this we need to determine the density of the material from the mass, cross sectional area and volume:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+V &amp;= \pi r^2 L = \pi \left(\frac{d}{2}\right)^2 L\\
+\therefore \rho &amp;= \frac{M}{V} = \frac{M}{\pi \left(\frac{d}{2}\right)^2 L)}
+\end{align*}\]</div>
+<p>The speed of sound in the material is given by:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+c &amp;= \sqrt{\frac{E}{\rho}}\\
+    &amp;= \sqrt{\frac{E}{\left(\frac{M}{\pi \left(\frac{d}{2}\right)^2 L)}\right)}}\\
+    &amp;= \sqrt{\frac{140 \times 10^9}{\left(\frac{0.031}{\pi \left(\frac{0.5\times 10^{-3}}{2}\right)^2 \cdot 2)}\right)}}\\
+    &amp;= 4210 \text{ m s}^{-1}
+\end{align*}\]</div>
 </div>
-<div class="dropdown admonition">
-<p class="admonition-title">Q1d Solution</p>
-<p>To determine the energy stored in the wire we are simply calculating the area under the linear section of the plot stress-strain, thus:</p>
-<p><span class="math notranslate nohighlight">\(E = \frac{1}{2}F\Delta L,\)</span></p>
-<p><span class="math notranslate nohighlight">\(E = \frac{1}{2}mg\Delta L,\)</span></p>
-<p><span class="math notranslate nohighlight">\(E = \frac{1}{2}\cdot 3.5\cdot 9.81 \cdot 2.5\times 10^{-3},\)</span></p>
-<p><span class="math notranslate nohighlight">\(E = 0.0429 \, J\)</span></p>
-</div>
-<div class="dropdown admonition">
-<p class="admonition-title">Q1e Solution</p>
-<p>To solve this we need to determine the density of the material from the mass, cross sectional area and volume:</p>
-<p><span class="math notranslate nohighlight">\(V = \pi r^2 L = \pi \left(\frac{d}{2}\right)^2 L \)</span></p>
-<p><span class="math notranslate nohighlight">\(\rho = \frac{M}{V} = \frac{M}{\pi \left(\frac{d}{2}\right)^2 L)} \)</span></p>
-<p>The speed of sound in the material is simply given by:</p>
-<p><span class="math notranslate nohighlight">\( c = \sqrt{\frac{E}{\rho}}, \)</span></p>
-<p><span class="math notranslate nohighlight">\( c = \sqrt{\frac{E}{\left(\frac{M}{\pi \left(\frac{d}{2}\right)^2 L)}\right)}}, \)</span></p>
-<p><span class="math notranslate nohighlight">\( c = \sqrt{\frac{140 \times 10^9}{\left(\frac{0.031}{\pi \left(\frac{0.5\times 10^{-3}}{2}\right)^2 \cdot 2)}\right)}}, \)</span></p>
-<p><span class="math notranslate nohighlight">\( c = 4210 \,\text{m}\,\text{s}^{-1}.\)</span></p>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -631,11 +684,10 @@ These defects can include:</p>
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="Lecture_8_Intermolecular_Forces.html"
@@ -643,20 +695,19 @@ These defects can include:</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 8: Intermolecular Forces and Deformation</p>
+        <p class="prev-next-title">Intermolecular Forces and Deformation</p>
       </div>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -664,20 +715,15 @@ These defects can include:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-and-plastic-deformation">Elastic and Plastic Deformation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hooke-s-law">Hooke’s Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Hooke’s Law</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-strain-plot">Stress-Strain Plot</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#youngs-modulus">Youngs Modulus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#young-s-modulus">Young’s Modulus</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-stored-in-tensile-strain">Energy Stored in Tensile Strain</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intermolecular-force-revisited">Intermolecular Force Revisited</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#speed-of-sound-in-a-material">Speed of Sound in a Material</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-1">Question 1</a></li>
-</ul>
-</li>
 </ul>
   </nav></div>
 
@@ -692,16 +738,17 @@ These defects can include:</p>
   <div class="footer-item">
     
 <p class="component-author">
-By Dr Ross Mathieson
+By Drs Ross Mathieson and Matt Mears
 </p>
 
   </div>
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -725,8 +772,8 @@ By Dr Ross Mathieson
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
   </footer>
