@@ -1,65 +1,65 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thermal Expansion, The Kelvin Scale and Thermometers &#8212; PHY009/10 - Thermal Physics and Solids</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
-  <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture_3_Thermal_Expansion';</script>
@@ -69,7 +69,6 @@
     <link rel="prev" title="Thermometry" href="Lecture_2_Thermometry.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -77,16 +76,23 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
-  <div id="pst-scroll-pixel-helper"></div>
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
-  <dialog id="pst-search-dialog">
-    
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -94,6 +100,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -101,25 +108,16 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
+</form></div>
+  </div>
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      
-      
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -132,13 +130,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
-  
-    
   
 
 <a class="navbar-brand logo" href="Introduction.html">
-  
   
   
   
@@ -148,19 +142,12 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
-    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -202,7 +189,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -211,14 +198,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -340,20 +327,26 @@
 </button>
 
 
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
-
-
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -401,10 +394,10 @@
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="thermal-expansion-the-kelvin-scale-and-thermometers">
-<span id="tps-topic3"></span><h1>Thermal Expansion, The Kelvin Scale and Thermometers<a class="headerlink" href="#thermal-expansion-the-kelvin-scale-and-thermometers" title="Link to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="thermal-expansion-the-kelvin-scale-and-thermometers">
+<span id="tps-topic3"></span><h1>Thermal Expansion, The Kelvin Scale and Thermometers<a class="headerlink" href="#thermal-expansion-the-kelvin-scale-and-thermometers" title="Permalink to this heading">#</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Learning Objectives</p>
 <p>By the end of this topic you should:</p>
@@ -415,26 +408,22 @@
 </ul>
 </div>
 <hr class="docutils" />
-<section id="thermal-expansion">
-<h2>Thermal Expansion<a class="headerlink" href="#thermal-expansion" title="Link to this heading">#</a></h2>
+<div class="section" id="thermal-expansion">
+<h2>Thermal Expansion<a class="headerlink" href="#thermal-expansion" title="Permalink to this heading">#</a></h2>
 <p>In the <a class="reference internal" href="Lecture_2_Thermometry.html#tps-topic2"><span class="std std-ref">last topic</span></a> we began to look at thermometry which is based on measuring thermetric properties. One such thermetric property is that of thermal expansion and contraction - the change in dimensions of an object as a function of its temperature. This is one of the topics that we are going to look at today.</p>
 <p>Understanding thermal expansions is not only limited to thermometry, but also in everyday life and how we engineer the world around us. For example, consider the climate in the UK, the coldest temperature ever recorded was <span class="math notranslate nohighlight">\(-27.2\,^\circ\text{C}\)</span> and the hottest ever recorded temperature was <span class="math notranslate nohighlight">\(40.3\,^\circ\text{C}\)</span>. This is a temperature difference of <span class="math notranslate nohighlight">\(67.5\,^\circ\text{C}\)</span>!</p>
 <p>When engineers are designing infrastructure projects, considerations must be taken to account for the fact that the infrastructure will need to operate in vastly different temperature ranges without failure.  An example of this is shown below where the design of a bridge incorporates an expansion joint, which prevents the bridge from buckling in high temperatures as it has been designed to accommodate a thermal expansion.</p>
-<figure class="align-center" id="fig-thermalexpansionexamples">
+<div class="figure align-center" id="fig-thermalexpansionexamples">
 <a class="reference internal image-reference" href="_images/ThermalExpansionExamples.png"><img alt="There are two photograph images presented. The left is a close-up of an expansion joint on a bridge. The joint consists of a series of metal plates with gaps between them, allowing the bridge to expand and contract with changes in temperature. The right is a photograph of a railroad track winding through a rural landscape. The track curves gently through fields and trees." src="_images/ThermalExpansionExamples.png" style="width: 80%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Two real world examples of thermal expansion. The left image shows an expansion joint on a bridge, allowing for thermal expansion and contraction of the bridge deck. The right is a railroad track with that should be a lot straighter but thes image shows a railroad track with several curves, demonstrating how the track has warped as it tries to exapand but has buckled instead.</span><a class="headerlink" href="#fig-thermalexpansionexamples" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Two real world examples of thermal expansion. The left image shows an expansion joint on a bridge, allowing for thermal expansion and contraction of the bridge deck. The right is a railroad track with that should be a lot straighter but thes image shows a railroad track with several curves, demonstrating how the track has warped as it tries to exapand but has buckled instead.</span><a class="headerlink" href="#fig-thermalexpansionexamples" title="Permalink to this image">#</a></p>
+</div>
 <p>Similarly, we can see an example of where train tracks have buckled. Network rail aims to prevent buckling by painting some rails paler colours so they absorb less heat, reduce the speed at which trains can travel over rails in hot conditions and introduce small gaps in the rails for them to expand into. Even so this is not always sufficient, and tracks may need replacing, which means that trains are unable to run and the efficiency of the network is reduced.</p>
 <p>Let us now consider the physics that is actually taking place when materials undergo thermal expansion.</p>
 <p>To understand thermal expansion, we must look at the bulk materials on a much smaller scale. Let us consider a block of metal - if we zoom in on the structure of the metal we will find atoms arranged within a lattice (a repeating structural unit of atoms):</p>
-<figure class="align-center" id="fig-culattice">
+<div class="figure align-center" id="fig-culattice">
 <a class="reference internal image-reference" href="_images/CuLattice.png"><img alt="A diagram representing the crystal lattice structure of copper. Large, overlapping spheres represent copper ions arranged in a repeating cubic pattern. Smaller black dots are scattered between the copper ions, labeled as &quot;free electrons.&quot; Lines connect the copper ions, indicating the metallic bonds between them." src="_images/CuLattice.png" style="width: 60%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Diagram illustrating the crystal lattice structure of copper. Copper ions are shown as large spheres arranged in a cubic pattern. Smaller black dots represent free electrons moving freely between the copper ions. The black lines show the bonds between copper ions.</span><a class="headerlink" href="#fig-culattice" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Diagram illustrating the crystal lattice structure of copper. Copper ions are shown as large spheres arranged in a cubic pattern. Smaller black dots represent free electrons moving freely between the copper ions. The black lines show the bonds between copper ions.</span><a class="headerlink" href="#fig-culattice" title="Permalink to this image">#</a></p>
+</div>
 <p>As these atoms have energy, they will vibrate around their equilibrium positions. If these are supplied with more heat (e.g. from the environment on a hot sunny day), the temperature of the metal will increase.</p>
 <p>As we learnt in the last lecture, temperature is directly related to the kinetic energy of the atoms, and if this increases, so does the amplitude of the atomic oscillations. This results in a larger average distance between the atoms and correspondingly and expansion of the metal.</p>
 <p>We can again assume that over a given temperature range, the amount of expansion is linearly proportional to the temperature of the material. We can also assume that the expansion would be proportional to the original length of the material. These assumptions can be expressed mathematically as:</p>
@@ -444,13 +433,13 @@
 \end{align*}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\Delta L\)</span> is the change in length, <span class="math notranslate nohighlight">\(L_0\)</span> is the intial length and <span class="math notranslate nohighlight">\(\Delta T\)</span> is the change in temperature. When we see a proportionality sign we can introduce a constant of linear proportionality, which in this case is the coefficient of thermal exapansion, <span class="math notranslate nohighlight">\(\alpha\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-eq-thermexp">
-<span class="eqno">(1)<a class="headerlink" href="#equation-eq-thermexp" title="Link to this equation">#</a></span>\[\begin{split}\Delta L = L_f - L_0 &amp;= \alpha L_0 \Delta T\\
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-thermexp" title="Permalink to this equation">#</a></span>\[\begin{split}\Delta L = L_f - L_0 &amp;= \alpha L_0 \Delta T\\
 \therefore L_f &amp;= \alpha L_0 \Delta T + L_0\\
     &amp;= L_0 \left(1 + \alpha \Delta T\right)\end{split}\]</div>
 <p><strong>We must be aware that as was the case in our thermometer example, this condition is only true over a given range of temperatures. For much larger changes in temperature, we may no longer be able to assume linear proportionality.</strong></p>
 <hr class="docutils" />
-<section id="coefficient-of-thermal-expansion">
-<h3>Coefficient of Thermal Expansion<a class="headerlink" href="#coefficient-of-thermal-expansion" title="Link to this heading">#</a></h3>
+<div class="section" id="coefficient-of-thermal-expansion">
+<h3>Coefficient of Thermal Expansion<a class="headerlink" href="#coefficient-of-thermal-expansion" title="Permalink to this heading">#</a></h3>
 <p>The coefficient of thermal expansion of a given material can easily be calculated by rearranging equation <a class="reference internal" href="#equation-eq-thermexp">(1)</a>:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -458,8 +447,12 @@
 \end{align*}\]</div>
 <p>If we rearrange our equation we can see that <span class="math notranslate nohighlight">\(\alpha\)</span> is simply a measure of the fractional change in length for a given change in temperature. Again, we are making an assumption that this coefficient of thermal expansion is constant (whereas in reality it is dependent on the temperature range, the initial temperature and other external conditions such as pressure). We will neglect this in our calculations unless otherwise stated.</p>
 <p>We can also see from the equation above that <span class="math notranslate nohighlight">\(\alpha\)</span> has units of inverse temperature or “per Kelvin” (K<span class="math notranslate nohighlight">\(^{-1}\)</span>). Examples of the thermal expansion coefficients for various materials are provided below:</p>
-<div class="pst-scrollable-table-container"><table class="table" id="tab-expcoeffs">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Some expansion coefficient values</span><a class="headerlink" href="#tab-expcoeffs" title="Link to this table">#</a></caption>
+<table class="table" id="tab-expcoeffs">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Some expansion coefficient values</span><a class="headerlink" href="#tab-expcoeffs" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Material</p></th>
 <th class="head"><p><span class="math notranslate nohighlight">\(\alpha\)</span> (K<span class="math notranslate nohighlight">\(^{-1}\)</span>) &#64; 20˚C</p></th>
@@ -489,7 +482,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 <p>It is worth noting that this equation holds for <strong>all dimensions</strong> of the material during expansion, (e.g. it could be the width, the length, the height) so long as this is a linearly expanding material. This may not always be the case, for example, some crystals when heated will expand by different amounts in different directions. We are not going to consider this additional complication.</p>
 <p>It is often necessary to use materials with similar values of thermal expansivity to prevent any thermal expansion from causing undue stresses on those materials (particularly for structural/machine components that are thermally cycled).</p>
 <div class="admonition-important admonition">
@@ -502,25 +494,23 @@
 <p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is the coefficient of thermal expansion and has units of K<span class="math notranslate nohighlight">\(^{-1}\)</span>.</p>
 </div>
 <hr class="docutils" />
-</section>
-</section>
-<section id="revisiting-fixed-points">
-<span id="tps-topic3-revisitingfixedpoints"></span><h2>Revisiting Fixed Points<a class="headerlink" href="#revisiting-fixed-points" title="Link to this heading">#</a></h2>
+</div>
+</div>
+<div class="section" id="revisiting-fixed-points">
+<span id="tps-topic3-revisitingfixedpoints"></span><h2>Revisiting Fixed Points<a class="headerlink" href="#revisiting-fixed-points" title="Permalink to this heading">#</a></h2>
 <p>Before we move onto to looking at the different types of thermometer, it is worth revisiting the fixed points that we have used to define our tempeature scales thus far. In our previous example of making a liquid in glass thermometer using water, we stated that the two fixed points to be used were the freezing and boiling points of water, which we assigned to <span class="math notranslate nohighlight">\(0\,^\circ\text{C}\)</span> and <span class="math notranslate nohighlight">\(100\,^\circ\text{C}\)</span> respectively. Looking at the diagram, can you tell in which circumstances this is actually the case?</p>
-<figure class="align-center" id="fig-phase">
+<div class="figure align-center" id="fig-phase">
 <a class="reference internal image-reference" href="_images/WaterPhaseDiagram.png"><img alt="A phase diagram of water showing the relationship between temperature and pressure. The horizontal axis represents temperature, increasing from left to right. The vertical axis represents pressure, increasing from bottom to top. The diagram is divided into three regions; Solid, liquid, and gas. Lines and curves within the diagram indicate phase transitions, such as melting, freezing, boiling, and sublimation. Key points are labeled, including the freezing point at 1 atmosphere, the boiling point at 1 atmosphere, the critical point, and the triple point where all three phases of water can coexist." src="_images/WaterPhaseDiagram.png" style="width: 80%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 11 </span><span class="caption-text">This diagram illustrates the relationship between temperature, pressure, and the phases of water (solid, liquid, and gas). Key points include the freezing point at 1 atmosphere, the boiling point at 1 atmosphere, the critical point, and the triple point where all three phases coexist.</span><a class="headerlink" href="#fig-phase" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">This diagram illustrates the relationship between temperature, pressure, and the phases of water (solid, liquid, and gas). Key points include the freezing point at 1 atmosphere, the boiling point at 1 atmosphere, the critical point, and the triple point where all three phases coexist.</span><a class="headerlink" href="#fig-phase" title="Permalink to this image">#</a></p>
+</div>
 <p><a class="reference internal" href="#fig-phase"><span class="std std-numref">Fig. 11</span></a> shows us the pressure on the vertical axis and the temperature on the horizontal axis, and the different colours represent the different phases of water. The boundaries represented by the black lines represent the temperatures and pressures that phase changes occur at under different circumstances.</p>
 <p>We can see that the boiling and freezing points of water actually only occur at <span class="math notranslate nohighlight">\(0\,^\circ\text{C}\)</span> and <span class="math notranslate nohighlight">\(100\,^\circ\text{C}\)</span> at 1 atmosphere of pressure, and that if we increase the pressure the temperatures at which these phase transitions occur change (this is most easily seen for the boiling point).</p>
 <p>There are two other interesting points on this plot, one is the <strong>triple point of water</strong>, which is the temperature and pressure at which exists in solid, liquid <strong>and</strong> gas states.</p>
 <p>The second is the <strong>critical point</strong>, which is the point at which the differences in the physical properties (such as the density or the compressibility) between the liquid and vapour phase of the water become zero and the distinction between the liquid and vapour phase disappears.</p>
 <p>Taking this into consideration, it means that when we are defining the temperatures of our fixed points, there are other variables that we must be able to control for them to be truly accurate. Wouldn’t it be better if there was a more absolute temperature scale that we could use instead? Introducing the Kelvin scale!</p>
 <hr class="docutils" />
-<section id="the-kelvin-scale">
-<h3>The Kelvin Scale<a class="headerlink" href="#the-kelvin-scale" title="Link to this heading">#</a></h3>
+<div class="section" id="the-kelvin-scale">
+<h3>The Kelvin Scale<a class="headerlink" href="#the-kelvin-scale" title="Permalink to this heading">#</a></h3>
 <p>For the lower point we are going to recall that heat is simply equal to energy, and this energy could be extracted from an object continually to the point where there is no more energy left in the object to remove. At this point, the object will have a minimal internal energy. <strong>We define the temperature of the object to be absolute zero - it is not possible to cool an object below this point</strong>.</p>
 <p>It is often said that at absolute zero all molecular motion ceases, however due to the quantum nature of the universe at this scale, this is not actually true…</p>
 <p>Another quirk of absolute zero is it is actually impossible to cool an object to absolute zero in a finite number of thermodynamic steps. For example, consider if you already had an object at absolute zero and brought into contact with a body you wanted to cool to absolute zero, the two bodies would heat and cool until they reach thermal equilibrium, which will be above absolute zero. Whilst it is not possible to cool anything down to absolute zero, we have been able to cool to 38 pK (38 <span class="math notranslate nohighlight">\(\times 10^{-12}\)</span> K!</p>
@@ -528,16 +518,16 @@
 <p><strong>The upper fixed point of the Kelvin scale is the triple point of water (<span class="math notranslate nohighlight">\(0.01\,^\circ\text{C}\)</span>, <span class="math notranslate nohighlight">\(273.16\text{ K}\)</span> at <span class="math notranslate nohighlight">\(611.657\text{ Pa}\)</span>).</strong></p>
 <p>Not only is the triple point of water occur at the same temperature, but this also means that we get a very simple relationship between the celsius scale and Kelvin scale. An increase in temperature of <span class="math notranslate nohighlight">\(1\,^\circ\text{C}\)</span> is equal to an increase in <span class="math notranslate nohighlight">\(1\text{ K}\)</span>. If we need to convert between Kelvin and Celcius, we simply add 273.15 to our celsius value.</p>
 <p>For example, <span class="math notranslate nohighlight">\(0\,^\circ\text{C}\)</span> is simply equal to <span class="math notranslate nohighlight">\(273.15\text{ K}\)</span>, <span class="math notranslate nohighlight">\(20\,^\circ\text{C}\)</span> is simply equal to <span class="math notranslate nohighlight">\(293.15\text{ K}\)</span>. Note that we do not say “degrees Kelvin”, simply Kelvin!</p>
-</section>
-</section>
+</div>
+</div>
 <hr class="docutils" />
-<section id="types-of-thermometer">
-<h2>Types of Thermometer<a class="headerlink" href="#types-of-thermometer" title="Link to this heading">#</a></h2>
+<div class="section" id="types-of-thermometer">
+<h2>Types of Thermometer<a class="headerlink" href="#types-of-thermometer" title="Permalink to this heading">#</a></h2>
 <p>Let us consider the different types of thermometer, with their advantages and disadvantages. The choice of thermometer you would use is dependent on many circumstances such as how hot the thing we are measuring is likely to be (e.g. sticking a glass thermometer into molten lava will not end well…)? Is the temperature probe going to be incorporated into a small device? etc.</p>
 <p>When we defined our temperature scale, we assumed that the thermometric property we were measuring was changing linearly with the temperature. On this basis, we used two fixed points to define an equation that gave us a relationship between the temperature and thermometric property, however <strong>most thermometric properties don’t change linearly with temperature, or they only do so over a limited range!</strong></p>
 <hr class="docutils" />
-<section id="liquid-in-glass-thermometer">
-<h3>Liquid in Glass Thermometer<a class="headerlink" href="#liquid-in-glass-thermometer" title="Link to this heading">#</a></h3>
+<div class="section" id="liquid-in-glass-thermometer">
+<h3>Liquid in Glass Thermometer<a class="headerlink" href="#liquid-in-glass-thermometer" title="Permalink to this heading">#</a></h3>
 <p>We know that these operate via the expansion of a liquid as a function of temperature, the liquids most commonly being used are mercury or ethanol, due to the fact that both of these liquids will undergo phase changes, they are only able to measure over a limited range of temperature.</p>
 <p>The design of these thermometers means that they are very sensitive to changes in temperature. Simply consider a cylinder with a fixed cross-sectional area, <span class="math notranslate nohighlight">\(A\)</span>, containing a liquid. If the cylinder has large cross sectional area, as the volume of the liquid expands the increase in the length of the liquid in the cylinder will barely change, whereas if the cross sectional area of the tube is very narrow, a small fluctuation in temperature will correspond to a large change in the length of the liquid! This means that these thermometers are very sensitive to changes in temperature. The change in length of the material can be calculated as:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -575,21 +565,19 @@
 </div>
 </div>
 </div>
-</section>
+</div>
 <hr class="docutils" />
-<section id="platinum-resistance-thermometer">
-<h3>Platinum Resistance Thermometer<a class="headerlink" href="#platinum-resistance-thermometer" title="Link to this heading">#</a></h3>
+<div class="section" id="platinum-resistance-thermometer">
+<h3>Platinum Resistance Thermometer<a class="headerlink" href="#platinum-resistance-thermometer" title="Permalink to this heading">#</a></h3>
 <p>As we have discussed previously, the electrical resistivity of a material is a thermometric property and the one that is exploited in platinum resistance thermometers - this is to say that the measured resistance of the device changes as a function of its temperature. There are two common standards:</p>
 <ul class="simple">
 <li><p>PT100 has a resistance of <span class="math notranslate nohighlight">\(100\,\Omega\)</span> at <span class="math notranslate nohighlight">\(100\,^\circ\text{C}\)</span>.</p></li>
 <li><p>PT1000 has a resistance of <span class="math notranslate nohighlight">\(1000\,\Omega\)</span> at <span class="math notranslate nohighlight">\(100\,^\circ\text{C}\)</span>.</p></li>
 </ul>
-<figure class="align-center" id="ptresistance">
+<div class="figure align-center" id="ptresistance">
 <a class="reference internal image-reference" href="_images/PTResistance.png"><img alt="A photograph of a Pt100 RTD temperature sensor. The sensor consists of a long, thin metal probe with a cylindrical head. The head of the sensor contains the sensing element, which is a platinum resistor that changes resistance with temperature." src="_images/PTResistance.png" style="width: 100%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 12 </span><span class="caption-text">A standard PT100 RTD (Resistance Temperature Detector) probe.</span><a class="headerlink" href="#ptresistance" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">A standard PT100 RTD (Resistance Temperature Detector) probe.</span><a class="headerlink" href="#ptresistance" title="Permalink to this image">#</a></p>
+</div>
 <p>Platinum is chosen because of its relatively high resistivity and wide temperature range as well as for being stable, this means that the temperature probe is able to operate over a large range of temperatures with a relatively high sensitivity to changes in temperature and accuracy when measuring temperatures. The final advantage is that it is a digital device which means that it may be more useful for recording temperatures in an experiment.</p>
 <p>The conversion between the resistance and temperature for a PT100 thermometer is:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -626,18 +614,16 @@ R(T) = R_{100}\left[1 + \rho_T(T-100)\right]
 </div>
 </div>
 </div>
-</section>
+</div>
 <hr class="docutils" />
-<section id="thermistor-resistance-thermometer">
-<h3>Thermistor Resistance Thermometer<a class="headerlink" href="#thermistor-resistance-thermometer" title="Link to this heading">#</a></h3>
+<div class="section" id="thermistor-resistance-thermometer">
+<h3>Thermistor Resistance Thermometer<a class="headerlink" href="#thermistor-resistance-thermometer" title="Permalink to this heading">#</a></h3>
 <p>A similar resistive thermometer is a thermistor, however unlike the previous resistive thermometer the temperature response is not linear.</p>
-<figure class="align-center" id="thermistorresistance">
+<div class="figure align-center" id="thermistorresistance">
 <a class="reference internal image-reference" href="_images/ThermistorResistance.png"><img alt="Left image shows a graph showing the relationship between resistance and temperature. The horizontal axis is labeled temperature, increasing from left to right. The  vertical axis is labeled resistance, increasing from bottom to top. A blue line curves downward from left to right, indicating that resistance decreases as temperature increases. The graph is titled &quot;Resistance (Ω) vs. Temperature (°C)&quot; and includes the label &quot;10 kilo-ohm at 25 degree C Thermistor.&quot; Right image shows a photograph of two thermistors. Thermistors are small electronic components used to measure temperature. They are shaped like beads with two metal leads extending from them. The thermistors in the image are black and green in color." src="_images/ThermistorResistance.png" style="width: 80%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Left: A graph showing the relationship between resistance and temperature for a <span class="math notranslate nohighlight">\(10\text{ k}\Omega\)</span> at <span class="math notranslate nohighlight">\(25\,^\circ\text{C}\)</span> thermistor. The graph demonstrates the negative temperature coefficient (NTC) behavior of the thermistor, where resistance decreases as temperature increases.<br />
-Right: A photograph of two NTC thermistors with different temperature-resistance profiles.</span><a class="headerlink" href="#thermistorresistance" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Left: A graph showing the relationship between resistance and temperature for a <span class="math notranslate nohighlight">\(10\text{ k}\Omega\)</span> at <span class="math notranslate nohighlight">\(25\,^\circ\text{C}\)</span> thermistor. The graph demonstrates the negative temperature coefficient (NTC) behavior of the thermistor, where resistance decreases as temperature increases.<br />
+Right: A photograph of two NTC thermistors with different temperature-resistance profiles.</span><a class="headerlink" href="#thermistorresistance" title="Permalink to this image">#</a></p>
+</div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
 <div class="sd-col sd-d-flex-row docutils">
@@ -667,18 +653,16 @@ Right: A photograph of two NTC thermistors with different temperature-resistance
 </div>
 </div>
 </div>
-</section>
+</div>
 <hr class="docutils" />
-<section id="thermocouple-thermometer">
-<h3>Thermocouple Thermometer<a class="headerlink" href="#thermocouple-thermometer" title="Link to this heading">#</a></h3>
+<div class="section" id="thermocouple-thermometer">
+<h3>Thermocouple Thermometer<a class="headerlink" href="#thermocouple-thermometer" title="Permalink to this heading">#</a></h3>
 <p>The thermocouple thermometer is another type of digital thermometer that is formed of two pieces of electrically conductive metal which have different electrical properties. These metals form a junction. As a result of the Seebeck effect, these devices produce a temperature dependant voltage at the junction.</p>
 <p>The Seebeck effect is simply an effect where an electromotive force (EMF) forms across two points of a conductor when they are at different temperatures. The magnitude of the EMF is temperature dependent which means that this thermometric property can be used for thermometry in a thermocouple thermometer.  The voltage, <span class="math notranslate nohighlight">\(V\)</span>, is used to calculate a distant temperature, provided that a reference temperature is known.</p>
-<figure class="align-center" id="thermocouple">
+<div class="figure align-center" id="thermocouple">
 <a class="reference internal image-reference" href="_images/Thermocouple.png"><img alt="A yellow digital multimeter with a knob for selecting different measurement functions. The display shows a temperature reading of 0.19 degrees Celsius. A type K thermocouple probe is connected to the multimeter. The thermocouple probe has a thin, metal wire with a colored tip that is sensitive to temperature changes." src="_images/Thermocouple.png" style="width: 80%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">A digital multimeter with a type K thermocouple probe attached. Type K thermocouple is a type of temperature sensor that measures temperature by producing a voltage proportional to the temperature difference between its two junctions.</span><a class="headerlink" href="#thermocouple" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">A digital multimeter with a type K thermocouple probe attached. Type K thermocouple is a type of temperature sensor that measures temperature by producing a voltage proportional to the temperature difference between its two junctions.</span><a class="headerlink" href="#thermocouple" title="Permalink to this image">#</a></p>
+</div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
 <div class="sd-col sd-d-flex-row docutils">
@@ -709,17 +693,15 @@ Right: A photograph of two NTC thermistors with different temperature-resistance
 </div>
 </div>
 </div>
-</section>
+</div>
 <hr class="docutils" />
-<section id="constant-volume-gas-thermometer">
-<h3>Constant Volume Gas Thermometer<a class="headerlink" href="#constant-volume-gas-thermometer" title="Link to this heading">#</a></h3>
+<div class="section" id="constant-volume-gas-thermometer">
+<h3>Constant Volume Gas Thermometer<a class="headerlink" href="#constant-volume-gas-thermometer" title="Permalink to this heading">#</a></h3>
 <p>In order to understand how a constant volume gas thermometer works, we must first understand one of the gas laws, which we will visit later in this course. Effectively Gay-Lussac’s Law states that the pressure of a gas held within a constant volume will increase as a function of temperature and that the pressure is directly proportional to the Kelvin temperature.</p>
-<figure class="align-center" id="constantgasvolume">
+<div class="figure align-center" id="constantgasvolume">
 <a class="reference internal image-reference" href="_images/ConstantGasVolume.png"><img alt="A diagram illustrating a U-shaped manometer used to measure pressure. The manometer consists of a U-shaped tube filled with mercury. One end of the tube is open to the atmosphere, while the other end is connected to a chamber containing the gas whose pressure is to be measured. The height difference between the mercury levels in the two arms of the U-tube indicates the pressure difference between the gas and the atmosphere." src="_images/ConstantGasVolume.png" style="width: 80%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 15 </span><span class="caption-text">A diagram (top) and schematic (bottom) of a U-tube manometer used to measure pressure. As the gas expands the mercury is displaced further along the tube.</span><a class="headerlink" href="#constantgasvolume" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">A diagram (top) and schematic (bottom) of a U-tube manometer used to measure pressure. As the gas expands the mercury is displaced further along the tube.</span><a class="headerlink" href="#constantgasvolume" title="Permalink to this image">#</a></p>
+</div>
 <p>Using this law we are able to make measurements of temperature using the setup shown. Here we have a bulb containing a gas submerged in the environment we are going to measure. This gas bulb is directly connected to a column of mercury that is again directly connected to a second reservoir of mercury.</p>
 <p>We aim to maintain the level of the mercury in the first column (A) relative to an external scale by moving the mercury in the second column (B). As the gas heats, it pushes the mercury in the first column down and increases the level of the mercury in the second column. Once equilibrium has been reached, the second column (B) is physically raised until the mercury in the first column returns to its original position. This ensures that as the gas heats up, the volume it occupies remains constant and the pressure of the gas increases.  The difference in height of the mercury of the second column (B) is then recorded.</p>
 <p>This means that the height of the mercury in the second reservoir is directly proportional to the pressure of the gas in the fixed volume, which itself is directly proportional to the temperature of the environment being measured.</p>
@@ -756,18 +738,18 @@ Right: A photograph of two NTC thermistors with different temperature-resistance
 </div>
 </div>
 </div>
-</section>
+</div>
 <hr class="docutils" />
-<section id="radiation-pyrometry">
-<h3>Radiation Pyrometry<a class="headerlink" href="#radiation-pyrometry" title="Link to this heading">#</a></h3>
+<div class="section" id="radiation-pyrometry">
+<h3>Radiation Pyrometry<a class="headerlink" href="#radiation-pyrometry" title="Permalink to this heading">#</a></h3>
 <p>Our final way of measuring temperature is via pyrometry, which is the technique we used to measure extremely high temperatures where it is not physically possible to get a thermometer into contact with the body.</p>
 <p>This technique effectively uses the light emitted by the hot body to determine its temperature, for example an optical pyrometer will focus the light emitted by the glowing body onto a photodiode, which then produces a voltage proportional to the temperature of the object.</p>
 <p>A more analogue example of a pyrometer is that of the disappearing filament. Effectively, as we increase the current flowing through a filament of wire, we increase its temperature and cause it to glow due to resistive heating. The higher the current, the more brightly the filament will glow! If we then place this filament in front of the object whose temperature we would like to gauge, we can adjust the current until the glow of the filament matches that of the hot object and they become indistinguishable from one another. The current flowing through the wire is then a measure of the temperature of the object.</p>
 <p>The advantage of using pyrometers is that as they are non-contact, they do not change the temperature of the thing that you are measuring, they can be operated safely as they do not need to be directly exposed to high temperatures which may damage them and they respond to changes in temperature relatively quickly.</p>
-</section>
-</section>
-<section id="questions">
-<h2>Questions<a class="headerlink" href="#questions" title="Link to this heading">#</a></h2>
+</div>
+</div>
+<div class="section" id="questions">
+<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this heading">#</a></h2>
 <div class="dropdown hint admonition">
 <p class="admonition-title">Question 3.1 - Expansion of a known metal rod</p>
 <div class="sd-tab-set docutils">
@@ -830,8 +812,8 @@ Solution</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -858,10 +840,11 @@ Solution</label><div class="sd-tab-content docutils">
 
               
               
-              
-              
-                <footer class="prev-next-footer d-print-none">
+                <footer class="bd-footer-article">
                   
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="Lecture_2_Thermometry.html"
@@ -881,16 +864,17 @@ Solution</label><div class="sd-tab-content docutils">
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -937,10 +921,9 @@ By Drs Ross Mathieson and Matt Mears
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2022.
       <br/>
     
   </p>
@@ -964,8 +947,8 @@ By Drs Ross Mathieson and Matt Mears
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
