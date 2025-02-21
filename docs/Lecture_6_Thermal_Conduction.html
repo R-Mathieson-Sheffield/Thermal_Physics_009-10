@@ -1,65 +1,65 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Thermal Conduction &#8212; PHY009/10 - Thermal Physics and Solids</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture_6_Thermal_Conduction';</script>
@@ -69,6 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="The Gas Laws" href="Lecture_5_Gas_Laws.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -76,23 +77,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -100,7 +94,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -108,16 +101,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -130,9 +132,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="Introduction.html">
+  
   
   
   
@@ -142,12 +148,19 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -189,7 +202,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -198,14 +211,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -327,26 +340,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -388,10 +395,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="thermal-conduction">
-<span id="tps-topic6"></span><h1>Thermal Conduction<a class="headerlink" href="#thermal-conduction" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="thermal-conduction">
+<span id="tps-topic6"></span><h1>Thermal Conduction<a class="headerlink" href="#thermal-conduction" title="Link to this heading">#</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Learning Objectives</p>
 <p>By the end of this topic you should:</p>
@@ -403,47 +410,51 @@ document.write(`
 </ul>
 </div>
 <hr class="docutils" />
-<div class="section" id="heat-transfer-mechanisms">
-<h2>Heat Transfer Mechanisms<a class="headerlink" href="#heat-transfer-mechanisms" title="Permalink to this heading">#</a></h2>
+<section id="heat-transfer-mechanisms">
+<h2>Heat Transfer Mechanisms<a class="headerlink" href="#heat-transfer-mechanisms" title="Link to this heading">#</a></h2>
 <p>There are three mechanisms by which heat may be tranferred: <strong>conduction, convection</strong> and <strong>radiation</strong>. The mechanism of heat transfer is broadly dependent on the state of the material. In solids, we tend to find that conduction will dominate, whereas in liquids and gases, the primary mechanism is via convection.</p>
-<div class="figure align-center" id="label-for-crossreferencing">
+<figure class="align-center" id="label-for-crossreferencing">
 <a class="reference internal image-reference" href="_images/HeatTransferMechanisms.png"><img alt="A diagram illustrating the three methods of heat transfer. The diagram shows a pot on a stove burner. A hand is touching the handle of the pot, indicating the conduction of heat through the metal handle. Text next to the handle reads &quot;Conduction. Transfer of energy between adjacent molecules.&quot; Arrows are drawn inside the pot, showing the convective movement of hot water in a circular pattern. Text next to the pot reads &quot;Convection. Movement of a hot fluid.&quot; Arrows are drawn from the burner to the bottom of the pot, indicating the emission of heat as electromagnetic radiation. Text next to the burner reads &quot;Radiation. Emission of electromagnetic rays.&quot;" src="_images/HeatTransferMechanisms.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">A real world example illustrating the three methods of heat transfer: conduction, convection, and radiation, as demonstrated by a pot of water being heated on a stove burner.</span><a class="headerlink" href="#label-for-crossreferencing" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">A real world example illustrating the three methods of heat transfer: conduction, convection, and radiation, as demonstrated by a pot of water being heated on a stove burner.</span><a class="headerlink" href="#label-for-crossreferencing" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>This topic will focus on conduction as a heat transfer mechanism, but we will look at convection and radiation in <a class="reference internal" href="Lecture_7_Convection_Radiation.html#tps-topic7"><span class="std std-ref">the next topic</span></a>.</p>
-</div>
-<div class="section" id="conduction">
-<h2>Conduction<a class="headerlink" href="#conduction" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="conduction">
+<h2>Conduction<a class="headerlink" href="#conduction" title="Link to this heading">#</a></h2>
 <p>Let us start with a rather fundamental question about how heat conducts through a material. <strong>What is actually happening at an atomic level when heat is being conducted?</strong></p>
 <p>Metals are examples of good thermal conductors. If we place one end of a metal rod in a flame, the temperature of that end will increase, the temperature of the rest of the rod will also start to increase - why is this?<br />
 The atoms in the hot end of the rod are at a higher temperature and therefore have a higher kinetic energy. This means that the magnitude of the oscillations of the atomic vibrations is increased compared to the cooler atoms.</p>
 <p>The hotter atoms then jostle with the cooler atoms and transfer to them some of their kinetic energy. This process continues along the material allowing the heat energy to be transferred along the bar.</p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This wiggling about a fixed point is somewhat akin to a pendulum. A lower temperature atom is like a pendulum with a low amplitude whereas the higher temperature atoms are like a larger amplitude pendulum. The pendulum system itself doesn’t travel along some axis (assuming it’s not on wheels or haunted), even though the pendulum bob is moving back and forth.</p>
 </div>
-</div>
+</aside>
 <p>It is key to note that the atoms in this scenario do not move <strong>along</strong> the bar, but the energy does. Instead the atoms are wiggling with a greater amplitude about some fixed point.</p>
 <p>One of the reasons that metals are such good conductors is that they are formed of an atomic lattice with many delocalised electrons. Unlike the atoms, these electrons are able to more freely move throughout the bulk of the material, which means they are readily able to carry energy from the hotter regions to the cooler regions.</p>
 <hr class="docutils" />
-<div class="section" id="coefficient-of-thermal-conductivity">
-<h3>Coefficient of Thermal Conductivity<a class="headerlink" href="#coefficient-of-thermal-conductivity" title="Permalink to this heading">#</a></h3>
+<section id="coefficient-of-thermal-conductivity">
+<h3>Coefficient of Thermal Conductivity<a class="headerlink" href="#coefficient-of-thermal-conductivity" title="Link to this heading">#</a></h3>
 <p>We know that some materials conduct heat more readily than others, but why is this and what other factors contribute? When we are considering how well a material conducts heat, we are effectively trying to determine the rate at which <strong>heat flows</strong> through the material. As you may have noticed by now when we are looking at relationships between variables for different materials, we often refer to a property that defines the relationship (often a constant of proportionality) with values that are unique to the material in question. In this instance we are going to consider the <strong>coefficient of thermal conductivity</strong>.
 Let us derive the relationship for heat flow that lets us determine the coefficient of thermal conductivity for any given material.</p>
 <p>To begin we should consider the factors that would impact heat flow through a material. To simplify our thought experiment we are consider a circular disk, with an area <span class="math notranslate nohighlight">\(A\)</span>, and a thickness <span class="math notranslate nohighlight">\(\Delta x\)</span>, with a temperature gradient <span class="math notranslate nohighlight">\(\Delta\theta\)</span> across the thickness. The temperature gradient between the two circular surfaces of the disk is key as heat must flow from hot to cold.</p>
-<div class="figure align-center" id="coefficientconductivity">
+<figure class="align-center" id="coefficientconductivity">
 <a class="reference internal image-reference" href="_images/CoefficientConductivity.png"><img alt="A schematic of one-dimensional heat conduction through a disk. The disk is shown with a temperature gradient across it. The left side of the disk is labeled with a higher temperature (θ + Δθ) and the right side with a lower temperature (θ). An arrow passes through the disk from left to right, representing the flow of heat (ΔQ/Δt). The thickness of the disk is labeled as Δx and its surface area is labeled as A." src="_images/CoefficientConductivity.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">A schematic representation of one-dimensional heat conduction through a disk of surface area A and thickness <span class="math notranslate nohighlight">\(\Delta x\)</span>. The temperature gradient across the disk is represented by <span class="math notranslate nohighlight">\(\theta + \Delta\theta\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>. The heat flow rate <span class="math notranslate nohighlight">\(\frac{\Delta Q}{\Delta t}\)</span>
-is shown as an arrow passing through the disk.</span><a class="headerlink" href="#coefficientconductivity" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">A schematic representation of one-dimensional heat conduction through a disk of surface area A and thickness <span class="math notranslate nohighlight">\(\Delta x\)</span>. The temperature gradient across the disk is represented by <span class="math notranslate nohighlight">\(\theta + \Delta\theta\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>. The heat flow rate <span class="math notranslate nohighlight">\(\frac{\Delta Q}{\Delta t}\)</span>
+is shown as an arrow passing through the disk.</span><a class="headerlink" href="#coefficientconductivity" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>So we want to consider how these factors affect the flow of heat <span class="math notranslate nohighlight">\(\Delta Q\)</span> in some time interval <span class="math notranslate nohighlight">\(\Delta t\)</span>, i.e. <span class="math notranslate nohighlight">\(\frac{\Delta Q}{\Delta t}\)</span>:</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Property</p></th>
 <th class="head"><p>Expectation</p></th>
-<th class="text-center head"><p>Model</p></th>
+<th class="head text-center"><p>Model</p></th>
 </tr>
 </thead>
 <tbody>
@@ -461,15 +472,16 @@ is shown as an arrow passing through the disk.</span><a class="headerlink" href=
 </tr>
 </tbody>
 </table>
+</div>
 <p>So with this in mind, how would we build an expression for the rate of heat flow, <span class="math notranslate nohighlight">\(\frac{\Delta Q}{\Delta t}\)</span>, that takes into account each of these contributing factors? Assuming the variables involved (area, thickness and temperature gradient) are independent then we can multiply all of the models in the above table into a single model</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\frac{\Delta Q}{\Delta t} \propto A \times \frac{1}{\Delta x} \times \Delta \theta\\
     &amp;\propto A\frac{\Delta \theta}{\Delta x}\end{split}\]</div>
 <p>What do we do when we have a proportional relationship? We introduce a constant of proportionality! Therefore:</p>
 <div class="math notranslate nohighlight" id="equation-eq-tps6-heatflow">
-<span class="eqno">(10)<a class="headerlink" href="#equation-eq-tps6-heatflow" title="Permalink to this equation">#</a></span>\[\frac{\Delta Q}{\Delta t} = -\lambda A\frac{\Delta \theta}{\Delta x}\]</div>
+<span class="eqno">(10)<a class="headerlink" href="#equation-eq-tps6-heatflow" title="Link to this equation">#</a></span>\[\frac{\Delta Q}{\Delta t} = -\lambda A\frac{\Delta \theta}{\Delta x}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\lambda\)</span> is the coefficient of thermal conductivity which has units of <span class="math notranslate nohighlight">\(\text{W m}^{-1}\text{ K}^{-1}\)</span>. <strong>The negative sign comes from the fact that the temperature gradient is negative, but the heat flow must be positive.</strong> The coefficients of conductivity for various materials are tabulated below:</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Substance</p></th>
 <th class="head"><p><span class="math notranslate nohighlight">\(\lambda\)</span> W<span class="math notranslate nohighlight">\(\,\)</span>m<span class="math notranslate nohighlight">\(^{-1}\,\)</span>K<span class="math notranslate nohighlight">\(^{-1}\)</span></p></th>
@@ -496,10 +508,11 @@ is shown as an arrow passing through the disk.</span><a class="headerlink" href=
 </tr>
 </tbody>
 </table>
+</div>
 <p>We can see here that there is trend wherein the density of the material is broadly proportional to the coefficient of conductivity. This makes sense when we consider the microscopic process of conduction discussed above. We know that metals are particularly good conductors of heat due to the fact that they are solids and allow molecular vibrations to effectively transmit energy along the material and they have an excess of dissociated conduction electrons, which is the same reason that they are such effective conductors of electricity.
 Temperature also affect the ability of a material to conduct heat. Some materials are good conductors at low temperatures, but as they increase in temperature their physical properties change which means they do not as effectively conduct heat.</p>
 <p>Just to reinforce this concept, here we can compare the thermal conductivities of two different materials, copper and fused quartz. We can see that copper is an excellent conductor of electricity and heat, whereas the same is not true for fused quartz. This makes sense as copper has many delocalised electrons, whereas quartz does not.</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Material</p></th>
 <th class="head"><p>Thermal Conductivity W<span class="math notranslate nohighlight">\(\,\)</span>m<span class="math notranslate nohighlight">\(^{-1}\,\)</span>K<span class="math notranslate nohighlight">\(^{-1}\)</span></p></th>
@@ -518,15 +531,18 @@ Temperature also affect the ability of a material to conduct heat. Some material
 </tbody>
 </table>
 </div>
+</section>
 <hr class="docutils" />
-<div class="section" id="temperature-distribution-along-a-bar">
-<h3>Temperature Distribution Along a Bar<a class="headerlink" href="#temperature-distribution-along-a-bar" title="Permalink to this heading">#</a></h3>
+<section id="temperature-distribution-along-a-bar">
+<h3>Temperature Distribution Along a Bar<a class="headerlink" href="#temperature-distribution-along-a-bar" title="Link to this heading">#</a></h3>
 <p>Now that we understand the mechanics of conduction, I would like to briefly make you aware of how the temperature across a metal bar varies during conduction.</p>
 <p>To do this I first want you to consider this scenario here. We have a metal bar connected to a <strong>heat source</strong> and a <strong>heat sink</strong>. A heat sink is just something that draws heat energy out of a system to help keep it cool.</p>
-<div class="figure align-center" id="fig-metalbar">
+<figure class="align-center" id="fig-metalbar">
 <a class="reference internal image-reference" href="_images/MetalBar.png"><img alt="Four stages showing the flow of heat through a metal bar. In the first stage, the left side of the bar, labeled &quot;Heat Source,&quot; is red, indicating a high temperature. The right side, labeled &quot;Heat Sink,&quot; is blue, indicating a low temperature. The rest of the bar is a neutral color. In the second stage, the red area has expanded slightly towards the right, showing that heat has begun to flow through the bar. In the third stage, the red area has expanded further to the right, indicating that more heat has been transferred. In the fourth stage, the red area has expanded even further towards the right, showing that heat continues to flow from the heat source to the heat sink." src="_images/MetalBar.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">A series of four stages illustrating heat conduction through a metal bar over time. Heat is applied to one end of the bar (heat source) and flows towards the other end (heat sink). The colour gradient within the bar represents the temperature distribution, with warmer colours indicating higher temperatures.</span><a class="headerlink" href="#fig-metalbar" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">A series of four stages illustrating heat conduction through a metal bar over time. Heat is applied to one end of the bar (heat source) and flows towards the other end (heat sink). The colour gradient within the bar represents the temperature distribution, with warmer colours indicating higher temperatures.</span><a class="headerlink" href="#fig-metalbar" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <ul class="simple">
 <li><p><strong>Step 1:</strong> Initially the heat source and the heat sink are the same temperature.</p></li>
 <li><p><strong>Step 2:</strong> The heat source is activated and begins to supply heat to the bar. Initially one end of the bar will heat up and heat will slowly be transferred along the length of the bar.</p></li>
@@ -538,22 +554,26 @@ Temperature also affect the ability of a material to conduct heat. Some material
 <p>A temperature distribution is simply a snapshot of what the various temperatures are along the length of the bar. We can plot this with temperature on the vertical axis and the position along the bar on the position axis.</p>
 </div>
 <p>Lagged and unlagged heat flow may be represented using <strong>heat flow lines</strong>, which are simply a useful visualisation of how heat energy is transferred through a medium. The line density is proportional to the heat flow rate and the direction of the line indicates the direction that heat is flowing.</p>
-<div class="figure align-center" id="fig-laggedunlagged">
+<figure class="align-center" id="fig-laggedunlagged">
 <a class="reference internal image-reference" href="_images/LaggedUnlagged.png"><img alt="Two diagrams illustrating heat flow through a bar. The left diagram represents perfectly lagged heat flow. Two red rectangles represent the bar. Red arrows show heat flowing in straight lines from the Heat Source on the left side of the left rectangle to the Heat Sink on the right side. Below the diagram, a line graph shows a linear decrease in temperature from left to right. The right diagram represents unlagged heat flow. Two red rectangles represent the bar. Red arrows show heat flowing from the Heat Source on the left side of the right rectangle towards the Heat Sink on the right side. Some arrows curve outwards, indicating heat loss to the surroundings. Below the diagram, a line graph shows a curved decrease in temperature, with a steeper drop at the beginning and a more gradual drop towards the end." src="_images/LaggedUnlagged.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">A diagram comparing perfectly lagged and unlagged heat flow through a bar. The left side shows perfectly lagged heat flow, where heat flows in a straight line from the heat source to the heat sink, resulting in a linear temperature gradient. The right side shows unlagged heat flow, where heat is lost to the surroundings, resulting in a curved temperature gradient.</span><a class="headerlink" href="#fig-laggedunlagged" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">A diagram comparing perfectly lagged and unlagged heat flow through a bar. The left side shows perfectly lagged heat flow, where heat flows in a straight line from the heat source to the heat sink, resulting in a linear temperature gradient. The right side shows unlagged heat flow, where heat is lost to the surroundings, resulting in a curved temperature gradient.</span><a class="headerlink" href="#fig-laggedunlagged" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>We can see that in the case of unlagged heat flow, the heat flow lines are parallel and all of the heat is transferred from one end of the bar to the other. In this case if we plot the temperature measured by temperature probes across the bar as a function of distance, we will see that there is a linear relationship (i.e. a constant temperature gradient).</p>
 <p>This is not the case for the lagged heat flow where the heat flow lines are not parallel and are instead directed towards the sides of the bar. This means that the bar will radiate heat energy away from the sides of the bar. Again if we were to plot the temperature as a function of distance along the bar, we would see that the temperature gradient across the bar is not constant. This makes sense, as the further along the bar you take a measurement, the more surface area the heat has been able to radiate away through.</p>
 <p>Now that we understand the difference between lagged and unlagged heating we can consider how we may experimentally determine the coefficient of thermal conductivity of a material using <strong>Searle’s Bar Method</strong>.</p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="searle-s-bar-method">
-<h3>Searle’s Bar Method<a class="headerlink" href="#searle-s-bar-method" title="Permalink to this heading">#</a></h3>
+<section id="searle-s-bar-method">
+<h3>Searle’s Bar Method<a class="headerlink" href="#searle-s-bar-method" title="Link to this heading">#</a></h3>
 <p>The Searle’s bar method is one for determining the coefficient of thermal conductivity of a material. The method assumes that the bar is lagged so that the temperature gradient across the bar is constant. The setup for the experiment is as follows:</p>
-<div class="figure align-center" id="fig-searlesbar">
+<figure class="align-center" id="fig-searlesbar">
 <a class="reference internal image-reference" href="_images/SearlesBar.png"><img alt="A diagram of Searle's apparatus. The apparatus consists of a long, rectangular metal bar. Steam flows through a jacket surrounding the left end of the bar, heating it up. Thermocouples are attached at various points along the length of the bar to measure the temperature. A jacket surrounding the right end of the bar allows cold water to flow through, cooling that end. The diagram also shows labels for the steam inlet and outlet, warm water outlet, cold water inlet, and the distances between the thermocouples." src="_images/SearlesBar.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">A schematic diagram of Searle’s apparatus for measuring the thermal conductivity of a metal bar. The apparatus consists of a metal bar surrounded by a steam jacket to heat one end. Thermocouples are attached along the length of the bar to measure the temperature gradient. Cold water flows through a jacket surrounding the bar to remove heat from the other end.</span><a class="headerlink" href="#fig-searlesbar" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">A schematic diagram of Searle’s apparatus for measuring the thermal conductivity of a metal bar. The apparatus consists of a metal bar surrounded by a steam jacket to heat one end. Thermocouples are attached along the length of the bar to measure the temperature gradient. Cold water flows through a jacket surrounding the bar to remove heat from the other end.</span><a class="headerlink" href="#fig-searlesbar" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>We have a metal bar of unknown thermal conductivity connected to a heat supply, in this instance a continuous flow of steam passing over one end of the bar to heat it, and a heat sink at the opposite end of the bar, in this case a continuous supply of cool water.</p>
 <p>We place temperature probes on the bar at two points separated by a known distance, and also place temperature probes in positions that measure the temperature of a known mass of water before it has been and after it has been heated by the bar.</p>
 <p>Mathematically, we can define the linear temperature gradient across the bar simply as the change in the temperature for a given length:</p>
@@ -579,15 +599,17 @@ Temperature also affect the ability of a material to conduct heat. Some material
 <p class="admonition-title">Warning</p>
 <p>You are expected to know and understand this method for determining the coefficient of thermal conductivity of a material (including the derivation). It would be worth working through the steps of the derivation above yourself to ensure that it makes sense to you.</p>
 </div>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="thermal-conductivity-combined-materials">
-<h3>Thermal Conductivity: Combined Materials<a class="headerlink" href="#thermal-conductivity-combined-materials" title="Permalink to this heading">#</a></h3>
+<section id="thermal-conductivity-combined-materials">
+<h3>Thermal Conductivity: Combined Materials<a class="headerlink" href="#thermal-conductivity-combined-materials" title="Link to this heading">#</a></h3>
 <p>The final thing that we are going to consider in this lecture is how we calculate the thermal conductivity of composite materials, e.g. one layer of material placed on top of another as shown below:</p>
-<div class="figure align-center" id="fig-compositematerial">
+<figure class="align-center" id="fig-compositematerial">
 <a class="reference internal image-reference" href="_images/CompositeMaterial.png"><img alt="A diagram showing a rectangular block composed of two layers. The top layer is pink and the bottom layer is blue. The top layer is labeled with a subscript 1 and the bottom layer is labeled with a subscript 2. The top and bottom layers have different thicknesses, labeled $\Delta x_1$ and $\Delta x_2$, respectively. Each layer is also labeled with a symbol $\lambda$, representing its thermal conductivity. An arrow pointing upwards through the center of the block represents the flow of heat (Q) from the bottom to the top. The temperature at the bottom of the block is labeled $\theta_1$ and the temperature at the top of the block is labeled $\theta_2$." src="_images/CompositeMaterial.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">A schematic diagram illustrating steady-state heat flow through two materials of different thermal conductivities (<span class="math notranslate nohighlight">\(\lambda_1\)</span> and <span class="math notranslate nohighlight">\(\lambda_2\)</span>) and thicknesses (<span class="math notranslate nohighlight">\(\Delta x_1\)</span> and <span class="math notranslate nohighlight">\(\Delta x_2\)</span>). The temperature at the bottom of layer 2 is represented by <span class="math notranslate nohighlight">\(\theta_1\)</span> and the temperature at the other end is represented by <span class="math notranslate nohighlight">\(\theta_2\)</span>.</span><a class="headerlink" href="#fig-compositematerial" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">A schematic diagram illustrating steady-state heat flow through two materials of different thermal conductivities (<span class="math notranslate nohighlight">\(\lambda_1\)</span> and <span class="math notranslate nohighlight">\(\lambda_2\)</span>) and thicknesses (<span class="math notranslate nohighlight">\(\Delta x_1\)</span> and <span class="math notranslate nohighlight">\(\Delta x_2\)</span>). The temperature at the bottom of layer 2 is represented by <span class="math notranslate nohighlight">\(\theta_1\)</span> and the temperature at the other end is represented by <span class="math notranslate nohighlight">\(\theta_2\)</span>.</span><a class="headerlink" href="#fig-compositematerial" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>There is a simple formula to model this, but in order to do so we need two things. Firstly we are going to make a direct comparison to resistors in circuits as an analogy. The total resistance is equal to the sum of the two, as the current needs to flow through one and then the other. This is equivalent to the system we have here but instead of resistance to electical flow we are dealing with resistance to heat flow.</p>
 <p>This leads us onto the second thing we need. So far we have considered the thermal <strong>conductivity</strong> which quantifies how well heat flows in a material, whereas the resistance in a circuit quantifies the <strong>resistance</strong> to current flow (as opposed to how conductive the wire / component is).<br />
 We can define the <strong>thermal resistance</strong> <span class="math notranslate nohighlight">\(R_\text{thermal}\)</span> as</p>
@@ -608,13 +630,13 @@ We can define the <strong>thermal resistance</strong> <span class="math notransl
 <div class="math notranslate nohighlight">
 \[\begin{split}\frac{\Delta Q}{\Delta t} &amp;= -\frac{\lambda_T}{\Delta x_T} A \Delta \theta\\
         &amp;= - \left(\frac{\lambda_1\lambda_2}{\Delta x_1\lambda_2+\Delta x_2\lambda_1}\right) A \Delta \theta\end{split}\]</div>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="questions">
-<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this heading">#</a></h2>
-<div class="section" id="question-1">
-<h3>Question 1<a class="headerlink" href="#question-1" title="Permalink to this heading">#</a></h3>
+<section id="questions">
+<h2>Questions<a class="headerlink" href="#questions" title="Link to this heading">#</a></h2>
+<section id="question-1">
+<h3>Question 1<a class="headerlink" href="#question-1" title="Link to this heading">#</a></h3>
 <div class="dropdown hint admonition">
 <p class="admonition-title">Question 6.1 - Heat flow through a window</p>
 <div class="sd-tab-set docutils">
@@ -688,9 +710,9 @@ For this part of the question we now have a composite material, therefore we mus
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -717,11 +739,10 @@ For this part of the question we now have a composite material, therefore we mus
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="Lecture_5_Gas_Laws.html"
@@ -741,17 +762,16 @@ For this part of the question we now have a composite material, therefore we mus
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -792,9 +812,10 @@ By Drs Ross Mathieson and Matt Mears
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -818,8 +839,8 @@ By Drs Ross Mathieson and Matt Mears
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -1,65 +1,65 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Intermolecular Forces and Deformation &#8212; PHY009/10 - Thermal Physics and Solids</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture_8_Intermolecular_Forces';</script>
@@ -69,6 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Convection and Radiation" href="Lecture_7_Convection_Radiation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -76,23 +77,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -100,7 +94,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -108,16 +101,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -130,9 +132,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="Introduction.html">
+  
   
   
   
@@ -142,12 +148,19 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="PHY009/10 - Thermal Physics and Solids - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -189,7 +202,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -198,14 +211,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -327,26 +340,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -392,10 +399,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="intermolecular-forces-and-deformation">
-<span id="tps-topic8"></span><h1>Intermolecular Forces and Deformation<a class="headerlink" href="#intermolecular-forces-and-deformation" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="intermolecular-forces-and-deformation">
+<span id="tps-topic8"></span><h1>Intermolecular Forces and Deformation<a class="headerlink" href="#intermolecular-forces-and-deformation" title="Link to this heading">#</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Learning Objectives</p>
 <p>By the end of this topic you should:</p>
@@ -406,15 +413,17 @@ document.write(`
 </ul>
 </div>
 <hr class="docutils" />
-<div class="section" id="intermolecular-forces">
-<h2>Intermolecular Forces<a class="headerlink" href="#intermolecular-forces" title="Permalink to this heading">#</a></h2>
+<section id="intermolecular-forces">
+<h2>Intermolecular Forces<a class="headerlink" href="#intermolecular-forces" title="Link to this heading">#</a></h2>
 <p><a class="reference internal" href="#fig-intermolecularforceplot"><span class="std std-numref">Fig. 32</span></a> shows how matter remains, well  matter.</p>
-<div class="figure align-center" id="fig-intermolecularforceplot">
+<figure class="align-center" id="fig-intermolecularforceplot">
 <a class="reference internal image-reference" href="_images/IntermolecularForcePlot.png"><img alt="A graph showing two curves. The horizontal axis represents distance. The vertical axis represents both potential energy (U) and force (F). The potential energy curve is a smooth curve that starts high on the left, dips down to a minimum point labeled &quot;U_0&quot; at a distance labeled &quot;r_0&quot;, and then rises slightly before leveling off. The force curve is similar shape the potential energy curve, crossing the horizontal axis at the same distance &quot;r_0&quot;. Text labels indicate which curve represents &quot;Force&quot; and which represents &quot;Potential energy.&quot;" src="_images/IntermolecularForcePlot.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 32 </span><span class="caption-text">A graph showing the Lennard-Jones potential, which describes the interaction energy between two neutral atoms or molecules. The horizontal axis represents the distance between the two particles <span class="math notranslate nohighlight">\((r)\)</span>, and the vertical axis represents the potential energy <span class="math notranslate nohighlight">\((U)\)</span> and force <span class="math notranslate nohighlight">\((F)\)</span>. The potential energy curve has a characteristic shape with a minimum <span class="math notranslate nohighlight">\(U_0\)</span> at a specific distance <span class="math notranslate nohighlight">\(r_0\)</span>, indicating the equilibrium separation distance where the attractive and repulsive forces between the particles are balanced.</span><a class="headerlink" href="#fig-intermolecularforceplot" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text">A graph showing the Lennard-Jones potential, which describes the interaction energy between two neutral atoms or molecules. The horizontal axis represents the distance between the two particles <span class="math notranslate nohighlight">\((r)\)</span>, and the vertical axis represents the potential energy <span class="math notranslate nohighlight">\((U)\)</span> and force <span class="math notranslate nohighlight">\((F)\)</span>. The potential energy curve has a characteristic shape with a minimum <span class="math notranslate nohighlight">\(U_0\)</span> at a specific distance <span class="math notranslate nohighlight">\(r_0\)</span>, indicating the equilibrium separation distance where the attractive and repulsive forces between the particles are balanced.</span><a class="headerlink" href="#fig-intermolecularforceplot" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>First of all let us consider a molecular gas. Gas molecules have large spatial separations between them which means that for the majority of the time these molecules move independently of one another. Generally they only interact with one another when they are close enough to collide.</p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -422,26 +431,30 @@ document.write(`
 <strong>Intra</strong> = “inside” or “within”.<br />
 Knowing a little Latin can occasional be useful.</p>
 </div>
-</div>
+</aside>
 <p>On the other hand, for liquids and solids the molecules are far closer together and interact with one another via intermolecular forces. These are not to be confused with intramolecular forces (those that bind the atoms together in molecules), which are much stronger. These intermolecular forces are simply caused by the interactions between the electrically charged constituents of the molecules.</p>
 <p>These intermolecular forces only act between molecules when they are in close proximity to one another. Therefore we can conclude that forces between molecules are attractive at short distances only. <strong>We define the attractive force acting between molecules to be negative</strong> as they act to <strong>reduce</strong> intermolecular distance.</p>
 <p>When we consider a material, we must also recall that the majority of matter is empty space, from which we can conclude that there must be some force that prevents atoms/molecules from getting too close to one another. Therefore at very short ranges, the force acting between molecules must be repulsive. <strong>We define the repulsive force acting between molecules to be positive.</strong></p>
 <p>The red line in <a class="reference internal" href="#fig-intermolecularforceplot"><span class="std std-numref">Fig. 32</span></a> represents the sum of the attractive and repulsive forces. As the molecules are brought closer together, they become more strongly attracted to one another (the force becomes increasingly negative), however as the separation reduces even further, the force begins to become less negative and the positive attraction between the molecules begins to decrease, until the intermolecular force (the net force of attractive + repulsive) acting on the molecules becomes zero. The separation between the molecules when the intermolecular force becomes zero is known as the <strong>equilibrium separation</strong>. This spacing is approximately the distance between molecules in liquids and solids.</p>
 <p>When the separation between the molecules becomes less than the equilibrium distance, the force acting on the molecules becomes repulsive. The gradient of this repulsive force as a function of distance is much steeper than the attractive force, therefore only a small compression beyond the equilibrium distance corresponds to a large increase in the repulsive force acting between the molecules.</p>
 <p>As these forces are a function of distance we can safely assume that we are actually witnessing the effect of two independent forces and the intermolecular force is simply the net force acting on the molecules. Clearly at small distances, the repulsive force dominates. You don’t need to know the underlying derivation or model for this, but one of the most successful models of this two-force system is known as the Lennard-Jones potential shown in <a class="reference internal" href="#fig-ljpot"><span class="std std-numref">Fig. 33</span></a> below.</p>
-<div class="figure align-center" id="fig-ljpot">
+<figure class="align-center" id="fig-ljpot">
 <a class="reference internal image-reference" href="_images/LJPot.png"><img alt="A graph showing three curves. The horizontal axis represents distance. The vertical axis represents both potential energy (U).  The total potential energy curve is a smooth curve that starts high on the left, dips down to a minimum point labeled &quot;U_0&quot; at a distance labeled &quot;r_0&quot;, and then rises slightly before leveling off. The first curve is dashed in blue and starts very positive on the left and decreases smoothly until flat around zero. The second curve is dashed in red and starts very negative on the left and increases smoothly until flat around zero." src="_images/LJPot.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 33 </span><span class="caption-text">A graph showing the Lennard-Jones potential, which describes the interaction energy between two neutral atoms or molecules. The horizontal axis represents the distance between the two particles (<span class="math notranslate nohighlight">\(r\)</span>). The vertical axis represents the potential energy (<span class="math notranslate nohighlight">\(U\)</span>). The graph shows three curves: the total Lennard-Jones potential (solid black line), the attractive term (dashed red line), and the repulsive term (dashed blue line). The potential energy curve has a characteristic shape with a minimum at a specific distance, indicating the equilibrium separation distance where the attractive and repulsive forces between the particles are balanced.</span><a class="headerlink" href="#fig-ljpot" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">A graph showing the Lennard-Jones potential, which describes the interaction energy between two neutral atoms or molecules. The horizontal axis represents the distance between the two particles (<span class="math notranslate nohighlight">\(r\)</span>). The vertical axis represents the potential energy (<span class="math notranslate nohighlight">\(U\)</span>). The graph shows three curves: the total Lennard-Jones potential (solid black line), the attractive term (dashed red line), and the repulsive term (dashed blue line). The potential energy curve has a characteristic shape with a minimum at a specific distance, indicating the equilibrium separation distance where the attractive and repulsive forces between the particles are balanced.</span><a class="headerlink" href="#fig-ljpot" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>As the molecules are brought closer together, we will have an increase in the density of like charges such as electrons which will therefore repel one another. We can also consider the Pauli exclusion principle which states that two fermions (such as electrons) cannot occupy the same quantum state. When two are brought together they experience a repulsive force known as Pauli-repulsion. You will meet the exclusion principle in more depth in your particle and quantum courses if you go on to study Physics.</p>
 <hr class="docutils" />
-<div class="section" id="intermolecular-potential">
-<h3>Intermolecular Potential<a class="headerlink" href="#intermolecular-potential" title="Permalink to this heading">#</a></h3>
+<section id="intermolecular-potential">
+<h3>Intermolecular Potential<a class="headerlink" href="#intermolecular-potential" title="Link to this heading">#</a></h3>
 <p>We can expand upon this explanation further by considering the potential energy of the molecules as a function of separation distances. This is what is plotted in blue in this graph.</p>
-<div class="figure align-center" id="fig-intermolecularpotential">
+<figure class="align-center" id="fig-intermolecularpotential">
 <a class="reference internal image-reference" href="_images/IntermolecularPotential.png"><img alt="A graph showing two curves. The horizontal axis represents distance. The vertical axis represents both potential energy (U) and force (F). The potential energy curve is a smooth curve that starts high on the left, dips down to a minimum point labeled &quot;U_0&quot; at a distance labeled &quot;r_0&quot;, and then rises slightly before leveling off. The force curve is similar in shape to the potential energy curve, crossing the horizontal axis at the same distance &quot;r_0&quot;. Text labels indicate which curve represents &quot;Force&quot; and which represents &quot;Potential energy.&quot; An arrow points horizontally between two vertical lines on the horizontal axis, labeled &quot;Bond length&quot; and &quot;r_0,&quot; indicating the distance between the two atoms at the equilibrium point. A vertical arrow points downwards from the minimum point of the potential energy curve to the horizontal axis, labeled &quot;Bond Strength.&quot;" src="_images/IntermolecularPotential.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 34 </span><span class="caption-text">A graph showing the Lennard-Jones potential, which describes the interaction energy between two neutral atoms or molecules. This graph is similar to <a class="reference internal" href="#fig-intermolecularforceplot"><span class="std std-numref">Fig. 32</span></a>, but with an additional label indicating the “Bond length” (<span class="math notranslate nohighlight">\(r_0\)</span>), which represents the equilibrium separation distance between the two atoms where the potential energy is at a minimum and has a characteristic bond strength.</span><a class="headerlink" href="#fig-intermolecularpotential" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">A graph showing the Lennard-Jones potential, which describes the interaction energy between two neutral atoms or molecules. This graph is similar to <a class="reference internal" href="#fig-intermolecularforceplot"><span class="std std-numref">Fig. 32</span></a>, but with an additional label indicating the “Bond length” (<span class="math notranslate nohighlight">\(r_0\)</span>), which represents the equilibrium separation distance between the two atoms where the potential energy is at a minimum and has a characteristic bond strength.</span><a class="headerlink" href="#fig-intermolecularpotential" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>We see that the potential energy has a minimum at the equilibrium distance. This is what we call a <em>potential well</em>. We can see here that the net force acting on the molecule is zero in this potential well so there is clearly a relationship between the force and the potential energy. The force at any given intermolecular separation is simply equal to the gradient of the potential energy function:</p>
 <div class="math notranslate nohighlight">
 \[F = - \frac{\mathrm{d}U}{\mathrm{d}r}\]</div>
@@ -449,15 +462,15 @@ Knowing a little Latin can occasional be useful.</p>
 <p>At low temperatures molecules will have some kinetic energy, but the average kinetic energy of a molecule will be less than the depth of the potential well, so the molecule remains bound as either a liquid or a solid with average intermolecular spacings of <span class="math notranslate nohighlight">\(r_0\)</span>.</p>
 <p>If the molecules are supplied with heat and their temperatures increase, their average kinetic energies will exceed the depth of the potential well and the molecule can escape the intermolecular force and move independently in the gaseous phase.</p>
 <p>The diagram shows that the average bond length and strength can be determined from the properties of the potential well.</p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="thermal-expansion">
-<h3>Thermal Expansion<a class="headerlink" href="#thermal-expansion" title="Permalink to this heading">#</a></h3>
+<section id="thermal-expansion">
+<h3>Thermal Expansion<a class="headerlink" href="#thermal-expansion" title="Link to this heading">#</a></h3>
 <p>We can use the intermolecular potential plot to explain why materials expand when they are heated.</p>
 <p><img alt="" src="_images/ThermalExpansionPlot.png" /></p>
 <p>Looking at this plot you will notice that the shape of the potential well is asymmetric around <span class="math notranslate nohighlight">\(r_0\)</span> as the repulsive force is stronger than the attractive force at short distances (see <a class="reference internal" href="#fig-ljpot"><span class="std std-numref">Fig. 33</span></a> for a visual reminder).</p>
-<div class="section" id="solids">
-<h4>Solids<a class="headerlink" href="#solids" title="Permalink to this heading">#</a></h4>
+<section id="solids">
+<h4>Solids<a class="headerlink" href="#solids" title="Link to this heading">#</a></h4>
 <p>First, let us thing about solids. Solids are made up of atoms arranged in a lattice, constantly vibrating around their equilibrium positions.  Even at low temperatures, these vibrations occur due to the inherent thermal energy.  Increasing the temperature means giving the atoms more energy, causing them to vibrate with larger amplitudes. However we’ve seen that the potential well is steeper on the repulsive side and shallower on the attractive side. This asymmetry is the key to thermal expansion.</p>
 <p>As the atoms vibrate with larger amplitudes (due to the increased temperature), they explore a wider range of the potential well. Because of the asymmetry, they spend slightly more time at larger interatomic separations than at compressed ones.  While they experience both attractive and repulsive forces, the shallower attractive side allows for a greater average separation.<br />
 Think of it this way: the atoms can move further apart more easily than they can be squeezed together.  While they oscillate back and forth, the average distance between them increases with increasing vibrational amplitude.</p>
@@ -465,32 +478,32 @@ Think of it this way: the atoms can move further apart more easily than they can
 <div class="dropdown admonition">
 <p class="admonition-title">Heating a metal sheet with a hole in the middle</p>
 <p>When a solid expands due to heating, it expands in all directions.  This includes any “negative space” within the solid, such as a hole in the middle of a solid sheet.  It’s a common misconception that the hole might shrink as the surrounding material expands inwards.  However, this is incorrect.</p>
-<div class="figure align-default">
+<figure class="align-default">
 <img alt="_images/Hole_Expansion.png" src="_images/Hole_Expansion.png" />
-</div>
+</figure>
 <p>Consider the atomic view (middle image).  Heating the material increases the average separation between all atoms.  This increased spacing applies equally to the atoms bordering the hole.  As these atoms move outwards, the hole they define also expands (rightmost image).</p>
 <p>The hole expands because the material itself is expanding uniformly. It’s not that the expansion pushes inwards; rather, the expanding atomic lattice effectively “stretches” the hole along with it.  The hole behaves as if it were made of the same material as the sheet; it expands by the same proportion.</p>
 </div>
-</div>
-<div class="section" id="liquids">
-<h4>Liquids<a class="headerlink" href="#liquids" title="Permalink to this heading">#</a></h4>
+</section>
+<section id="liquids">
+<h4>Liquids<a class="headerlink" href="#liquids" title="Link to this heading">#</a></h4>
 <p>In liquids, the intermolecular distances are slightly greater than in the corresponding solid phase, but the key difference is the <strong>lack of long-range order</strong>. While there might be small, transient clusters of molecules with some local structure, liquids don’t have the rigid, extended lattice of a solid. The molecules have much greater freedom of movement, constantly jostling and rearranging.</p>
 <p>When we increase the temperature of a liquid, the molecules gain kinetic energy and move more vigorously. This increased motion leads to <strong>larger average intermolecular separations</strong>, just as in solids. However, because liquids lack the fixed structure of a solid, the expansion isn’t as constrained. The increased freedom of movement allows the molecules to spread out more readily, and the thermal expansion of liquids is generally greater than that of solids. The same principle of an asymmetric intermolecular potential still applies, but its effect is more pronounced due to the greater freedom of movement.</p>
-</div>
-<div class="section" id="gases">
-<h4>Gases<a class="headerlink" href="#gases" title="Permalink to this heading">#</a></h4>
+</section>
+<section id="gases">
+<h4>Gases<a class="headerlink" href="#gases" title="Link to this heading">#</a></h4>
 <p>Gases are characterised by widely separated molecules with very weak intermolecular forces. In the ideal gas model, we even neglect these forces entirely. Increasing the temperature of a gas dramatically increases the kinetic energy of the molecules, leading to much greater speeds and, consequently, a larger average separation between molecules.</p>
 <p>Because the intermolecular forces are so weak (or negligible in the ideal gas case), the expansion of a gas is primarily driven by the increased kinetic energy of the molecules. The molecules simply fly further apart when they have more energy. This is why gases exhibit the largest thermal expansion coefficients compared to solids and liquids. The expansion is not constrained by any lattice structure or significant intermolecular forces, so the molecules are free to occupy a much larger volume.</p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="dissociation-energy">
-<h3>Dissociation Energy<a class="headerlink" href="#dissociation-energy" title="Permalink to this heading">#</a></h3>
+<section id="dissociation-energy">
+<h3>Dissociation Energy<a class="headerlink" href="#dissociation-energy" title="Link to this heading">#</a></h3>
 <p>The dissociation energy, <span class="math notranslate nohighlight">\(\epsilon\)</span>, is the amount of energy required to break the intermolecular bonds between a pair of molecules in a substance. Of course this only applies to a single pair of molecules, so we can scale it up to consider breaking apart all of the pair-bonds to turn a solid into an ideal gas (no intermolecular interactions). This process of changing state from solid to gas is sublimation as so we can relate <span class="math notranslate nohighlight">\(\epsilon\)</span> to the latent heat of sublimation of the substance, <span class="math notranslate nohighlight">\(L_\text{SM}\)</span>, using the equation:</p>
 <div class="math notranslate nohighlight">
 \[L_\text{SM} = \frac{1}{2}n N_a \epsilon\]</div>
 <p>where <span class="math notranslate nohighlight">\(n\)</span> is the number of moles and <span class="math notranslate nohighlight">\(N_a\)</span> is Avagadro’s number. The factor of a half is present to ensure that the bond between pairs of atoms is not double counted. <strong>Looking at the intermolecular potential plot, the dissociation energy is simply equal to the depth of the well</strong>. By considering how much thermal energy a material poses with respect to the dissociation energy, we are able to categorise it into three different types of matter: cold matter, moderate temperature or high temperature. The features of each of these categories is tabulated below:</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
 <th class="head"><p>Thermal Energy</p></th>
@@ -520,70 +533,83 @@ Think of it this way: the atoms can move further apart more easily than they can
 </tr>
 </tbody>
 </table>
+</div>
 <div class="dropdown admonition">
-<p class="admonition-title">Degrees of Freedom </p>
+<p class="admonition-title">Degrees of Freedom</p>
 <p>If you are unfamiliar with this term, it simply means the way that something is able to move. Vibrational simply means oscillating back and forth around a fixed point, translational means being able to move in the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> directions and rotational means… well rotating.</p>
 <p>For each degree of freedom listed above, there are different modes. For example a triatomic gas may be able to vibrate either by stretching symetrically, stretching assymetrically, scissoring, rocking, wagging or twisting as shown below:</p>
 <p><img alt="" src="_images/VibrationalModes.gif" /></p>
 <p>This illustration was <a class="reference external" href="https://en.wikipedia.org/wiki/Molecular_vibration#:~:text=Wagging%3A%20a%20change%20in%20angle,between%20the%20two%20methylene%20groups.">taken from Wikipedia</a></p>
 </div>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="deformation">
-<h2>Deformation<a class="headerlink" href="#deformation" title="Permalink to this heading">#</a></h2>
+<section id="deformation">
+<h2>Deformation<a class="headerlink" href="#deformation" title="Link to this heading">#</a></h2>
 <p>Now that we have looked at the forces that act on materials at a molecular level we are going to look at the impact exerting forces has on a macroscopic scale by considering the deformation of solids.</p>
 <p>Deformation is by definition just the change in shape or dimensions of something caused by the application of external forces.</p>
-<div class="figure align-center" id="fig-tensioncompression">
+<figure class="align-center" id="fig-tensioncompression">
 <a class="reference internal image-reference" href="_images/TensionCompression.png"><img alt="Two horizontal bars are shown with arrows indicating forces. The top bar is under tension. Purple arrows point outwards from the centre of each end of the bar, indicating forces pulling the bar outwards. The bottom bar is under compression. Purple arrows point inwards towards the centre of each end of the bar, indicating forces pushing the bar inwards. The text &quot;Tension&quot; appears above the top bar, and the text &quot;Compression&quot; appears below the bottom bar." src="_images/TensionCompression.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 35 </span><span class="caption-text">A diagram illustrating the difference between tension and compression forces on a bar. The top bar shows tension, where applied forces (indicated by arrows) are pulling outwards, causing elongation. The bottom bar shows compression, where applied forces are pushing inwards, causing shortening or buckling.</span><a class="headerlink" href="#fig-tensioncompression" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">A diagram illustrating the difference between tension and compression forces on a bar. The top bar shows tension, where applied forces (indicated by arrows) are pulling outwards, causing elongation. The bottom bar shows compression, where applied forces are pushing inwards, causing shortening or buckling.</span><a class="headerlink" href="#fig-tensioncompression" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p><a class="reference internal" href="#fig-tensioncompression"><span class="std std-numref">Fig. 35</span></a> shows examples of tension and compression of a solid, wherein two forces acting in opposite directions in equilibrium are used to change the shape of the material. A single force or unequal forces would just result in the translational movement of the material (e.g. it being pulled or pushed).</p>
 <p>Make note of the language being used here,  we will refer to compressive and tensile forces and it is important that you remember what these are. Compression is simple enough to remember, but ensure that you are happy that tension is applying a pulling force to something.</p>
 <p>There are several types of deformation to be aware of: tensile and compressive deformation, bending, torsion and shear. <a class="reference internal" href="#fig-bendingtorsionshear"><span class="std std-numref">Fig. 36</span></a> below illustrates the latter three types of deformation:</p>
-<div class="figure align-center" id="fig-bendingtorsionshear">
+<figure class="align-center" id="fig-bendingtorsionshear">
 <a class="reference internal image-reference" href="_images/BendingTorsionShear.png"><img alt="Three images depicting different types of stress on a rectangular object. From left to right Bending A blue rectangle is supported at both ends by black arrows pointing upwards labeled Support A red arrow points downwards in the center labeled Load (Force) The rectangle is curved downwards in the middle Torsion A yellow three-dimensional rectangle is twisted with a purple arrow wrapping around it in a circular motion Shear Two blue rectangles are slightly offset with red arrows pointing in opposite directions along their adjacent edges indicating a sliding force The text Bending Torsion and Shear are written above each respective image." src="_images/BendingTorsionShear.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 36 </span><span class="caption-text">The three types of stress a material can experience: bending, torsion, and shear. Each example shows a blue, rectangular object with indicated forces and support points. Bending involves a force applied perpendicular to the object’s length, causing it to bend. Torsion involves a twisting force, represented by a purple arrow wrapping around the object. Shear involves forces applied parallel to the object’s surface, causing one part of the object to slide relative to the adjacent part.</span><a class="headerlink" href="#fig-bendingtorsionshear" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 36 </span><span class="caption-text">The three types of stress a material can experience: bending, torsion, and shear. Each example shows a blue, rectangular object with indicated forces and support points. Bending involves a force applied perpendicular to the object’s length, causing it to bend. Torsion involves a twisting force, represented by a purple arrow wrapping around the object. Shear involves forces applied parallel to the object’s surface, causing one part of the object to slide relative to the adjacent part.</span><a class="headerlink" href="#fig-bendingtorsionshear" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <ul class="simple">
 <li><p><strong>Bending</strong> is bending an object by applying a force perpendicularly to its longitudinal axis whilst its ends are secured, which results in the middle of the bar moving whilst the ends remain fixed in place thus bending the object.</p></li>
 <li><p><strong>Torsion</strong> deformation is applying a torque (or rotational force) to an object that is held secure its other end resulting in the material becoming twisted.</p></li>
 <li><p><strong>Shear</strong> deformation is when forces are applied in different directions at different parts of the object, which forces the two parts to move in opposite directions.</p></li>
 </ul>
 <p>Engineers must account for deformative forces and are able to design components that are resistant to different types of deformation. Consider bending, when a material is bent, the side that is being pushed experiences compression, whereas the bottom of the beam is under tension. The centre line of the bar remains will remain neither stretched or compressed. This is shown in <a class="reference internal" href="#fig-bendingbeam"><span class="std std-numref">Fig. 37</span></a> below taken from <a class="reference external" href="https://www.engineeringskills.com/posts/shear-and-moment-diagrams">engineeringskills.com</a>:</p>
-<div class="figure align-center" id="fig-bendingbeam">
+<figure class="align-center" id="fig-bendingbeam">
 <a class="reference internal image-reference" href="_images/BendingBeam.png"><img alt="A diagram showing a horizontal beam supported at both ends. Above the beam, evenly spaced downward-pointing arrows represent a uniformly distributed load, labeled w (kN/m). The beam has a length L, and a cross-section with breadth b and height h. To the right of the beam, a small rectangle labeled A-A shows the cross-section. Below the beam, a curved line represents the beam's deflected shape under the load, with the center sagging downwards. The text Fibres above the neutral axis get shorter under compression is written above the top of the curved beam, and Fibres under the neutral axis get longer under tension is written below the bottom. In the center of the curved beam is written Neutral axis which passes through the centroid of the cross-section." src="_images/BendingBeam.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 37 </span><span class="caption-text">A diagram illustrating the bending moment in a simply supported beam subjected to a uniformly distributed load. The top portion of the figure shows the beam with the applied load and dimensions. The bottom portion shows the deflected shape of the beam, along with the stress distribution and location of the neutral axis.</span><a class="headerlink" href="#fig-bendingbeam" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 37 </span><span class="caption-text">A diagram illustrating the bending moment in a simply supported beam subjected to a uniformly distributed load. The top portion of the figure shows the beam with the applied load and dimensions. The bottom portion shows the deflected shape of the beam, along with the stress distribution and location of the neutral axis.</span><a class="headerlink" href="#fig-bendingbeam" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>To minimise the amount of compression or extension, the surface area of the top and bottom of the bar are given a larger cross-sectional area, which means that the force is acting over a larger area. As we will see in a few slides, the area over which a force is applied is related to the compressive or tensile stress. The centre line can remain thinner to minimise the amount of material (cost) used to make the bars and reduce their weight, as as we mentioned before the centre line experiences no compression or tension. A classic example of this idea are “I” or “H” beams. Both are designed to have “flanges” and a “central web”. In a H beam the flanges are longer and the central web is thicker than that of an I beam. Both resemble the letter that they are named after. <a class="reference internal" href="#fig-hbeam"><span class="std std-numref">Fig. 38</span></a> below shows an H-beam, and was taken from <a class="reference external" href="https://www.bakersteeltrading.co.uk/steel-beam-differences/">Baker Steal Trading Ltd’s website</a> which outlines the differences between I and H-beams.</p>
-<div class="figure align-center" id="fig-hbeam">
+<figure class="align-center" id="fig-hbeam">
 <a class="reference internal image-reference" href="_images/Hbeam.png"><img alt="A black and white photograph of three steel H-beams stacked horizontally, slightly offset from each other.  The H-shape of the beams is clearly visible. The beams have a rough, industrial finish. The background is plain and light, providing contrast with the dark beams." src="_images/Hbeam.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 38 </span><span class="caption-text">A photograph of several steel H-beams stacked horizontally, illustrating their use in construction and structural engineering. The image highlights the distinct H-shape of the beams, providing strength and stability in various applications.</span><a class="headerlink" href="#fig-hbeam" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 38 </span><span class="caption-text">A photograph of several steel H-beams stacked horizontally, illustrating their use in construction and structural engineering. The image highlights the distinct H-shape of the beams, providing strength and stability in various applications.</span><a class="headerlink" href="#fig-hbeam" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <hr class="docutils" />
-<div class="section" id="dynamic-deformation">
-<h3>Dynamic Deformation<a class="headerlink" href="#dynamic-deformation" title="Permalink to this heading">#</a></h3>
+<section id="dynamic-deformation">
+<h3>Dynamic Deformation<a class="headerlink" href="#dynamic-deformation" title="Link to this heading">#</a></h3>
 <p>The example given on the previous slides are all types of static deformation e.g. deformation under a static load.</p>
 <p>We also need to think about dynamic loading, which is where the amount of force acting upon and the amount of deformation of a material changes as a function of time. This can lead to fatigue.</p>
 <p>“<strong>Fatigue is defined as a process of progressive localized plastic deformation occurring in a material subjected to cyclic stresses and strains at high stress concentration locations that may culminate in cracks or complete fracture after a sufficient number of fluctuations.</strong>”  - Metal Fatigue Analysis Handbook, 2012.</p>
 <p>This may occur cyclically, for example if you have a component that serves the same function and undergoes repeated application and application of force time and time again. It is understandable that the performance of the material will change over the lifetime of the product until it is no longer capable of serving its intended purpose, meaning it requires replacement.</p>
 <p>For example, consider the components that make up an aircraft - as the plane is routinely flown it will experience a great number of forces acting upon it which change at different stages of the flight. Each flight the components of the aircraft will experience these forces over and over again.</p>
 <p>When designing the plane, engineers need to take into account material fatigue, which is the weakening of a material caused by cyclical stresses and strains on the material (e.g. applying forces over and over again). This over time will cause small cracks to develop in the material, which will themselves grow and become a weak point in a component. Eventually this can lead to large cracks or even fracture of the component (component failure).</p>
-<div class="figure align-center" id="fig-fatigue">
+<figure class="align-center" id="fig-fatigue">
 <a class="reference internal image-reference" href="_images/Fatigue.png"><img alt="A close-up photograph of a fractured metal bar, shown at an angle. The surface of the break is rough and uneven. A darker, cracked region is visible, indicating fatigue damage. The rest of the bar appears metallic and worn. In the top left corner, a smaller, separate metal piece with a hole in it is shown as an inset. The background is a blurry, light surface." src="_images/Fatigue.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 39 </span><span class="caption-text">A photograph showing a close-up, angled view of a fractured metal bar, revealing fatigue damage. The image captures the rough, irregular surface of the break, with a clear indication of cracking in the darker region, highlighting the material’s failure due to fatigue. An inset image shows a smaller metal component, possibly related to the fractured bar.</span><a class="headerlink" href="#fig-fatigue" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 39 </span><span class="caption-text">A photograph showing a close-up, angled view of a fractured metal bar, revealing fatigue damage. The image captures the rough, irregular surface of the break, with a clear indication of cracking in the darker region, highlighting the material’s failure due to fatigue. An inset image shows a smaller metal component, possibly related to the fractured bar.</span><a class="headerlink" href="#fig-fatigue" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>In <a class="reference internal" href="#fig-fatigue"><span class="std std-numref">Fig. 39</span></a> above we see the fracture of an aluminium crank arm. Dark areas of striations show slow crack growth whereas the bright granular area shows where sudden fracture occurred. To better understand these phenomena, engineers can perform fatigue testing wherein they get a component and repeatedly apply cyclical loading onto it. They can then study where crack growth begins and how rapidly it propagates to determine component weak points and determine the approximate lifetime of the component (number of expected cycles).</p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="tensile-deformation-stress-and-strain">
-<h2>Tensile Deformation, Stress and Strain<a class="headerlink" href="#tensile-deformation-stress-and-strain" title="Permalink to this heading">#</a></h2>
+<section id="tensile-deformation-stress-and-strain">
+<h2>Tensile Deformation, Stress and Strain<a class="headerlink" href="#tensile-deformation-stress-and-strain" title="Link to this heading">#</a></h2>
 <p>Tensile deformation is a type of dynamic deformation. When we apply a load (force) to an object, for example a metal wire, the length of the object will increase by an amount <span class="math notranslate nohighlight">\(\Delta L\)</span>. This is tensile deformation.</p>
-<div class="figure align-center" id="fig-tensileextension">
+<figure class="align-center" id="fig-tensileextension">
 <a class="reference internal image-reference" href="_images/TensileExtension.png"><img alt="Three blue cylinders are shown horizontally, representing a metal bar. The top cylinder represents the bar before stretching, with its original length labeled L_0 with a double-headed arrow. Two red arrows labeled F point outwards from the ends of the cylinder, indicating the application of tensile forces. The middle cylinder represents the bar during stretching, with its extended length labeled L with a double-headed arrow. The bottom two cylinders are aligned end-to-end, with the original length L_0 marked below the top cylinder and the total extended length L marked below the bottom cylinder. A red arrow labeled delta L points horizontally from the right end of the top cylinder to the right end of the bottom cylinder, indicating the change in length." src="_images/TensileExtension.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 40 </span><span class="caption-text">A diagram illustrating the elongation of a metal bar under tensile forces. The bar is shown before (top) and after (bottom) the application of forces, with its length increasing from <span class="math notranslate nohighlight">\(L_0\)</span> to <span class="math notranslate nohighlight">\(L\)</span>. The change in length, <span class="math notranslate nohighlight">\(\Delta L\)</span>, is also indicated.</span><a class="headerlink" href="#fig-tensileextension" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 40 </span><span class="caption-text">A diagram illustrating the elongation of a metal bar under tensile forces. The bar is shown before (top) and after (bottom) the application of forces, with its length increasing from <span class="math notranslate nohighlight">\(L_0\)</span> to <span class="math notranslate nohighlight">\(L\)</span>. The change in length, <span class="math notranslate nohighlight">\(\Delta L\)</span>, is also indicated.</span><a class="headerlink" href="#fig-tensileextension" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>One thing to consider is that our material has a fixed volume/density. In this case, the volume of the wire is simply equal to its area multiplied by its length:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -595,10 +621,12 @@ V = L A
 V = L \cdot \pi r^2
 \end{align*}\]</div>
 <p>Obviously <span class="math notranslate nohighlight">\(\pi\)</span> is a constant, which tells us that if the volume of the material is to remain the same, the cross sectional area of the wire must decrease. In this case, this means that the radius of the wire will decrease:</p>
-<div class="figure align-center" id="fig-wirecrosssection">
+<figure class="align-center" id="fig-wirecrosssection">
 <a class="reference internal image-reference" href="_images/WireCrossSection.png"><img alt="Two blue circles, representing the cross-section of a wire, are shown side-by-side. The circle on the left is larger and labeled with r_0 and an arrow indicating the radius. The circle on the right is smaller and labeled with r and an arrow indicating the radius. The background is white." src="_images/WireCrossSection.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 41 </span><span class="caption-text">A diagram showing the cross-section of a wire with an initial radius, <span class="math notranslate nohighlight">\(r_0\)</span>, changing to a smaller radius, <span class="math notranslate nohighlight">\(r\)</span>. The image illustrates a decrease in the wire’s radius, potentially due to stretching or drawing</span><a class="headerlink" href="#fig-wirecrosssection" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 41 </span><span class="caption-text">A diagram showing the cross-section of a wire with an initial radius, <span class="math notranslate nohighlight">\(r_0\)</span>, changing to a smaller radius, <span class="math notranslate nohighlight">\(r\)</span>. The image illustrates a decrease in the wire’s radius, potentially due to stretching or drawing</span><a class="headerlink" href="#fig-wirecrosssection" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>That being said, if the length of the wire is significantly longer than the radius, the change in length will result in a very small change in radius, small enough for us to neglect. <strong>For all of the problems you are going to encounter on this course, unless otherwise stated, you can assume that the radius of the wire will remain constant!</strong> This is important when performing <em>stress</em> and <em>strain</em> calculations.</p>
 <div class="admonition-what-is-stress admonition">
 <p class="admonition-title">What is stress?</p>
@@ -675,8 +703,8 @@ To determine the strain on the wire we can use the strain equation:</p>
 </div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -703,11 +731,10 @@ To determine the strain on the wire we can use the strain equation:</p>
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="Lecture_7_Convection_Radiation.html"
@@ -727,17 +754,16 @@ To determine the strain on the wire we can use the strain equation:</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -782,9 +808,10 @@ By Drs Ross Mathieson and Matt Mears
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -808,8 +835,8 @@ By Drs Ross Mathieson and Matt Mears
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
   </footer>
